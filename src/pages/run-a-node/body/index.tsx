@@ -169,7 +169,7 @@ export default function Body(
               <div className={styles.stepDesc}>
                 <Trans ns="run-a-node" i18nKey="You need createAccount command to perform the above operations. For more details about createAccount command, please see this." components={{
                   text: <text className={styles.inlineText}></text>,
-                  link1: <Link target="_blank" href={"https://docs.mapprotocol.io/develop/map-relay-chain/marker/aboutcommon#createaccount"} ></Link>,
+                  link1: <Link target="_blank" href={"https://mapo.gitbook.io/docs-en/base/architecture_en/example/how-to-become-a-new-validator_en#create-an-account"} ></Link>,
 
                 }} />
               </div>
@@ -214,7 +214,7 @@ export default function Body(
           <div className={styles.stepDesc}>
             <Trans ns="run-a-node" i18nKey="You need lockedMAPO command to perform the above operations, more detail about lockedMAPO command please see this." components={{
               text: <text className={styles.inlineText}></text>,
-              link1: <Link target="_blank" href={"https://docs.mapprotocol.io/develop/map-relay-chain/marker/aboutcommon#lockedmap"} ></Link>,
+              link1: <Link target="_blank" href={"https://mapo.gitbook.io/docs-en/base/architecture_en/example/how-to-become-a-new-validator_en#locking-mapo"} ></Link>,
             }} />
           </div>
         </div>
@@ -231,12 +231,12 @@ export default function Body(
           <div className={styles.stepDesc}>
             <Trans ns="run-a-node" i18nKey="This step is a key step for registering as a new validator. You need register command to perform the above operations. For more details about register command please see this." components={{
               text: <text className={styles.inlineText}></text>,
-              link1: <Link target="_blank" href={"https://docs.mapprotocol.io/develop/map-relay-chain/marker/aboutvalidator#register"} ></Link>,
+              link1: <Link target="_blank" href={"https://mapo.gitbook.io/docs-en/base/architecture_en/example/how-to-become-a-new-validator_en#locking-mapo"} ></Link>,
             }} />
           </div>
           <div className={styles.stepDesc}>
             <Trans ns="run-a-node" i18nKey="At this step, you will successfully register as a validator. Next, you can try to vote for yourself. For details on how to vote please see this." components={{
-              link1: <Link target="_blank" href={"https://docs.mapprotocol.io/develop/map-relay-chain/marker/aboutvote#vote"} ></Link>,
+              link1: <Link target="_blank" href={"https://mapo.gitbook.io/docs-en/base/architecture_en/example/how-to-become-a-new-validator_en#locking-mapo"} ></Link>,
             }} />
           </div>
         </div>
@@ -256,7 +256,7 @@ export default function Body(
           <div className={styles.stepDesc}>
             <Trans ns="run-a-node" i18nKey="Since you’ve locked in 1,000,000 MAPO in Step 3, it's a great decision to vote for yourself now." components={{
               text: <text className={styles.inlineText}></text>,
-              link1: <Link target="_blank" href={"https://docs.mapprotocol.io/develop/map-relay-chain/getting-started/how-to-vote"} ></Link>,
+              link1: <Link target="_blank" href={"https://mapo.gitbook.io/docs-en/base/architecture_en/example/how-to-vote_en"} ></Link>,
             }} />
           </div>
         </div>
