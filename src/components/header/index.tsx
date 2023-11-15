@@ -16,7 +16,7 @@ export interface TabItem {
     path?: string;
 }
 
-interface TabsArray {
+export interface TabsArray {
     [key: string]: TabItem[];
 }
 export const tabsArray: TabsArray = {

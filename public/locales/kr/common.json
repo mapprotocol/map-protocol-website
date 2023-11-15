@@ -61,5 +61,11 @@
   "Similar to the 51% attack, long-range attack is a threat to PoS blockchains. MAP Protocol uses the Bitcoin network’s security mechanism to prevent long-range attack.": "51% 공격과 유사하게, 장기 공격은 PoS 블록체인에 대한 위협입니다. MAP Protocol은 비트코인 네트워크의 보안 메커니즘을 사용하여 장기 공격을 방지합니다.",
   "Edit Page": "페이지 편집",
   "We use cookies to improve your experience. By continuing to browse our site, you agree to our Cookie Policy.": "우리는 귀하의 경험을 개선하기 위해 쿠키를 사용합니다. 저희 사이트를 계속해서 탐색함으로써, 귀하는 우리의 쿠키 정책에 동의하게 됩니다.",
-  "Accept": "수락"
+  "Accept": "수락",
+  "Official contract addresses": "공식 계약 주소",
+  "Ecosystem": "생태계",
+  "MAP Protocol community grant": "MAP Protocol 커뮤니티 그랜트",
+  "MAP Protocol research grant": "MAP Protocol 연구 그랜트",
+  "MAP Protocol builder grant": "MAP Protocol 빌더 그랜트",
+  "MAP Protocol brand assets": "MAP Protocol 브랜드 자산"
 }
