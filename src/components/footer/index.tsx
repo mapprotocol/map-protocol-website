@@ -8,7 +8,7 @@ import { useTranslation } from 'next-i18next';
 
 const iconArray = [
     {
-        src: '/fonts/Kakao.svg',
+        src: '/fonts/Kakao.png',
         link: 'https://open.kakao.com/o/gP9WduRb/'
     },
     {
