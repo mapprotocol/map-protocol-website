@@ -1,0 +1,427 @@
+.main {
+
+    width: 100%;
+    min-height: 560px;
+    background: linear-gradient(90deg, #DEF8FD 0%, #F3EDFF 100%), linear-gradient(90deg, #E5D9FF 1.48%, #EDF6FA 94.08%);
+    /* background-color: #e3f2f8; */
+    position: relative;
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    opacity: 0.4;
+}
+
+.textContent {
+    position: relative;
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+}
+
+.textTitle {
+    color: #000;
+
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-top: 48px;
+    margin-bottom: 12px;
+}
+
+.textContent p {
+    color: #313131;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.2px;
+    /* 154.667% */
+
+}
+
+.textCard {
+    max-width: 811px;
+    height: 161px;
+    border-radius: 12px;
+    background: #F7F7F7;
+    align-self: center;
+    margin-top: 48px;
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.textCard:hover{
+    background-color: #F1F1F1;
+    
+}
+
+.textCardImage {
+    position: relative;
+    width: 131px;
+    height: 104px;
+}
+
+
+.textCardLeft {
+    background: linear-gradient(90deg, #DDF7FF 0%, #E9DCFF 98.47%);
+    min-width: 161px;
+    flex-shrink: 0;
+    min-height: 161px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textCardRight {
+    margin: 24px;
+
+}
+
+.textCardTitle {
+    color: #3F6DFF;
+
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+}
+
+.textCardDesc {
+    margin-top: 24px;
+    color: #313131;
+
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.2px;
+    /* 154.667% */
+
+}
+
+.cardListTitle {
+    max-width: 920px;
+    color: #313131;
+    
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.2px;
+    /* 145% */
+}
+.card:hover{
+    background-color: #F1F1F1;
+    
+}
+.centerContent {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 48px;
+    box-sizing: border-box;
+}
+.listTitle{
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    margin-top: 40px;
+    box-sizing: border-box;
+
+}
+.centerTitle {
+    color: #000;
+
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+}
+
+.centerDesc {
+    max-width: 100%;
+    margin-top: 24px;
+    color: #313131;
+    text-align: center;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.2px;
+    /* 145% */
+
+}
+
+.fade {
+    opacity: 1;
+
+    transition: opacity 0.4s;
+    transition-timing-function: ease-in;
+}
+
+.mainLeft {
+    max-width: 613px;
+    margin-top: 56px;
+    position: relative;
+    display: block;
+}
+
+.mapCoinsImage {
+    margin-left: 20px;
+    position: relative;
+    margin-top: 58px;
+    width: 560px;
+    height: 443px;
+    /* right: 100px; */
+}
+
+.centerImage {
+    margin-top: 24px;
+    position: relative;
+    margin-top: 58px;
+    width: 496px;
+    height: 356px;
+
+
+}
+
+.linkText {
+    /* color: #3F6DFF;
+    margin-left: 2px; */
+}
+
+.pretitle {
+    color: #6F7A7E;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 140% */
+
+}
+
+.title {
+
+    color: #000;
+
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 50px;
+    /* 138.889% */
+}
+
+.desc {
+    color: #000;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    margin-top: 24px;
+}
+
+.getMapButton {
+    border-radius: 16px;
+    margin-top: 24px;
+}
+
+
+.priceCard {
+    max-width: 397px;
+    height: 182px;
+    position: relative;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    margin-top: 24px;
+    background: #FFF;
+}
+
+.tipIcon {
+    display: block;
+    width: 15px;
+    width: 15px;
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+.priceTitle {
+    color: #231815;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.priceNumber {
+    color: #000;
+
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+}
+
+.change {
+    position: absolute;
+    left: 20px;
+    bottom: 31px;
+    display: flex;
+    text-align: center;
+    gap: 6px;
+    align-items: center;
+}
+
+.changeNumber {
+    color: #35B600;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    line-height: normal;
+    border-radius: 5px;
+    background-color: rgba(53, 182, 0, 0.10);
+    padding: 0px 6px;
+}
+
+.changeDesc {
+    color: rgba(0, 0, 0, 0.297);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card {
+    max-width: 397px;
+    box-sizing: border-box;
+    padding: 24px;
+    background-color: #F7F7F7;
+    min-height: 240px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.cardList {
+    margin-top: 50px;
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    gap: 24px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cardTitle {
+    color: #000;
+
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 12px;
+}
+
+.cardDesc {
+    margin-top: 24px;
+    color: #000;
+
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+
+.mapoTitle {
+    color: #000;
+    width: 312px;
+
+
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.li {
+    margin-top: 8px;
+}
+
+@media (max-width: 1288px) {
+    .main {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .listTitle {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .cardList {
+        padding: 0 24px;
+    }
+
+    .centerContent {
+        padding-left: 24px;
+        padding-right: 24px;
+
+    }
+
+    .textContent {
+
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .main {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-bottom: 96px;
+    }
+
+    .card {
+        max-width: 100%;
+
+        width: 100%;
+    }
+
+    .mapCoinsImage {
+        width: 100%;
+        margin: 0;
+    }
+
+    .centerImage {
+        width: 100%;
+        margin: 0;
+    }
+
+    .textCardLeft {
+        display: none;
+    }
+}

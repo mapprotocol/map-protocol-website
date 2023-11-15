@@ -1,0 +1,12 @@
+{
+    "Welcome to MAP Protocol": "MAP प्रोटोकॉल में आपका स्वागत है",
+    "MAP Protocol is a Bitcoin layer-2 for peer-to-peer cross-chain interoperability.": "MAP प्रोटोकॉल बिटकॉइन लेयर-2 है जो पीयर-टू-पीयर क्रॉस-चेन संचार के लिए है।",
+    "Explore MAP Protocol": "MAP प्रोटोकॉल का पता लगाएं",
+    "The Bitcoin layer-2 for Bitcoin ecosystem transformation": "बिटकॉइन पारिस्थितिकी तंत्र परिवर्तन के लिए बिटकॉइन लेयर-2",
+    "By leveraging the Bitcoin network’s security mechanism, MAP Protocol strengthened its network security and serves as a Bitcoin layer-2 to enable BRC-20 cross-chain and allow assets and users to from other public chains interact with the Bitcoin network via peer-to-peer cross-chain.": "बिटकॉइन नेटवर्क की सुरक्षा तंत्र का उपयोग करके, MAP प्रोटोकॉल ने अपनी नेटवर्क सुरक्षा को मजबूत किया है और यह एक बिटकॉइन लेयर-2 के रूप में कार्य करता है जो BRC-20 क्रॉस-चेन को सक्षम करता है और अन्य सार्वजनिक चेनों के संपत्तियों और उपयोगकर्ताओं को बिटकॉइन नेटवर्क से पीयर-टू-पीयर क्रॉस-चेन के माध्यम से जोड़ने देता है।",
+    "The Bitcoin-level peer-to-peer cross-chain network": "बिटकॉइन-स्तरीय पीयर-टू-पीयर क्रॉस-चेन नेटवर्क",
+    "Similar to the “purely peer-to-peer” Bitcoin network, MAP Protocol’s cross-chain network is also peer-to-peer without going through any third party. The validity of a cross-chain request depends purely on the fact that it has occurred on the source chain, not on decisions or proofs made by trusted third parties.": "बिटकॉइन नेटवर्क के “शुद्ध पीयर-टू-पीयर” तरीके के समान, MAP प्रोटोकॉल का क्रॉस-चेन नेटवर्क भी किसी तृतीय पक्ष के माध्यम से नहीं जाता है। क्रॉस-चेन अनुरोध की वैधता केवल इस तथ्य पर निर्भर करती है कि यह स्रोत चेन पर हुआ है, न कि विश्वसनीय तृतीय पक्षों द्वारा निर्णय या प्रमाणों पर।",
+    "The frontier for building anything cross-chain": "क्रॉस-चेन कुछ भी बनाने के लिए सीमा",
+    "Cross-chain should be made easy. We provide a full suite of development tools, tutorials, and SDKs for you to build your cross-chain dApps or expand your chain connectivity with as little effort as possible. Building things cross-chain is as easy as building on a single chain.": "क्रॉस-चेन को आसान बनाया जाना चाहिए। हम आपके क्रॉस-चेन डैप्स बनाने या आपकी चेन कनेक्टिविटी को कम से कम प्रयास के साथ विस्तारित करने के लिए विकास उपकरणों, ट्यूटोरियल्स और एसडीके का पूरा सेट प्रदान करते हैं। क्रॉस-चेन पर चीजें बनाना एक चेन पर बनाने जितना आसान है।",
+    "The infra for interoperable on-chain assets, storage, and computing": "संचारणीय ऑन-चेन संपत्तियों, भंडारण, और कंप्यूटिंग के लिए इन्फ्रा"
+}

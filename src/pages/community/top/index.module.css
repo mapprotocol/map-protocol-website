@@ -1,0 +1,371 @@
+.main {
+
+    width: 100%;
+    min-height: 560px;
+    background: linear-gradient(90deg, #DEF8FD 0%, #F3EDFF 100%), linear-gradient(90deg, #E5D9FF 1.48%, #EDF6FA 94.08%);
+    position: relative;
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+
+    opacity: 0.4;
+}
+
+.fade {
+    opacity: 1;
+
+    transition: opacity 0.4s;
+    transition-timing-function: ease-in;
+}
+
+
+.mainLeft {
+    max-width: 520px;
+    position: relative;
+    display: block;
+    margin-top: 162px;
+}
+
+.topImage {
+    position: relative;
+    width: 470px;
+    height: 400px;
+    margin-left: 24px;
+    margin-top: 47px;
+    margin-right: 82px;
+    flex-shrink: 0.4;
+}
+
+
+
+.title {
+    color: #000;
+    
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 58px;
+    /* 126.087% */
+}
+
+.desc {
+    color: #000;
+    
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 36px;
+    /* 140% */
+}
+
+.cardTitle {
+    color: #000;
+    
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    max-width: 80%;
+}
+
+
+.title {
+    color: #000;
+    
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+
+.cardListTitle {
+    margin-top: 60px;
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    color: #000;
+    
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.cardListDesc {
+    margin-top: 24px;
+    color: #313131;
+    
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.2px;
+    /* 145% */
+
+
+}
+
+.card {
+    max-width: 397px;
+    flex: 1 1 30%;
+    box-sizing: border-box;
+    padding: 24px;
+    background-color: #F7F7F7;
+
+    border-radius: 12px;
+    position: relative;
+}
+
+.cardList {
+    margin-top: 50px;
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.cardTitle {
+    color: #000;
+    
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 16px;
+}
+
+.cardDesc {
+    margin-top: 12px;
+
+    color: #313131;
+    
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+
+.cardLink {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #1976d2;
+    
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    cursor: pointer;
+    line-height: normal;
+}
+
+.contribute {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    position: relative;
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    /* align-items: center; */
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin-top: 0px;
+}
+
+.contributeTitle {
+    color: #000;
+    
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.contributeLeft {
+    max-width: 636px;
+    margin-top: 138px;
+    margin-right: 24px;
+}
+
+.contributeImage {
+    flex-shrink: 0.3;
+    margin-top: 70px;
+    width: 430.317px;
+    height: 293px;
+    margin-right: 54px;
+    position: relative;
+}
+
+.contributeDesc {
+    margin-top: 32px;
+    color: #313131;
+    
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.2px;
+    /* 145% */
+
+}
+
+.getStartCardTitle {
+    color: #000;
+    
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 28px;
+    margin-top: 12px;
+    padding: 0 24px;
+}
+
+.getStartCardDesc {
+    color: #313131;
+    
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.2px;
+    margin-top: 12px;
+    padding: 0 24px 24px 24px;
+}
+
+.getStartCard {
+    position: relative;
+    flex-basis: 48%;
+    max-width: 600px;
+    border-radius: 12px;
+    border: 1px solid #000;
+    margin-top: 36px;
+    cursor: pointer;
+}
+
+.getStartCard:hover {
+
+    transform: scale(1.03);
+    box-shadow: none !important;
+
+    transition: all 0.1s;
+    transition-timing-function: ease-in;
+
+
+}
+
+.getStartCardTop {
+    width: 100%;
+    background: linear-gradient(90deg, #EEE6FF 4.25%, #F2FBFF 94.08%);
+    overflow: hidden;
+    border-radius: 12px 12px 0 0;
+    height: 260px;
+}
+
+.getStartCardList {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    position: relative;
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    /* align-items: center; */
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding-top: 48px;
+    padding-bottom: 96px;
+    flex-wrap: wrap;
+}
+
+.getStartCardTop {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+
+    margin-top: 32px;
+    display: flex;
+    gap: 24px;
+    }
+
+@media (max-width: 1288px) {
+    .main {
+        padding-left: 24px;
+        padding-right: 24px;
+
+    }
+
+    .cardListTitle {
+        padding: 0 24px;
+    }
+
+    .cardList {
+        padding: 0 24px;
+
+    }
+
+    .contribute {
+        padding: 0 24px;
+    }
+
+    .getStartCardList {
+
+        padding: 48px 24px 96px 24px;
+    }
+}
+
+@media (max-width: 800px) {
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding-bottom: 64px;
+        padding-top: 64px;
+        align-items: center;
+
+
+    }
+    .getStartCard{
+
+        width: 80%;
+    }
+    .contributeLeft{
+        margin-top: 24px;
+    }
+    .mainLeft {
+        margin-top: 24px;
+    }
+
+    .topImage {
+        width: 100%;
+        margin: 0;
+    }
+
+    .cardList {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contribute {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .getStartCardList {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contributeImage {
+        width: 100%;
+        height: 332px;
+        margin-top: 48px;
+        margin-right: 0px;
+    }
+    .getStartCard{
+        width: 100%;
+    }
+}

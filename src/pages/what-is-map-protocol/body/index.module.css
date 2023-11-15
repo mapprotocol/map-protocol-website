@@ -1,0 +1,189 @@
+.contentItem {
+    /* background-color: #e3f2f8; */
+    position: relative;
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    min-height: 680px;
+    padding-bottom: 24px;
+    padding-top: 24px;
+
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+.mapStats {
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    padding-top: 96px;
+    padding-bottom: 96px;
+    margin-top: 96px;
+    background: linear-gradient(90deg, #F8F4FF 0%, #FAFDFE 100%);
+
+}
+
+.whyUseMapContent{
+    margin-top: 48px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.whyUseMap {
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    padding-top: 96px;
+
+}
+
+.table {
+    /* border-radius: 12px; */
+    border: 0.5px solid #E4E4E4;
+    border-collapse: collapse;
+    flex-wrap: wrap;
+    margin-top: 48px;
+    justify-content: space-around;
+    overflow: hidden;
+    display: flex;
+}
+
+.tableItem {
+    flex-basis: 33.333%;
+    min-width: 200px;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    padding: 24px;
+    min-height: 160px;
+    border: 0.5px solid #E4E4E4;
+    position: relative;
+}
+
+.tableData {
+    color: #313131;
+    
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.tabletext {
+    color: #818084;
+    margin-top: 24px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.tableItem:hover {
+
+    background: #f1f1f1;
+}
+
+
+
+.statsTitle {
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    line-height: normal;
+}
+
+.tableItem:hover .tableData {
+    color: #3F6DFF;
+}
+
+.contentText {
+    max-width: 605px;
+    margin-left: 20px;
+}
+
+.title {
+    color: #000;
+    margin-bottom: 48px;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    width: 90%;
+}
+
+.desc {
+    color: #000;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.2px;
+    margin-top: 32px;
+    /* 145% */
+}
+
+.button {
+    margin-top: 32px;
+    display: flex;
+    gap:24px
+}
+.tipIcon{
+}
+.contentImage {
+    flex-shrink: 0.2;
+}
+
+@media (max-width: 1288px) {
+    .contentItem {
+        padding-left: 24px;
+        padding-right: 24px;
+
+    }
+
+    .mapStats {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .whyUseMap{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .contentItem {
+        flex-direction: column;
+        align-items: center;
+        padding: 64px 24px;
+    }
+
+    .tableItem {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    /* .contentImage img{
+        width: 100% !important;
+        height: auto !important;
+        margin-right: 0px;
+    } */
+    .whyUseMapContent{
+        flex-direction: column-reverse;
+        align-items: center;
+
+    }
+    .contentImage {
+        width: 100% !important;
+
+        height: 380px !important;
+        margin-right: 0px;
+    }
+}

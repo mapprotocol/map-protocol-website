@@ -1,0 +1,316 @@
+.whatIsNode {
+
+    padding-top: 96px;
+    display: flex;
+    min-height: 482px;
+
+    position: relative;
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    box-sizing: border-box;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+
+
+.nodeImage2 {
+    border-radius: 10px;
+
+    background: linear-gradient(0deg, #F3EDFF 0%, #F7FBFD 100%);
+}
+
+
+.mainRight {
+    width: 799px;
+    position: relative;
+    display: block;
+}
+
+
+.title {
+    color: #000;
+    
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    /* 126.087% */
+}
+
+.desc {
+    color: #313131;
+
+    
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.2px;
+    margin-top: 32px;
+
+}
+
+.moreButton {
+    margin-top: 32px;
+
+}
+
+.buildNode {
+    color: #000;
+    margin-top: 96px;
+    
+    background: linear-gradient(90deg, #FAFDFE 0%, #F8F4FF 100%);
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    padding-top: 96px;
+    padding-bottom: 96px;
+
+}
+
+.buildTitle {
+    color: #000;
+    
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.form {
+    color: #313131;
+    
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.2px;
+    border-color: #999;
+    border-width: 1px;
+    border-width: 1px 0 1px 0;
+
+    border-style: solid;
+    margin-left: 54px;
+    /* border-radius: 12px; */
+    margin-top: 24px;
+}
+
+.formTitle {
+    flex-shrink: 0;
+    display: flex;
+    /* height: 100%; */
+    justify-content: center;
+    width: 115px;
+    align-items: center;
+    border-color: #999;
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    margin-right: 24px;
+
+}
+
+.formItem {
+    display: flex;
+    min-height: 57px;
+    align-items: center;
+    border-color: #999;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+}
+
+
+
+.li {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    margin-left: 46px;
+    max-width: 920px;
+}
+
+.buildStep {
+    margin-top: 33px;
+}
+
+.stepTitle {
+    color: #000;
+    
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+}
+
+.stepTitle {
+    gap: 12px;
+}
+
+.runNode {
+    margin-top: 90px;
+    position: relative;
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.runTitle {
+    color: #000;
+    
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.inlineText{
+
+    color: rgb(5, 165, 5) ;
+}
+
+.runDesc {
+    color: #313131;
+    
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.2px;
+    margin-top: 24px;
+    /* 145% */
+}
+
+.runNodeImage {
+    width: 568.371px;
+    height: 387px;
+    flex-shrink: 0.3;
+    position: relative;
+
+}
+
+.stepTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.stepDesc {
+    margin-left: 52px;
+    margin-top: 32px;
+    color: #313131;
+    
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.2px;
+    /* 154.667% */
+}
+
+.stake {
+    min-height: 309px;
+    margin-top: 96px;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #F3EDFF 1.48%, #F7FBFD 94.08%);
+    /* background-color: #e3f2f8; */
+    position: relative;
+    margin-right: calc(50% - 620px);
+    margin-left: calc(50% - 620px);
+    display: flex;
+    box-sizing: border-box;
+    padding: 48px 24px;
+    justify-content: space-between;
+    padding-right: 24px;
+    gap: 96px
+}
+
+.stakeTitle {
+    color: #000;
+    
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.stakeButton {
+
+    margin-top: 48px;
+}
+
+.stakeDesc {
+    margin-top: 24px;
+
+    color: #313131;
+    
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.2px;
+    /* 145% */
+
+}
+
+.stakeImage {
+    width: 279.165px;
+    height: 230px;
+    position: relative;
+    margin-right: 24px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 1288px) {
+    .stake {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+    .whatIsNode {
+        margin-left: 24px;
+        margin-right: 24px;
+
+    }
+
+    .buildNode {
+        padding-left: 24px;
+        padding-right: 24px;
+
+    }
+
+    .runNode {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+}
+
+@media (max-width: 800px) {
+    .stake {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    .nodeImage2 {
+        display: none;
+    }
+    .whatIsNode{
+
+        padding-top: 48px;
+    }
+    .runNode{
+
+        margin-top: 48px;
+    }
+    .buildNode{
+        margin-top: 48px;
+        padding-top: 48px;
+
+        padding-bottom: 48px;
+
+    }
+    .stepTop {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .runNodeImage{
+        width: 100%;
+        margin: 0;
+    }
+}

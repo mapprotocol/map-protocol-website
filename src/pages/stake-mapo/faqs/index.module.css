@@ -1,0 +1,70 @@
+.title {
+    color: #000;
+    
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 45px;
+}
+
+.main {
+    margin-top: 100px;
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    box-sizing: border-box;
+    margin-bottom: 200px;
+}
+
+.recoveryLeft {
+
+    padding-top: 30px;
+    padding-left: 20px;
+
+}
+
+.recoveryTitle {
+
+    color: #000;
+    
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+
+.recovery {
+    margin-top: 100px;
+    margin-left: calc(50% - 620px);
+    margin-right: calc(50% - 620px);
+    box-sizing: border-box;
+    margin-bottom: 200px;
+    display: flex;
+    border-radius: 12px;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #E0D2FF 1.48%, #E9F4F8 94.08%);
+    height: 212px;
+}
+
+.mapCoinsImage {
+    margin-right: 69px;
+}
+
+
+.recoveryItem{
+    line-height: 32px;
+}
+
+
+@media (max-width: 1288px) {
+    .main {
+        padding: 0 24px;
+    }
+
+    .recovery {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+}

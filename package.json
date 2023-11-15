@@ -1,0 +1,46 @@
+{
+  "name": "map-protocol-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "list-docs": "node list-docs.js",
+    "dev": "npm run list-docs && next dev",
+    "build": "npm run list-docs && next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mdx-js/loader": "^2.3.0",
+    "@mdx-js/react": "^2.3.0",
+    "@mui/icons-material": "^5.14.12",
+    "@mui/material": "^5.14.12",
+    "@mui/x-tree-view": "^6.0.0-beta.0",
+    "@next/mdx": "^13.5.5",
+    "@notionhq/client": "^2.2.13",
+    "@types/mdx": "^2.0.8",
+    "@types/react-scrollspy": "^3.3.6",
+    "@types/remark-prism": "^1.3.6",
+    "axios": "^1.5.1",
+    "gray-matter": "^4.0.3",
+    "i18next": "^23.5.1",
+    "next": "13.5.4",
+    "next-i18next": "^14.0.3",
+    "next-mdx-remote": "^4.4.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-i18next": "^13.2.2",
+    "react-scrollspy": "^3.4.3",
+    "remark": "^15.0.1",
+    "remark-prism": "^1.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "13.5.4",
+    "typescript": "^5"
+  }
+}

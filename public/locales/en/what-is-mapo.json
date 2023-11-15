@@ -1,0 +1,90 @@
+{
+    "What is MAPO?": "What is MAPO?",
+    "Currency for the permissionless, digital future.": "Currency for the permissionless, digital future.",
+    "Currency of MAP Protocol omnichain apps.": "Currency of MAP Protocol omnichain apps.",
+
+
+    "Get MAPO": "Get MAPO",
+    "Current MAPO Price（USD）": "Current MAPO Price（USD）",
+    "Data Source: ": "Data Source: ",
+    "(LAST 24 HOUR)": "(LAST 24 HOUR)",
+
+    "MAPO is a cryptocurrency. It is the digital money that opens the door for you to access the Bitcoin-level peer-to-peer omnichain network. If you’re new to crypto, here's how MAPO differs from traditional money.": "MAPO is a cryptocurrency. It is the digital money that opens the door for you to access the Bitcoin-level peer-to-peer omnichain network. If you’re new to crypto, here's how MAPO differs from traditional money.",
+
+
+    "Open to all, truly borderless": "Open to all, truly borderless",
+    "MAPO is open and accessible to anyone with an internet connection and a crypto wallet, transcending geographical boundaries.": "MAPO is open and accessible to anyone with an internet connection and a crypto wallet, transcending geographical boundaries.",
+    
+    "You have the full autonomy": "You have the full autonomy",
+    "MAPO users have full control over their funds and transactions, eliminating the need for intermediaries like banks or any other third parties.": "MAPO users have full control over their funds and transactions, eliminating the need for intermediaries like banks or any other third parties.",
+
+    "Privacy by default": "Privacy by default",
+    "MAPO prioritizes user privacy by default. While transactions are recorded on a public ledger, user identities are often pseudonymous.": "MAPO prioritizes user privacy by default. While transactions are recorded on a public ledger, user identities are often pseudonymous.",
+
+    "Peer-to-peer, no third parties": "Peer-to-peer, no third parties",
+    "You can send your MAPO without any intermediaries such as banks or payment processors. Sending MAPO is just like cash handover, but it’s online and secured by cryptography.":"You can send your MAPO without any intermediaries such as banks or payment processors. Sending MAPO is just like cash handover, but it’s online and secured by cryptography.",
+
+    "Transparency and equity":"Transparency and equity",
+    "User Experience":"User Experience",
+    "All MAPO transactions are recorded on the MAP Relay Chain, ensuring transparency and immutability. This means you can verify transactions independently.":"All MAPO transactions are recorded on the MAP Relay Chain, ensuring transparency and immutability. This means you can verify transactions independently.",
+
+    "Code is law":"Code is law",
+    "MAPO operates based on predefined, immutable rules encoded in the software. The system's rules and monetary policy cannot be altered by any central authority.":"MAPO operates based on predefined, immutable rules encoded in the software. The system's rules and monetary policy cannot be altered by any central authority.",
+
+    "Want to buy some MAPO? It's common to mix up MAP and MAPO. MAPO is the ticker name on the MAP Relay Chain, while MAP is the name on other chains.":"Want to buy some MAPO? It's common to mix up MAP and MAPO. MAPO is the ticker name on the MAP Relay Chain, while MAP is the name on other chains.",
+   
+   
+    "To explore the MAP Protocol ecosystem,  MAPO is what you're probably looking to buy. More on Get MAPO.":"To explore the MAP Protocol ecosystem,  MAPO is what you're probably looking to buy. <link1>More on Get MAPO</link1>.",
+    
+    
+    "What’s unique about MAPO?":"What’s unique about MAPO?",
+    "There are many cryptocurrencies and lots of other tokens in the blockchain space, but there are some things that only MAPO can do.":"There are many cryptocurrencies and lots of other tokens in the blockchain space, but there are some things that only MAPO can do.",
+
+
+    "MAPO fuels MAP Protocol":"MAPO fuels MAP Protocol",
+    "MAPO is the heart of MAP Protocol. When you send MAPO or use an app on MAP Protocol, you'll pay a fee in MAPO to use the MAP Protocol network. This fee serves as an incentive for a block producer to process and verify your activity on the network.":"MAPO is the heart of MAP Protocol. When you send MAPO or use an app on MAP Protocol, you'll pay a fee in MAPO to use the MAP Protocol network. This fee serves as an incentive for a block producer to process and verify your activity on the network.",
+
+    "Validators are like the gatekeepers of MAP Protocol—they check and ensure all the transactions are valid and accurate. They are randomly selected to verify new translations and add them to a blockchain. Validators will be rewarded with a small amount of MAPO for the work they do.":"Validators are like the gatekeepers of MAP Protocol—they check and ensure all the transactions are valid and accurate. They are randomly selected to verify new translations and add them to a blockchain. Validators will be rewarded with a small amount of MAPO for the work they do.",
+
+    "There are certain hardware and software requirements you need to meet to become a validator. You can check out the details on Run a Node.":"There are certain hardware and software requirements you need to meet to become a validator. You can check out the details on <link1>Run a Node</link1>.",
+    "Besides those requirements, validators also need to stake a certain amount of MAPO to help secure the whole MAP Protocol network and earn rewards. If prefer to secure the omnichain network without building a node, you can still participate in staking by delegating your MAPO. More on staking.":"Besides those requirements, validators also need to stake a certain amount of MAPO to help secure the whole MAP Protocol network and earn rewards. If prefer to secure the omnichain network without building a node, you can still participate in staking by delegating your MAPO. <link1>More on staking</link1>.",
+
+    "What is MAP Protocol?":"What is MAP Protocol?",
+
+    "To know more about MAP Protocol — the technology behind MAPO, check out the info on this page.":"To know more about MAP Protocol — the technology behind MAPO, check out the info on this page.",
+    "MAPO underpins the omnichain financial system":"MAPO underpins the omnichain financial system",
+    "Moving beyond mere transactions, the omnichain community is crafting an all-encompassing financial network that is peer-to-peer and universally accessible.":"Moving beyond mere transactions, the omnichain community is crafting an all-encompassing financial network that is peer-to-peer and universally accessible.",
+    "Currently, users can earn MAPO through staking. However, as MAP Protocol evolves and expands, forthcoming functionalities like borrowing and lending will be introduced, broadening the utility of MAPO.":"Currently, users can earn MAPO through staking. However, as MAP Protocol evolves and expands, forthcoming functionalities like borrowing and lending will be introduced, broadening the utility of MAPO.",
+
+    "Uses for MAPO grow every day":"Uses for MAPO grow every day",
+    "Because MAP Protocol is programmable, developers can shape MAPO in countless ways. Here are just some of the things you can do with MAPO.":"Because MAP Protocol is programmable, developers can shape MAPO in countless ways. Here are just some of the things you can do with MAPO.",
+    "Swap tokens — you can trade MAPO with tokens on multiple different chains.":"<link1>Swap tokens</link1> — you can trade MAPO with tokens on multiple different chains.",
+    "Earn interest — stake MAPO and get rewarded.":"<link1>Earn interest</link1> — stake MAPO and get rewarded.",
+    "Get stablecoins — access the world of cryptocurrencies with a steady, less volatile value.":"<link1>Get stablecoins</link1> — access the world of cryptocurrencies with a steady, less volatile value.",
+    "Where to get MAPO":"Where to get MAPO",
+    "You can get MAPO from a  centralized exchange or decentralized exchange but different countries may have different policies. Check to see which would be the best way for you to get MAPO.":"You can get MAPO from a  centralized exchange or decentralized exchange but different countries may have different policies. Check to see which would be the best way for you to get MAPO.",
+    "Why does MAPO have value?":"Why does MAPO have value?",
+    "MAPO holds different values for different people.":"MAPO holds different values for different people.",
+    "For users of MAP Protocol, MAPO is valuable because it lets you pay transaction fees.":"For users of MAP Protocol, MAPO is valuable because it lets you pay transaction fees.",
+    "Others see it as a digital store of value because the creation of new MAPO slows down over time.":"Others see it as a digital store of value because the creation of new MAPO slows down over time.",
+    "In the future, MAPO will also become valuable to users of financial apps on MAP Protocol, as they can use MAPO for lending, borrowing, streaming, or even as a payment system.":"In the future, MAPO will also become valuable to users of financial apps on MAP Protocol, as they can use MAPO for lending, borrowing, streaming, or even as a payment system.",
+    "There are also users who are investors who take MAPO as their investment similar to Bitcoin or other cryptocurrencies.":"There are also users who are investors who take MAPO as their investment similar to Bitcoin or other cryptocurrencies.",
+    "MAPO is not the only token in crypto":"MAPO is not the only token in crypto",
+    "The crypto space allows anyone to create new assets and trade them across various platforms. These assets are often labeled as 'tokens'. From traditional assets like gold and real estate to innovative concepts like art and even personal value, tokenization is reshaping how we think of ownership.":"The crypto space allows anyone to create new assets and trade them across various platforms. These assets are often labeled as 'tokens'. From traditional assets like gold and real estate to innovative concepts like art and even personal value, tokenization is reshaping how we think of ownership.",
+    "The crypto landscape houses countless tokens, each with its unique utility and value. The ongoing innovation by developers ensures that new tokens continually emerge, each paving the way for novel opportunities and market expansion.":"The crypto landscape houses countless tokens, each with its unique utility and value. The ongoing innovation by developers ensures that new tokens continually emerge, each paving the way for novel opportunities and market expansion.",
+    "More on tokens":"More on tokens",
+    "Stablecoins":"Stablecoins",
+    "Decentralized finance (DeFi)":"Decentralized finance (DeFi)",
+    "Decentralized organizations (DAOs)":"Decentralized organizations (DAOs)",
+    "Non-fungible tokens (NFTs)":"Non-fungible tokens (NFTs)",
+    "Different types of tokens":"Different types of tokens",
+    "Stablecoins":"Stablecoins",
+    "Tokens that mirror the value of a traditional currency such as dollars. This solves the volatility problem with many cryptocurrencies.":"Tokens that mirror the value of a traditional currency such as dollars. This solves the volatility problem with many cryptocurrencies.",
+    "Governance tokens":"Governance tokens",
+    "Tokens that represent voting power in decentralized organizations.":"Tokens that represent voting power in decentralized organizations.",
+    "Sh*t coins":"Sh*t coins",
+    "Because anyone — even people with bad intentions — can create a new token, always do your research before deciding to invest in them!":"Because anyone — even people with bad intentions — can create a new token, always do your research before deciding to invest in them!",
+    "Collectible tokens":"Collectible tokens",
+    "Tokens that represent a collectible game item, piece of digital art, or other unique assets. Commonly known as non-fungible tokens (NFTs).":"Tokens that represent a collectible game item, piece of digital art, or other unique assets. Commonly known as non-fungible tokens (NFTs).",
+    "You can get MAPO from a centralized exchange or decentralized exchange but different countries may have different policies. Check to see which would be the best way for you to get MAPO.":"You can get MAPO from a centralized exchange or decentralized exchange but different countries may have different policies. Check to see which would be the best way for you to get MAPO."
+}

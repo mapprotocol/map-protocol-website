@@ -1,0 +1,23 @@
+body {
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
+  margin: 0;
+  /* font-family: 'Open Sans'; */
+}
+
+a {
+  color: #1976d2;
+
+}
+
+.remark-highlight {
+  max-width: 100%; 
+  overflow-x: auto; 
+}
+
+pre[class*="language-"],
+code[class*="language-"] {
+  white-space: pre-wrap; /* 代码自动换行 */
+  word-break: break-word; /* 防止单词被截断 */
+  overflow-wrap: break-word; /* 允许长单词或 URL 地址在边界内换行 */
+}

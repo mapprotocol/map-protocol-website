@@ -1,0 +1,47 @@
+/* styles/CookieConsent.css */
+
+.cookieConsentPopup {
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  /* margin-left: calc(50% - 620px); */
+  /* margin-right: calc(50% - 620px); */
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+  padding: 24px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+  z-index: 10000;
+  opacity: 0; 
+  transition: opacity 0.5s ease-in-out; 
+}
+.cookieConsentVisible {
+  opacity: 1; 
+}
+.title{
+  display: flex;
+  align-items: center;
+}
+
+
+.acceptButton {
+  margin-left: 24px;
+  
+}
+
+@media (max-width: 800px) {
+
+  .acceptButton{
+    margin-top: 12px;
+  
+  }
+  .cookieConsentPopup {
+      align-items: end;
+      flex-direction: column;
+  }
+  .errorIcon{
+    display: none;
+  }
+}

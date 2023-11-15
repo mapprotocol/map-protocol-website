@@ -1,0 +1,84 @@
+{
+    "What is MAPO?": "什么是 MAPO？",
+    "Currency for the permissionless, digital future.": "未来无需许可的数字货币。",
+    "Currency of MAP Protocol omnichain apps.": "MAP Protocol 全链应用的货币。",
+
+    "Get MAPO": "获取 MAPO",
+    "Current MAPO Price（USD）": "当前 MAPO 价格（美元）",
+    "Data Source: ": "数据来源：",
+    "(LAST 24 HOUR)": "（最近24小时）",
+
+    "MAPO is a cryptocurrency. It is the digital money that opens the door for you to access the Bitcoin-level peer-to-peer omnichain network. If you’re new to crypto, here's how MAPO differs from traditional money.": "MAPO 是一种加密货币。它是开启您进入比特币级别点对点全链网络大门的数字货币。如果您对加密货币不熟悉，这里有些关于 MAPO 如何不同于传统货币的信息。",
+
+    "Open to all, truly borderless": "对所有人开放，真正无国界",
+    "MAPO is open and accessible to anyone with an internet connection and a crypto wallet, transcending geographical boundaries.": "MAPO 对所有有互联网连接和加密钱包的人开放，超越地理界限。",
+    
+    "You have the full autonomy": "您拥有完全的自主权",
+    "MAPO users have full control over their funds and transactions, eliminating the need for intermediaries like banks or any other third parties.": "MAPO 用户对他们的资金和交易拥有完全的控制权，无需通过银行或任何其他第三方中介。",
+    "Privacy by default": "默认隐私保护",
+    "MAPO prioritizes user privacy by default. While transactions are recorded on a public ledger, user identities are often pseudonymous.": "MAPO 默认优先考虑用户隐私。虽然交易记录在公共账本上，但用户身份通常是匿名的。",
+
+    "Peer-to-peer, no third parties": "点对点，无需第三方",
+    "You can send your MAPO without any intermediaries such as banks or payment processors. Sending MAPO is just like cash handover, but it’s online and secured by cryptography.": "您可以不经过任何中介，如银行或支付处理商，发送您的MAPO。发送MAPO就像交接现金一样，但它是在线的，并通过加密技术保障安全。",
+
+    "Transparency and equity": "透明和公平",
+    "User Experience": "用户体验",
+    "All MAPO transactions are recorded on the MAP Relay Chain, ensuring transparency and immutability. This means you can verify transactions independently.": "所有MAPO交易都记录在MAP中继链上，确保了透明性和不可变性。这意味着您可以独立验证交易。",
+
+    "Code is law": "代码即法律",
+    "MAPO operates based on predefined, immutable rules encoded in the software. The system's rules and monetary policy cannot be altered by any central authority.": "MAPO根据软件中编码的预定义的不可变规则运作。系统的规则和货币政策不能被任何中央权威机构更改。",
+
+    "Want to buy some MAPO? It's common to mix up MAP and MAPO. MAPO is the ticker name on the MAP Relay Chain, while MAP is the name on other chains.": "想要购买一些MAPO吗？人们常常将MAP和MAPO混淆。MAPO是MAP中继链上的交易代号，而MAP是其他链上的名称。",
+
+    "To explore the MAP Protocol ecosystem,  MAPO is what you're probably looking to buy. More on Get MAPO.": "要探索MAP协议生态系统，您可能想要购买的是MAPO。<link1>更多关于获取MAPO</link1>。",
+
+    "What’s unique about MAPO?": "MAPO有什么独特之处？",
+    "There are many cryptocurrencies and lots of other tokens in the blockchain space, but there are some things that only MAPO can do.": "区块链空间中有许多加密货币和其他的代币，但有些事情只有MAPO能做。",
+
+    "MAPO fuels MAP Protocol": "MAPO是MAP协议的动力",
+    "MAPO is the heart of MAP Protocol. When you send MAPO or use an app on MAP Protocol, you'll pay a fee in MAPO to use the MAP Protocol network. This fee serves as an incentive for a block producer to process and verify your activity on the network.": "MAPO是MAP协议的核心。当您发送MAPO或在MAP协议上使用应用程序时，您将用MAPO支付费用以使用MAP协议网络。这个费用是对区块生产者处理和验证您在网络上活动的激励。",
+    "Validators are like the gatekeepers of MAP Protocol—they check and ensure all the transactions are valid and accurate. They are randomly selected to verify new translations and add them to a blockchain. Validators will be rewarded with a small amount of MAPO for the work they do.": "验证者就像是MAP协议的守门人——他们检查并确保所有交易都是有效且准确的。他们被随机选中来验证新的转账并将其加入区块链。验证者会因为他们的工作获得一小笔MAPO作为奖励。",
+
+    "There are certain hardware and software requirements you need to meet to become a validator. You can check out the details on Run a Node.": "要成为验证者，您需要满足一定的硬件和软件要求。您可以在 <link1>运行节点</link1> 上查看详细信息。",
+    "Besides those requirements, validators also need to stake a certain amount of MAPO to help secure the whole MAP Protocol network and earn rewards. If prefer to secure the omnichain network without building a node, you can still participate in staking by delegating your MAPO. More on staking.": "除了那些要求，验证者还需要质押一定数量的MAPO来帮助保护整个MAP协议网络并赚取奖励。如果您更倾向于在不建立节点的情况下保护全链网络，您仍然可以通过委托您的MAPO来参与质押。<link1>更多关于质押</link1>。",
+
+    "What is MAP Protocol?": "什么是MAP协议？",
+
+    "To know more about MAP Protocol — the technology behind MAPO, check out the info on this page.": "要了解更多关于MAP协议——MAPO背后的技术，请查看本页面上的信息。",
+    "MAPO underpins the omnichain financial system": "MAPO支持全链金融系统",
+    "Moving beyond mere transactions, the omnichain community is crafting an all-encompassing financial network that is peer-to-peer and universally accessible.": "全链社区正在构建一个超越简单交易的全面金融网络，这个网络是点对点的，可以被普遍访问。",
+    "Currently, users can earn MAPO through staking. However, as MAP Protocol evolves and expands, forthcoming functionalities like borrowing and lending will be introduced, broadening the utility of MAPO.": "目前，用户可以通过质押赚取MAPO。然而，随着MAP协议的发展和扩展，即将引入借贷等功能，扩大MAPO的实用性。",
+
+    "Uses for MAPO grow every day": "MAPO的使用场景每天都在增长",
+    "Because MAP Protocol is programmable, developers can shape MAPO in countless ways. Here are just some of the things you can do with MAPO.": "因为MAP协议是可编程的，开发者可以以无数方式塑造MAPO。以下只是一些您可以用MAPO做的事情。",
+    "Swap tokens — you can trade MAPO with tokens on multiple different chains.": "<link1>代币兑换</link1> — 您可以将MAPO与多个不同链上的代币进行交易。",
+    "Earn interest — stake MAPO and get rewarded.": "<link1>赚取利息</link1> — 质押MAPO并获得奖励。",
+    "Get stablecoins — access the world of cryptocurrencies with a steady, less volatile value.": "<link1>获取稳定币</link1> — 进入具有稳定、波动性更小价值的加密货币世界。",
+    "Where to get MAPO": "在哪里可以获得MAPO",
+    "You can get MAPO from a centralized exchange or decentralized exchange but different countries may have different policies. Check to see which would be the best way for you to get MAPO.": "您可以通过中心化交易所或去中心化交易所获得MAPO，但不同国家的政策可能有所不同。检查以确定对您来说获取MAPO的最佳方式。",
+    "Why does MAPO have value?": "为什么MAPO有价值？",
+    "MAPO holds different values for different people.": "MAPO对不同的人有不同的价值。",
+    "For users of MAP Protocol, MAPO is valuable because it lets you pay transaction fees.": "对于MAP协议的用户，MAPO之所以有价值，是因为它可以让您支付交易费用。",
+    "Others see it as a digital store of value because the creation of new MAPO slows down over time.": "其他人将其视为数字价值储藏，因为新MAPO的创造随时间推移而减慢。",
+    "In the future, MAPO will also become valuable to users of financial apps on MAP Protocol, as they can use MAPO for lending, borrowing, streaming, or even as a payment system.": "在未来，MAPO也将对MAP协议上的金融应用程序用户有价值，因为他们可以使用MAPO进行借贷、借款、流媒体播放，甚至作为支付系统。",
+    "There are also users who are investors who take MAPO as their investment similar to Bitcoin or other cryptocurrencies.": "也有把MAPO当作投资的用户，类似于比特币或其他加密货币的投资者。",
+    "MAPO is not the only token in crypto": "MAPO不是加密货币中唯一的代币",
+    "The crypto space allows anyone to create new assets and trade them across various platforms. These assets are often labeled as 'tokens'. From traditional assets like gold and real estate to innovative concepts like art and even personal value, tokenization is reshaping how we think of ownership.": "加密空间允许任何人创造新资产并在不同平台上交易。这些资产通常被标记为'代币'。从黄金和房地产这样的传统资产到艺术甚至个人价值这样的创新概念，代币化正在重新塑造我们对所有权的思考。",
+    "The crypto landscape houses countless tokens, each with its unique utility and value. The ongoing innovation by developers ensures that new tokens continually emerge, each paving the way for novel opportunities and market expansion.": "加密领域内有无数的代币，每个代币都有其独特的用途和价值。开发者的持续创新确保不断有新代币出现，每一个都为新机会和市场扩张铺平道路。",
+    "More on tokens": "关于代币的更多信息",
+    "Stablecoins": "稳定币",
+    "Decentralized finance (DeFi)": "去中心化金融（DeFi）",
+    "Decentralized organizations (DAOs)": "去中心化组织（DAO）",
+    "Non-fungible tokens (NFTs)": "非同质化代币（NFT）",
+    "Different types of tokens": "不同类型的代币",
+    "Stablecoins": "稳定币",
+    "Tokens that mirror the value of a traditional currency such as dollars. This solves the volatility problem with many cryptocurrencies.": "反映传统货币（如美元）价值的代币。这解决了许多加密货币的波动性问题。",
+    "Governance tokens": "治理代币",
+    "Tokens that represent voting power in decentralized organizations.": "代表去中心化组织中投票权的代币。",
+    "Sh*t coins": "垃圾币",
+    "Because anyone — even people with bad intentions — can create a new token, always do your research before deciding to invest in them!": "因为任何人——即使是有恶意的人——都可以创造一个新代币，在决定投资之前，请务必做好研究！",
+    "Collectible tokens": "可收集代币",
+    "Tokens that represent a collectible game item, piece of digital art, or other unique assets. Commonly known as non-fungible tokens (NFTs).": "代表可收集的游戏物品、数字艺术品或其他独特资产的代币。通常称为非同质化代币（NFT）。"
+
+
+}

@@ -1,0 +1,174 @@
+.topTitle {
+  color: #000;
+
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 50px;
+  /* 138.889% */
+
+}
+
+.topLeft {
+  margin-top: 180px;
+  max-width: 618px;
+  margin-right: 24px;
+}
+
+.topDesc {
+  color: #000;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 24px;
+  /* 140% */
+}
+
+.topImage {
+  flex-shrink: 0.4;
+  width: 535px;
+  height: 389px;
+  margin-right: 54px;
+  position: relative;
+  margin-top: 48px;
+
+}
+
+.docs {
+  display: flex;
+  margin-left: calc(50% - 620px);
+  position: relative;
+  margin-right: calc(50% - 620px);
+}
+
+.docsP {
+  color: #313131;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.2px;
+  /* 145% */
+  margin-top: 24px;
+}
+
+.docsH1 {
+  margin-top: 48px;
+  color: rgba(0, 0, 0, 0.8);
+
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 58px;
+  /* 223.077% */
+
+}
+
+.docsH2 {
+  color: #000;
+
+
+  color: rgba(0, 0, 0, 0.8);
+
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  /* 223.077% */
+
+}
+
+.docsContent {
+  margin-right: 48px;
+  padding-top: 24px;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+  position: relative
+}
+
+.top {
+  width: 100%;
+  background-color: #FCFCFC;
+  display: flex;
+  position: relative;
+  padding-left: calc(50% - 620px);
+  padding-right: calc(50% - 620px);
+  /* align-items: center; */
+  min-height: 500px;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #E5D9FF 1.48%, #EDF6FA 94.08%), #F7F7F7;
+  justify-content: space-between;
+}
+
+.bottom {
+  height: 120px;
+}
+
+.li {
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+}
+
+.docsTitle {
+  color: #000;
+  
+  border-bottom: #ECECEC 1px solid;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 58px;
+  /* 161.111% */
+  margin-top: 48px;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  margin-left: calc(50% - 620px);
+  margin-right: calc(50% - 620px);
+}
+
+@media (max-width: 1288px) {
+  .top {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .docsTitle {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .docs {
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+}
+
+@media (max-width: 800px) {
+  .docsContent {
+    margin-right: 0;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding-bottom: 64px;
+  }
+
+  .topLeft {
+    margin-top: 24px;
+  }
+
+  .topImage {
+    width: 100%;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}

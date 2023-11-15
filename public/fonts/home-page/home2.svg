@@ -1,0 +1,13 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="&#231;&#188;&#150;&#231;&#187;&#132; 14">
+<circle id="&#230;&#164;&#173;&#229;&#156;&#134;&#229;&#189;&#162;" cx="20" cy="20" r="20" fill="#DAD4FF"/>
+<g id="goujian">
+<mask id="mask0_4784_86" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="6" y="10" width="29" height="20">
+<path id="Clip 2" fill-rule="evenodd" clip-rule="evenodd" d="M6 10H35V30H6V10Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_4784_86)">
+<path id="Fill 1" fill-rule="evenodd" clip-rule="evenodd" d="M33.9358 10.0021H15.9752C15.3876 10.0021 14.9111 10.4764 14.9111 11.0615V18.8771H7.06422C6.47641 18.8771 6 19.3513 6 19.9365V28.9406C6 29.5257 6.47641 30 7.06422 30H25.0226C25.6104 30 26.0868 29.5257 26.0868 28.9406V21.1229H33.9358C34.5236 21.1229 35 20.6487 35 20.0635V11.0594C35 10.4743 34.5236 10 33.9358 10V10.0021ZM23.8265 27.7458H17.1735V21.125H23.8244V27.7458H23.8265ZM26.0868 18.8771H32.7377V12.2542H26.0868V18.8771Z" fill="black"/>
+</g>
+</g>
+</g>
+</svg>

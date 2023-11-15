@@ -1,0 +1,18 @@
+.scrollToTop button{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 54px;
+  height: 54px;
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  z-index: 10000;
+}
+.scrollText{
+  transform: translateY(-6px);
+
+}

@@ -1,0 +1,254 @@
+.whatIsStaking {
+
+    margin-top: 53px;
+    width: 100%;
+    display: flex;
+    border-radius: 12px;
+    min-height: 527px;
+    position: relative;
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding-bottom: 24px;
+
+}
+
+
+
+.stakeImage2 {
+    margin-top: 40px;
+    flex-shrink: 0.3;
+}
+
+
+.mainRight {
+    max-width: 620px;
+    margin-left: 20px;
+    position: relative;
+    display: block;
+    margin-top: 50px;
+}
+
+
+.title {
+    color: #000;
+    
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    /* 126.087% */
+}
+
+.moreButton {
+    margin-top: 32px;
+
+}
+
+.whyTitle {
+    color: #000;
+    margin-top: 36px;
+    
+    font-size: 40px;
+    font-weight: 800;
+    margin-left: calc(50% - 620px);
+    margin-right: calc(50% - 620px);
+
+}
+
+.cardList {
+    margin-top: 29px;
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.card {
+    flex: 1 1 30%;
+    box-sizing: border-box;
+    padding: 25px 20px 30px;
+    background-color: #F7F7F7;
+    min-height: 265px;
+    margin-top: 12px;
+    border-radius: 12px;
+    position: relative;
+}
+.card:hover {
+        background-color: #F1F1F1;
+    
+}
+
+.stepTitle {
+    color: #000;
+    
+    font-size: 21px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+}
+
+.stepTitle {
+    gap:12px;
+}
+
+.cardTitle {
+    margin-top: 16px;
+    color: #000;
+
+    
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.cardDesc {
+    color: #313131;
+    
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 16px;
+    
+}
+
+.howStake {
+    margin-top: 48px;
+    border-radius: 12px;
+    min-height: 527px;
+    background: linear-gradient(90deg, #FAFDFE 1.48%, #F8F4FF 94.08%);
+
+
+    position: relative;
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    box-sizing: border-box;
+    justify-content: space-between;
+    /* padding-right: 24px; */
+    padding-top: 93px;
+    padding-bottom: 93px;
+
+}
+
+.howTitle {
+    color: #000;
+    
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.howDesc {
+    color: #313131;
+    
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.2px;
+    margin-top: 29px;
+
+}
+
+.desc {
+    text-indent:2em ;
+    color: #000;
+    margin-top: 32px;
+    
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.2px;
+
+}
+
+.howFirst {
+    margin-top: 63px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 48px;
+
+}
+
+.firstleft {
+    max-width: 698px;
+    margin-right: 20px;
+
+}
+
+.ul {
+    color: #000;
+    
+    
+    font-size: 21px !important;
+    font-style: normal;
+    font-weight: 600 !important;
+    line-height: normal;
+}
+.li{
+    font-size: 16px;
+    margin-top: 32px;
+    line-height: 24px;
+}
+.secoundRight{
+    max-width: 698px;
+
+}
+.howSecound{
+    margin-top: 60px;
+    display: flex;
+    gap: 48px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+@media (max-width: 1288px) {
+    .whatIsStaking {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .cardList{
+        padding-left: 24px;
+        padding-right: 24px;
+
+    }
+    .whyTitle {
+        margin-left: 24px;
+        margin-right: 24px;
+
+    }
+    .howStake{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media (max-width: 800px) {
+    .howFirst{
+        flex-direction: column-reverse;
+    }
+    .howSecound{
+        flex-direction: column;
+    }
+    .whatIsStaking {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 24px 48px 24px;
+    }
+    .cardList{
+        flex-direction: column;
+        align-items: center;
+    }
+    .stakeImage2{
+        width: 100% !important;
+        height: 360px !important;
+        margin: 0 !important;
+
+    }
+}

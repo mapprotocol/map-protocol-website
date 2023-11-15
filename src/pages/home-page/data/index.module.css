@@ -1,0 +1,228 @@
+.dataCard {
+    position: relative;
+    flex-basis: 48%;
+    max-width: 600px;
+    min-height: 318px;
+    border-radius: 12px;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    padding: 24px;
+}
+
+.dataCard:hover .dataCardTitle {
+    color: #3F6DFF;
+
+}
+
+.button {
+    margin-top: 24px;
+    display: flex;
+    gap: 24px;
+}
+
+.dataCard:hover {
+    border: 1px solid #f1F1f1;
+    background-color: #f7F7f7;
+
+}
+
+.dataCard:hover {
+    box-shadow: none !important;
+    transition: all 0.1s;
+    transition-timing-function: ease-in;
+}
+
+.dataCardTitle {
+    color: #000;
+    
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 28px;
+    /* 133.333% */
+
+}
+
+.dataCardDesc {
+    color: #313131;
+    
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.2px;
+    margin-top: 12px;
+}
+
+.dataNumber {
+    margin-top: 32px;
+    color: #3F6DFF;
+    
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 28px;
+    /* 77.778% */
+}
+
+.dataCardList {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    position: relative;
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    /* align-items: center; */
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding-top: 48px;
+    padding-bottom: 96px;
+    flex-wrap: wrap;
+    gap: 24px;
+
+}
+
+.dataTitle {
+    margin-top: 96px;
+    color: #000;
+    
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+}
+
+.dataDesc {
+    margin-top: 12px;
+    color: #313131;
+    
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.2px;
+    /* 145% */
+
+}
+
+.contribute {
+    width: 100%;
+    background: linear-gradient(90deg, #FAFDFE 0%, #F8F4FF 100%), linear-gradient(90deg, #F7FAFD 1.48%, #F3EDFF 94.08%);
+    background-color: #fff;
+    display: flex;
+    position: relative;
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    padding-bottom: 48px;
+    /* align-items: center; */
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin-top: 0px;
+}
+
+.lineImage {
+    width: calc(100% + 11px);
+    position: absolute;
+    height: 100%;
+    left: -6px;
+    top: 80px;
+}
+
+.weekButton {
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+    color: #fff;
+    
+    width: 77px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    border-radius: 4px;
+    background: #3F6DFF;
+}
+
+.contributeTitle {
+    color: #000;
+
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.contributeLeft {
+    max-width: 636px;
+    margin-top: 64px;
+    margin-right: 24px;
+}
+
+.contributeImage {
+    flex-shrink: 0.3;
+    margin-top: 70px;
+    width: 430.317px;
+    height: 293px;
+    margin-right: 54px;
+    position: relative;
+}
+
+.contributeDesc {
+    margin-top: 32px;
+    color: #313131;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.2px;
+    /* 145% */
+
+}
+
+@media (max-width: 1288px) {
+
+
+    .contribute {
+        padding-left: 24px;
+        padding-right: 24px;
+
+    }
+
+    .dataTitle {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+
+    .dataCardList {
+
+        padding: 48px 24px 96px 24px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .dataCard {
+        width: 100%;
+    }
+
+    .dataCardList {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .contribute {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .contributeImage {
+        width: 100%;
+        height: 332px;
+        margin-top: 48px;
+        margin-right: 0px;
+    }
+}

@@ -1,0 +1,20 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="github (1) 2">
+<g id="github (1)">
+<circle id="&#232;&#146;&#153;&#231;&#137;&#136;" cx="15" cy="15" r="15" fill="#3F6DFF"/>
+<mask id="mask0_5001_709" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="30">
+<circle id="&#232;&#146;&#153;&#231;&#137;&#136;_2" cx="15" cy="15" r="15" fill="white"/>
+</mask>
+<g mask="url(#mask0_5001_709)">
+<g id="telegram-plane">
+<mask id="mask1_5001_709" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="5" y="7" width="19" height="16">
+<path id="Clip 2" fill-rule="evenodd" clip-rule="evenodd" d="M5 7H24V23H5V7Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_5001_709)">
+<path id="Fill 1" fill-rule="evenodd" clip-rule="evenodd" d="M23.9459 8.45668L21.0787 22.0342C20.8623 22.9924 20.2982 23.231 19.4966 22.7795L15.1279 19.5469L13.0199 21.5827C12.7866 21.817 12.5915 22.0128 12.1419 22.0128L12.4558 17.5452L20.5527 10.1985C20.9047 9.88334 20.4763 9.70878 20.0056 10.0239L9.99569 16.3527L5.68643 14.9983C4.74906 14.7045 4.7321 14.0571 5.88151 13.6057L22.737 7.08519C23.5175 6.79135 24.2003 7.25988 23.9459 8.45668Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>

@@ -1,0 +1,326 @@
+.main {
+
+    width: 100%;
+    min-height: 560px;
+    background: linear-gradient(90deg, #E0D2FF 1.48%, #E9F4F8 94.08%);
+    /* background-color: #e3f2f8; */
+    position: relative;
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    opacity: 0.4;
+}
+
+.fade {
+    opacity: 1;
+
+    transition: opacity 0.4s;
+    transition-timing-function: ease-in;
+}
+
+.mainLeft {
+    max-width: 500px;
+    position: relative;
+    display: block;
+    margin-top: 72px;
+
+}
+
+.mapCoinsImage {
+    margin-left: 20px;
+    position: relative;
+    margin-top: 58px;
+    margin-bottom: 58px;
+    width: 520px;
+    height: 423px;
+    flex-shrink: 0.5;
+    /* right: 100px; */
+}
+
+.linkText {
+    /* color: #3F6DFF;
+    margin-left: 2px; */
+}
+
+.title {
+    color: #000;
+
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.desc {
+    color: #000;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    margin-top: 12px;
+}
+
+.getMapButton {
+    margin-top: 24px;
+    border-radius: 16px;
+}
+
+
+.priceCard {
+    max-width: 397px;
+    height: 182px;
+    border-radius: 12px;
+    margin-top: 24px;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #FFF;
+}
+
+.tipIcon {
+    display: block;
+    width: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+
+.priceTitle {
+    color: #231815;
+
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.priceNumber {
+    color: #000;
+
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+}
+
+.change {
+    position: absolute;
+    left: 20px;
+    bottom: 31px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap:6px;
+}
+
+.changeNumber {
+    color: #35B600;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    line-height: normal;
+    border-radius: 5px;
+    background-color: rgba(53, 182, 0, 0.10);
+    padding: 0px 6px;
+}
+
+.changeDesc {
+    color: rgba(0, 0, 0, 0.297);
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card {
+    width: 397px;
+    /* flex: 1 1 30%; */
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #F7F7F7;
+    border-radius: 12px;
+    padding-bottom: 72px;
+    position: relative;
+}
+
+.cardList {
+    margin-top: 50px;
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.cardTitle {
+    color: #000;
+
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 16px;
+}
+
+.card:hover{
+
+    background: #f1f1f1;
+}
+.cardDesc {
+
+    color: #000;
+    margin-top: 12px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.cardLink {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #1976d2;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    cursor: pointer;
+    line-height: normal;
+}
+
+.whatsMAPOText {
+    margin-left: calc(50% - 620px);
+    margin-right: calc(50% - 620px);
+    display: flex;
+    justify-content: center;
+}
+
+.mapoDesc {
+    margin-top: 94px;
+    width: 100%;
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    flex-shrink: 0;
+    /* opacity: 0.3994; */
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #FAFDFE 0%, #F8F4FF 100%);
+    position: relative;
+    gap: 48px;
+    padding-top: 64px;
+    padding-bottom: 48px;
+
+
+}
+
+.mapCoinWallet {
+    position: relative;
+    width: 335px;
+    height: 316px;
+    flex-shrink: 0.4;
+}
+
+.mapoDescRight {
+    max-width: 798px;
+    margin-top: 48px;
+}
+
+.mapoContent {
+    margin: 10px 0;
+    color: #313131;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.2px;
+
+}
+
+.mapoTitle {
+    color: #000;
+    width: 312px;
+
+
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@media (max-width: 1288px) {
+    .main {
+        padding: 0 24px;
+
+    }
+
+    .whatsMAPOText {
+        margin-left: 24px;
+        margin-right: 24px;
+
+    }
+
+    .cardList {
+        padding: 0 24px;
+    }
+
+    .mapoDesc {
+        padding-left: 24px;
+        padding-right: 24px;
+
+    }
+}
+
+@media (max-width: 800px) {
+    .main {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-bottom: 48px;
+    }
+
+    .cardList {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .mapCoinsImage {
+        width: 80%;
+        margin: 0;
+        height: 300px;
+    }
+    .mainLeft{
+
+        margin-top: 24px;
+    }
+    .mapCoinWallet {
+        width: 80%;
+        margin: 0;
+    }
+
+    .mapoDesc {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 100%;
+    }
+}

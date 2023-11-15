@@ -1,0 +1,228 @@
+.whereToGetMAPO {
+    min-height: 309px;
+    margin-top: 96px;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #F3EDFF 1.48%, #F7FBFD 94.08%);
+    /* background-color: #e3f2f8; */
+    position: relative;
+    margin-right: calc(50% - 620px);
+    margin-left: calc(50% - 620px);
+    display: flex;
+    box-sizing: border-box;
+    padding: 48px 24px;
+    justify-content: space-between;
+    padding-right: 24px;
+    gap: 96px
+}
+
+.value {
+    margin-top: 96px;
+    position: relative;
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    gap: 96px;
+
+}
+
+.token {
+    margin-top: 96px;
+    background: linear-gradient(90deg, #FAFDFE 0%, #F8F4FF 100%);
+    position: relative;
+    padding-top: 96px;
+    padding-bottom: 96px;
+
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    gap: 48px;
+
+}
+
+.tokenLeft {
+    flex-basis: 50%;
+
+}
+
+.tokenRight {
+    flex-basis: 50%;
+}
+
+.title {
+    color: #000;
+
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+}
+
+.valueLeft {
+    position: relative;
+    width: 391.373px;
+    height: 380px;
+    flex-shrink: 0.2;
+}
+
+
+
+.desc {
+    color: #313131;
+
+    margin-top: 24px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.2px;
+    /* 154.667% */
+}
+
+.whereToGetMAPOLeft {
+    max-width: 830px;
+}
+
+.stepTitle {
+    color: #000;
+
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+}
+
+.stepTitle {
+    gap: 12px;
+}
+
+.buildStep {
+    margin-top: 33px;
+}
+
+.whereToGetMAPOTitle {
+    color: #000;
+
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.whereToGetMAPOButton {
+
+    margin-top: 48px;
+}
+
+.whereToGetMAPODesc {
+    margin-top: 24px;
+
+    color: #313131;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.2px;
+    /* 145% */
+
+}
+
+.whereToGetMAPOImage {
+    width: 279.165px;
+    height: 230px;
+    position: relative;
+    margin-right: 24px;
+    flex-shrink: 0;
+}
+
+.articles {
+    border-radius: 6px;
+    border: 1px solid #E4E4E4;
+    width: 100%;
+    margin-top: 24px;
+}
+
+.articles :last-child {
+
+    border-width: 0px;
+}
+
+.articleItem {
+    height: 72px;
+    box-sizing: border-box;
+    padding: 12px 24px;
+    border-bottom: 1px solid #E4E4E4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.articleTitle {
+    color: #000;
+    
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+.articleAuthor {
+    color: #A5A5A5;
+    
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.articleItem:hover {
+    background: #f1f1f1;
+}
+
+@media (max-width: 1288px) {
+    .whereToGetMAPO {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .value {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .token {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media (max-width: 800px) {
+    .whereToGetMAPO {
+        flex-direction: column-reverse;
+        align-items: center;
+
+    }
+
+    .value {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .token {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .valueLeft {
+        width: 100%;
+    }
+}

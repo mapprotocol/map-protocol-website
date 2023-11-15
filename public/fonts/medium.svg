@@ -1,0 +1,20 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="github (1) 2">
+<g id="github (1)">
+<circle id="&#232;&#146;&#153;&#231;&#137;&#136;" cx="15" cy="15" r="15" fill="#3F6DFF"/>
+<mask id="mask0_5001_697" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="30">
+<circle id="&#232;&#146;&#153;&#231;&#137;&#136;_2" cx="15" cy="15" r="15" fill="white"/>
+</mask>
+<g mask="url(#mask0_5001_697)">
+<g id="medium (3)">
+<mask id="mask1_5001_697" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="6" y="10" width="19" height="11">
+<path id="Clip 2" fill-rule="evenodd" clip-rule="evenodd" d="M6 10H25V21H6V10Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_5001_697)">
+<path id="Fill 1" fill-rule="evenodd" clip-rule="evenodd" d="M11.3586 10C8.39914 10 6 12.4626 6 15.5C6 18.5374 8.39929 21 11.3586 21C14.3179 21 16.7172 18.5376 16.7172 15.5C16.7172 12.4624 14.3182 10 11.3586 10ZM19.916 10.3222C18.4362 10.3222 17.2369 12.6409 17.2369 15.5001C17.2369 18.3592 18.4364 20.6782 19.9162 20.6782C21.396 20.6782 22.5955 18.3594 22.5955 15.5001H22.5953C22.5953 12.6401 21.396 10.3222 19.9161 10.3222H19.916ZM24.0576 10.8615C23.5373 10.8615 23.1155 12.9384 23.1155 15.5001C23.1155 18.0617 23.537 20.1387 24.0576 20.1387C24.5782 20.1387 25 18.0612 25 15.5C25 12.9383 24.578 10.8615 24.0576 10.8615Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>

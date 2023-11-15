@@ -1,0 +1,169 @@
+.safe {
+
+    width: 100%;
+    position: relative;
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    margin-top: 100px;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #FAFDFE 0%, #F8F4FF 100%), linear-gradient(90deg, #F7FAFD 1.48%, #F3EDFF 94.08%);
+    display: flex;
+    box-sizing: border-box;
+    padding-bottom: 96px;
+    align-items: center;
+    padding-top: 96px;
+    justify-content: space-between;
+    /* transition: opacity 2s; */
+    gap: 48px;
+}
+
+.title {
+
+    color: #000;
+
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.safeLeft {
+    max-width: 749px;
+
+}
+
+.keepSafeImage {
+    position: relative;
+    width: 423px;
+    height: 473px;
+    flex-shrink: 0.1;
+}
+
+.content {
+    color: #313131;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.2px;
+    margin-top: 16px;
+}
+
+.subtitle {
+    margin-top: 50px;
+    color: #000;
+
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.learnMoreButton {
+    position: absolute;
+    border-radius: 16px;
+    left: 20px;
+    bottom: 30px;
+    background-color: #3F6DFF;
+}
+
+.use {
+
+    width: 100%;
+    position: relative;
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    margin-top: 91px;
+    box-sizing: border-box;
+}
+
+.useContent {
+    color: #313131;
+
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 18px;
+}
+
+.card {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 24px;
+    margin-top: 24px;
+    background-color: #F7F7F7;
+    border-radius: 12px;
+    
+    position: relative;
+}
+
+.cardTitle {
+    color: #000;
+    gap: 12px;
+    font-size: 21px;
+    display: flex;
+    text-align: center;
+    font-weight: 800;
+}
+
+.cardCol {
+    flex: 1 1 30%;
+}
+
+.cardDesc {
+    color: #313131;
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 16px;
+}
+
+.cardList {
+
+    margin-top: 24px;
+    padding-left: calc(50% - 632px);
+    padding-right: calc(50% - 632px);
+    display: flex;
+    gap: 24px;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1288px) {
+    .safe {
+        padding-left: 24px;
+        padding-right: 24px;
+
+    }
+
+    .use {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .cardList {
+        padding-left: 24px;
+        padding-right: 24px;
+
+    }
+}
+
+@media (max-width: 800px) {
+    .safe {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 48px;
+        padding-bottom: 48px;
+
+    }
+
+    .keepSafeImage {
+        width: 100%;
+        margin: 0;
+    }
+
+
+    .cardList {
+        flex-direction: column;
+        align-items: center;
+    }
+}

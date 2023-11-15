@@ -1,0 +1,11 @@
+.isCurrent {
+    color: red;
+    font-weight: bold;
+  }
+
+.right{
+
+position: fixed;
+right: 0;
+top: 200;
+}

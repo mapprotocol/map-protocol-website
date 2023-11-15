@@ -1,0 +1,79 @@
+.isCurrent {
+  color: #1976d2 !important;
+}
+
+.sidebarItem {
+  margin-left: 12px;
+  color: #B2B2B2;
+  
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+}
+
+.sidebar {
+  width: 300px;
+  flex-shrink: 0;
+  border-left: #ECECEC 1px solid;
+  height:  calc(100vh - 168px);
+  margin-top: 24px;
+  position: sticky;
+  padding-top: 36px;
+  top: 96px;
+
+  /* right: calc(50% - 620px); */
+}
+
+.githubButton{
+  border-radius: 5px;
+  border: 1px solid #3F6DFF;
+  padding:  8px 12px;
+  display: flex;
+  align-items: center;
+  width: max-content;
+  gap: 8px;
+  color: #3F6DFF;
+  justify-content: center;
+  margin-left: 24px;
+  margin-top: 24px;
+  cursor: pointer;
+}
+.githubButton:hover{
+  background-color: #f7f7f7;
+}
+.sidebarText {
+  padding: 8px 12px;
+  transition: all 0.5s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+
+}
+
+.sidebarText:hover {
+  background-color: #F4F4F4;
+  color: #1976d2;
+  /* font-weight: 500; */
+
+}
+.activeDot{
+  position: absolute;
+  width: 6px;
+  height:  6px;
+  border: #1976d2 1px solid;
+  background-color: #fff;
+  border-radius: 50%;
+  top: calc(50% - 4px);
+  left: -16.5px;
+}
+
+@media (max-width: 1288px) {
+  .sidebar {
+    right: 24px;
+  }
+
+  
+}

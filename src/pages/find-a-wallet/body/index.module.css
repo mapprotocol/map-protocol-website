@@ -1,0 +1,181 @@
+.walletForMAPO {
+
+    width: 100%;
+
+    background-color: #fff;
+    position: relative;
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    padding-top: 96px;
+    padding-bottom: 96px;
+
+    box-sizing: border-box;
+}
+
+.title {
+    color: #000;
+    
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+}
+
+.desc {
+    margin-top: 24px;
+    color: #313131;
+    
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.2px;
+    /* 145% */
+}
+
+.walletCards {
+    justify-content: space-between;
+    gap: 24px;
+    display: flex;
+}
+
+.walletCard {
+    border-radius: 12px;
+    background: #F7F7F7;
+    flex-basis: 32%;
+    gap: 24px;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    padding: 24px;
+}
+
+.walletTitle {
+    color: #000;
+    
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.walletlink {
+    display: flex;
+    gap: 12px;
+}
+
+.linkIcon {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+.walletlink {
+    margin-top: 24px;
+}
+
+.walletSubTitle {
+    color: #939393;
+    margin-top: 6px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.walletImage {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.buildNode {
+    width: 100%;
+    position: relative;
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    padding-top: 96px;
+    padding-bottom: 96px;
+    box-sizing: border-box;
+
+    background: linear-gradient(90deg, #FAFDFE 0%, #F8F4FF 100%);
+}
+
+.li {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    margin-left: 46px;
+}
+
+.stepTitle  {
+    gap: 12px;
+}
+
+.stepTitle {
+    color: #000;
+    
+    font-size: 21px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+}
+
+.buildStep {
+    margin-top: 33px;
+}
+.buildNodeContent{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    gap: 48px;
+}
+.contentHalf {
+    flex-basis: 50%;
+    
+}
+.buildImage{
+    position: relative;
+    width: 60%;
+    height: 300px;
+    flex-shrink: 0.2;
+    margin-left: 24px;
+    margin-top: 47px;
+}
+
+@media (max-width: 1288px) {
+    .walletForMAPO {
+        padding-left: 24px;
+        padding-right: 24px;
+
+    }
+
+    .buildNode {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .walletCards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .buildNodeContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+}
