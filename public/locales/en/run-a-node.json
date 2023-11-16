@@ -10,7 +10,7 @@
     "You can find an overview of all current validators and their votes on MAPO Scan and the complete guides on how to become a new validator here.": "You can find an overview of all current validators and their votes on <link1>MAPO Scan</link1> and the complete guides on <link2>how to become a new validator here</link2>.",
     "Build your node": "Build your node",
     "Hardware": "Hardware",
-    "MAP Protocol is a Bitcoin layer-2 and a Proof Of Stake network, which has different hardware requirements compared with a Proof of Work network. Proof Of Stake consensus is less CPU intensive but is more sensitive to network connectivity and latency.": "MAP Protocol is a Bitcoin layer-2 and a Proof Of Stake network, which has different hardware requirements compared with a Proof of Work network. Proof Of Stake consensus is less CPU intensive but is more sensitive to network connectivity and latency.",
+    "MAP Protocol is a Bitcoin layer-2 and a Proof Of Stake (POS) network, which has different hardware requirements compared with a Proof of Work (POW) network. Proof Of Stake consensus is less CPU intensive but is more sensitive to network connectivity and latency.": "MAP Protocol is a Bitcoin layer-2 and a Proof Of Stake network (POS), which has different hardware requirements compared with a Proof of Work (POW) network. Proof Of Stake consensus is less CPU intensive but is more sensitive to network connectivity and latency.",
     "Ubuntu 20.04 LTS": "<link1>Ubuntu 20.04 LTS</link1>",
     "Below is a list of standard requirements for running Validator on the MAPO Network": "Below is a list of standard requirements for running Validator on the MAPO Network.",
     "Memory": "Memory",
