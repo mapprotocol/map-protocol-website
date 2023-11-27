@@ -1,0 +1,234 @@
+.main {
+
+    width: 100%;
+    min-height: 560px;
+    background: linear-gradient(90deg, #E5D9FF 1.48%, #EDF6FA 94.08%), linear-gradient(90deg, #E5D9FF 1.48%, #EDF6FA 94.08%);
+    position: relative;
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin-bottom: 96px;
+    opacity: 0.4;
+}
+
+.fade {
+    opacity: 1;
+
+    transition: opacity 0.4s;
+    transition-timing-function: ease-in;
+}
+
+
+.mainLeft {
+    max-width: 520px;
+    position: relative;
+    display: block;
+    margin-top: 162px;
+}
+
+.topImage {
+    position: relative;
+    width: 470px;
+    height: 400px;
+    margin-left: 24px;
+    margin-top: 47px;
+    margin-right: 82px;
+    flex-shrink: 0.4;
+}
+
+
+
+.title {
+    color: #000;
+
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 58px;
+    /* 126.087% */
+}
+
+.desc {
+    color: #000;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 36px;
+    /* 140% */
+}
+
+.cardTitle {
+    color: #000;
+
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    max-width: 80%;
+}
+
+
+.title {
+    color: #000;
+
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+
+.cardListTitle {
+    margin-top: 60px;
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+    color: #000;
+
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.card {
+
+    min-width: 284px;
+    border-radius: 5px;
+    min-height: 120px;
+    box-sizing: border-box;
+    flex-basis: 20%;
+    transition: all 0.5s;
+    color: #000;
+    margin-bottom: 24px;
+    /* cursor: pointer; */
+}
+
+.cardTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E6E6E6;
+    position: relative;
+    width: 100%;
+    height: 126px;
+    border-radius: 12px;
+}
+
+.cardTopImage {
+    position: relative;
+    width: 234px;
+    height: 47px;
+
+}
+
+.logoCards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    gap: 24px;
+    display: flex;
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+}
+
+.cardName {
+    margin-top: 8px;
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: space-between;
+}
+
+.downloadTabs {
+    display: flex;
+    gap: 6px;
+
+}
+
+.downloadTabs a {
+    background-color: #2f2f2f;
+    color: #fff;
+    padding: 4px 6px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    text-decoration: none;  
+
+}
+
+.badgesDesc{
+    margin-top: 24px;
+    color: #313131;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.2px; /* 145% */
+
+}
+@media (max-width: 1288px) {
+    .main {
+        padding-left: 24px;
+        padding-right: 24px;
+
+    }
+
+    .cardListTitle {
+        padding: 0 24px;
+    }
+
+    .logoCards {
+        padding: 0 24px;
+
+    }
+
+    .contribute {
+        padding: 0 24px;
+    }
+}
+
+@media (max-width: 800px) {
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding-bottom: 64px;
+        padding-top: 64px;
+        align-items: center;
+
+
+    }
+
+    .getStartCard {
+
+        width: 80%;
+    }
+
+
+    .mainLeft {
+        margin-top: 24px;
+    }
+
+    .topImage {
+        width: 100%;
+        margin: 0;
+    }
+
+    .logoCards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+}
