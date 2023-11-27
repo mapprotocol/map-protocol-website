@@ -237,6 +237,11 @@ export const tabsArray: TabsArray = {
             name: 'Learn about MAPDAO',
             path: '/article?id=learn-about-MAPDAO'
 
+        },
+        {
+            name: 'MAP Protocol brand assets',
+            path: '/brand-assets'
+
         }
     ]
 }
