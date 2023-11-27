@@ -173,7 +173,7 @@ export default function HomePageTop(
   return (
     <view>
       <CustomHead
-        title={t('Community center') + ' - ' + 'Map Protocol'}
+        title={t('MAP Protocol brand assets') + ' - ' + 'Map Protocol'}
       />
       <div className={fade} >
         <div className={styles.mainLeft}>
