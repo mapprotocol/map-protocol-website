@@ -83,7 +83,10 @@ export default function GetMapDEXs() {
 
                 <div className={styles.butterSwap}>
                     <div className={styles.butterLeft}>
-                        <div className={styles.buttertitle} >
+                        <div className={styles.buttertitle} onClick={() => {
+
+                            window.open("https://butterswap.io/", '_blank');
+                        }} >
                             <Image
                                 width={34}
                                 height={34}
