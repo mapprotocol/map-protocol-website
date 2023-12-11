@@ -38,7 +38,7 @@ export const Li: React.FC<TextComponentProps> = ({ className, style, children, t
                     />
              <div>{title}</div> 
             </div>
-           {children&& <div className={styles.children}>
+           {children && <div className={styles.children}>
                 {children}
             </div>}
         </ >
