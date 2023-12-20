@@ -37,7 +37,7 @@
     "*If you would like to get MAPO instead of MAP, please go to Butter Swap to swap directly.": "*إذا كنت ترغب في الحصول على MAPO بدلاً من MAP، يرجى الذهاب إلى <link1>Butter Swap</link1> للتبديل مباشرة.",
     "On Centralized Exchanges (CEXs)": "على البورصات المركزية (CEXs)",
     "Centralized exchanges are platforms that are managed by a single entity or company. They act as middlemen between buyers and sellers of cryptocurrencies, similar to traditional stock exchanges.": "البورصات المركزية هي منصات يديرها كيان أو شركة واحدة. يعملون كوسطاء بين المشترين والبائعين للعملات الرقمية، مشابهة لبورصات الأسهم التقليدية.",
-    "MAP on centralized exchanges is in the ERC-20 token standard, and ERC-20 MAP is available on Kucoin, Bithumb, Coinone and MEXC Global.": "MAP على البورصات المركزية هو بمعيار رمز ERC-20، و ERC-20 MAP متاح على <link1>Kucoin</link1>، <link2>Bithumb</link2>، <link3>Coinone</link3> و <link4>MEXC Global</link4>.",
+    "ERC-20 MAP (MAP Protocol's native token on Ethereum) is available on Kucoin, Bithumb, Coinone and MEXC Global. MRC-20 MAPO (MAP Protocol's native token on MAP Relay Chain thus the MAPO Mainnet) is available on LBank.": "ERC-20 MAP (الرمز الأصلي لبروتوكول MAP على Ethereum) متاح على <link1>Kucoin</link1>، <link2>Bithumb</link2>، <link3>Coinone</link3> و<link4>MEXC Global</link4>. MRC-20 MAPO (الرمز الأصلي لبروتوكول MAP على MAP Relay Chain وبالتالي الشبكة الرئيسية لـ MAPO) متاحة على <link5>LBank</link5>.",
     "Exchange": "التبادل",
     "Pairs": "الأزواج",
     "Price": "السعر",

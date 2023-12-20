@@ -37,7 +37,8 @@
   "*If you would like to get MAPO instead of MAP, please go to Butter Swap to swap directly.": "*MAP 대신 MAPO를 얻고 싶다면, 직접 <link1>Butter Swap</link1>으로 이동하여 교환하십시오.",
   "On Centralized Exchanges (CEXs)": "중앙 집중식 거래소 (CEXs)에서",
   "Centralized exchanges are platforms that are managed by a single entity or company. They act as middlemen between buyers and sellers of cryptocurrencies, similar to traditional stock exchanges.": "중앙 집중식 거래소는 단일 개체 또는 회사가 관리하는 플랫폼입니다. 그들은 암호화폐의 구매자와 판매자 사이의 중개인으로 작용하며, 전통적인 주식 거래소와 유사합니다.",
-  "MAP on centralized exchanges is in the ERC-20 token standard, and ERC-20 MAP is available on Kucoin, Bithumb, Coinone and MEXC Global.": "중앙 집중식 거래소에서의 MAP는 ERC-20 토큰 표준에 있으며, ERC-20 MAP는 <link1>Kucoin</link1>, <link2>Bithumb</link2>, <link3>Coinone</link3>, <link4>MEXC Global</link4>에서 이용할 수 있습니다.",
+  "ERC-20 MAP (MAP Protocol's native token on Ethereum) is available on Kucoin, Bithumb, Coinone and MEXC Global. MRC-20 MAPO (MAP Protocol's native token on MAP Relay Chain thus the MAPO Mainnet) is available on LBank.": "ERC-20 MAP (Ethereum에서의 MAP 프로토콜 네이티브 토큰)은 <link1>Kucoin</link1>, <link2>Bithumb</link2>, <link3>Coinone</link3> 및 <link4>MEXC 글로벌</link4>에서 이용 가능합니다. MRC-20 MAPO (MAP Relay Chain에서의 MAP 프로토콜 네이티브 토큰, 따라서 MAPO 메인넷)은 <link5>LBank</link5>에서 이용 가능합니다.",
+
   "Exchange": "거래소",
   "Pairs": "페어",
   "Price": "가격",
