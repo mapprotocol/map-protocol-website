@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 import { useMapPrice } from '@/hooks/useMapPrice';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import { absoluteDecimal, convertToMillion, convertToMillion1, toThousands } from '@/utils/number';
+import { absoluteDecimal, convertToBillion1, convertToMillion, convertToMillion1, toThousands } from '@/utils/number';
 import queryMaprelayeChainData from '@/api/queryMaprelayeChainData';
 import CustomHead from '@/components/CustimHead';
 
@@ -21,18 +21,19 @@ export default function Top(
   const [data, setData] = useState({
     stake: 0,
     node: 0,
-    apy: 0
+    apy: 0,
+    supply: 0
   })
   const { t } = useTranslation('stake-mapo');
   const [fade, setFade] = useState(styles.main)
 
   useEffect(() => {
     setFade(`${styles.main} ${styles.fade}`)
-    const numberEls = [document.getElementById('STAKED'), document.getElementById('VALIDATORS'), document.getElementById('APR')]
+    const numberEls = [document.getElementById('SUPPLY'), document.getElementById('STAKED'), document.getElementById('VALIDATORS'), document.getElementById('APR')]
     const duration = 600; // 
     queryMaprelayeChainData().then((res) => {
 
-      let array = [convertToMillion1(res.data.staking), res.data.validators, Number(res.data.stakingApy)]
+      let array = [convertToBillion1(res.data.supply), convertToMillion1(res.data.staking), res.data.validators, Number(res.data.stakingApy)]
       //@ts-ignore
       numberEls.forEach((numberEl: HTMLSpanElement, index: number) => {
         let start: number | null = null;
@@ -43,10 +44,12 @@ export default function Top(
           const progress = time - start;
           const current = Math.min(progress / duration * target, target);
           if (index == 0)
+            numberEl.textContent = absoluteDecimal(current, 3).toString() + "B";
+          if (index == 1)
             numberEl.textContent = absoluteDecimal(current, 2).toString() + "M";
-          else if (index == 1)
-            numberEl.textContent = Math.floor(current).toString();
           else if (index == 2)
+            numberEl.textContent = Math.floor(current).toString();
+          else if (index == 3)
             numberEl.textContent = absoluteDecimal(current, 1).toString() + '%'
 
           if (current < target) {
@@ -61,7 +64,7 @@ export default function Top(
 
   return (
     <>
-       <CustomHead
+      <CustomHead
         title={t('Stake MAPO') + ' - ' + 'Map Protocol'}
       />
       <div className={fade} >
@@ -83,6 +86,10 @@ export default function Top(
         </div>
       </div>
       <div className={styles.stakeData}>
+        <div className={styles.stakeItem}>
+          <div id={'SUPPLY'} data-target={data.supply} className={styles.stakeNumber}>{0}</div>
+          <div className={styles.stakeTitle}>{t('CIRCULATING SUPPLY')}</div>
+        </div>
         <div className={styles.stakeItem}>
           <div id={'STAKED'} data-target={data.stake} className={styles.stakeNumber}>{0}</div>
           <div className={styles.stakeTitle}>{t('TOTAL MAPO STAKED')}</div>

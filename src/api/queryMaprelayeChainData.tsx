@@ -17,6 +17,7 @@ interface QueryMaprelayeChainDataResponse {
         contract: number;
         validators: number;
         stakingApy: string;
+        supply: string;
         crossAssetCount: string;
     };
 }
@@ -24,16 +25,16 @@ interface QueryMaprelayeChainDataResponse {
 
 const queryMaprelayeChainData = async (params?: QueryDateParams): Promise<QueryMaprelayeChainDataResponse> => {
     const config: AxiosRequestConfig = {
-        method: 'get', 
+        method: 'get',
         url: 'https://makalu-api.mapscan.io/scan/queryMaprelayeChainData',
-        params, 
+        params,
     };
 
     try {
         const response: AxiosResponse<QueryMaprelayeChainDataResponse> = await axios(config);
         return response.data;
     } catch (error) {
-        // 处理错误
+
         console.error(error);
         throw error;
     }

@@ -59,5 +59,6 @@
   "Enter the amount you want to stake": "ステークしたい金額を入力する",
   "To stake successfully, you need to have MAPO in your wallet first. You can get MAPO via Butter Swap. Once you have MAPO ready in your wallet, you can proceed as below.": "成功裏にステークするには、まずウォレットに MAPO を持っている必要があります。MAPO は Butter Swap 経由で入手できます。ウォレットに MAPO を準備したら、以下の手順で進めることができます。",
   "Check validator info": "バリデーター情報を確認する",
-  "Get MAPO": "MAPO を入手する"
+  "Get MAPO": "MAPO を入手する",
+  "CIRCULATING SUPPLY": "循環供給"
 }

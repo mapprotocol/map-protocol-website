@@ -31,6 +31,7 @@ export function convertToMillion(str: string) {
 
     return (roundedMillions / 10).toFixed(1) + 'M';
 }
+
 export function convertToMillion1(str: string) {
     if (str.length < 7) {
         throw new Error("The number is too small to convert to millions.");
@@ -43,6 +44,20 @@ export function convertToMillion1(str: string) {
     const roundedMillions = roundingPart >= 50 ? millions + 1 : millions;
 
     return (roundedMillions / 10).toFixed(1);
+}
+
+export function convertToBillion1(str: string) {
+    if (str.length < 7) {
+        throw new Error("The number is too small to convert to millions.");
+    }
+
+    const millions = Number(str.slice(0, -24));
+
+    const roundingPart = Number(str.slice(-24, -27));
+
+    const roundedMillions = roundingPart >= 500 ? millions + 1 : millions;
+
+    return (roundedMillions / 1000).toFixed(3);
 }
 export function formatToMillionDollars(amount: string): string {
     const number = parseFloat(amount);
