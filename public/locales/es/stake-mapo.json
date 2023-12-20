@@ -59,5 +59,6 @@
   "Enter the amount you want to stake": "Ingresa la cantidad que quieres apostar",
   "To stake successfully, you need to have MAPO in your wallet first. You can get MAPO via Butter Swap. Once you have MAPO ready in your wallet, you can proceed as below.": "Para hacer staking con éxito, necesitas tener MAPO en tu cartera primero. Puedes obtener MAPO a través de Butter Swap. Una vez que tengas MAPO listo en tu cartera, puedes proceder de la siguiente manera.",
   "Check validator info": "Revisa la información del validador",
-  "Get MAPO": "Obtén MAPO"
+  "Get MAPO": "Obtén MAPO",
+  "CIRCULATING SUPPLY": "SUMINISTRO CIRCULANTE"
 }

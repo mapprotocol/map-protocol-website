@@ -59,5 +59,6 @@
   "Enter the amount you want to stake": "스테이킹하고자 하는 금액을 입력하세요",
   "To stake successfully, you need to have MAPO in your wallet first. You can get MAPO via Butter Swap. Once you have MAPO ready in your wallet, you can proceed as below.": "성공적으로 스테이킹하려면 먼저 지갑에 MAPO가 있어야 합니다. 버터 스왑을 통해 MAPO를 얻을 수 있습니다. 지갑에 MAPO가 준비되면 아래와 같이 진행할 수 있습니다.",
   "Check validator info": "검증자 정보 확인하기",
-  "Get MAPO": "MAPO 얻기"
+  "Get MAPO": "MAPO 얻기",
+  "CIRCULATING SUPPLY": "순환 공급"
 }

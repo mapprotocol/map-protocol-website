@@ -67,6 +67,7 @@
     "Enter the amount you want to stake": "输入你想要抵押的金额",
     "To stake successfully, you need to have MAPO in your wallet first. You can get MAPO via Butter Swap. Once you have MAPO ready in your wallet, you can proceed as below.": "要成功进行抵押，你首先需要在你的钱包中拥有 MAPO。你可以通过 Butter Swap 获得 MAPO。一旦你的钱包中准备好了 MAPO，你就可以按照以下步骤进行。",
     "Check validator info": "检查验证者信息",
-    "Get MAPO": "获取 MAPO"
+    "Get MAPO": "获取 MAPO",
+    "CIRCULATING SUPPLY": "总流通量"
 
 }

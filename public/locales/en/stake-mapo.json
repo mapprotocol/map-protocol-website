@@ -60,5 +60,6 @@
     "Enter the amount you want to stake": "Enter the amount you want to stake",
     "To stake successfully, you need to have MAPO in your wallet first. You can get MAPO via Butter Swap. Once you have MAPO ready in your wallet, you can proceed as below.": "To stake successfully, you need to have MAPO in your wallet first. You can get MAPO via Butter Swap. Once you have MAPO ready in your wallet, you can proceed as below.",
     "Check validator info": "Check validator info",
-    "Get MAPO":"Get MAPO"
+    "Get MAPO":"Get MAPO",
+    "CIRCULATING SUPPLY": "CIRCULATING SUPPLY"
 }
