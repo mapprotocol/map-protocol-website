@@ -37,7 +37,7 @@
   "*If you would like to get MAPO instead of MAP, please go to Butter Swap to swap directly.": "*如果你想获取 MAPO 而不是 MAP，请直接前往 <link1>Butter Swap</link1> 进行交换。",
   "On Centralized Exchanges (CEXs)": "在中心化交易所（CEXs）上",
   "Centralized exchanges are platforms that are managed by a single entity or company. They act as middlemen between buyers and sellers of cryptocurrencies, similar to traditional stock exchanges.": "中心化交易所是由单一实体或公司管理的平台。它们充当加密货币买卖双方之间的中介，类似于传统股票交易所。",
-  "MAP on centralized exchanges is in the ERC-20 token standard, and ERC-20 MAP is available on Kucoin, Bithumb, Coinone and MEXC Global.": "在中心化交易所上的 MAP 是 ERC-20 代币标准，ERC-20 MAP 可在 <link1>Kucoin</link1>、<link2>Bithumb</link2>、<link3>Coinone</link3> 和 <link4>MEXC Global</link4> 上获得。",
+  "ERC-20 MAP (MAP Protocol's native token on Ethereum) is available on Kucoin, Bithumb, Coinone and MEXC Global. MRC-20 MAPO (MAP Protocol's native token on MAP Relay Chain thus the MAPO Mainnet) is available on LBank.": "ERC-20 MAP（ MAP Protocol 在以太坊上的原生代币 ）可以在 <link1>Kucoin</link1>、<link2>Bithumb</link2>、<link3>Coinone</link3> 和 <link4>MEXC Global</link4>上获得。MRC-20 MAPO（ MAP Protocol 在 MAP 中继链上的原生代币，因此是 MAPO 主网 ）可以在<link5>LBank</link5> 上获得。",
   "Exchange": "交易所",
   "Pairs": "交易对",
   "Price": "价格",

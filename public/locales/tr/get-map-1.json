@@ -37,7 +37,7 @@
   "*If you would like to get MAPO instead of MAP, please go to Butter Swap to swap directly.": "*Eğer MAP yerine MAPO almak istiyorsanız, lütfen doğrudan <link1>Butter Swap</link1> üzerinden takas yapmak için gidin.",
   "On Centralized Exchanges (CEXs)": "Merkezi Borsalar (CEX'ler) Üzerinde",
   "Centralized exchanges are platforms that are managed by a single entity or company. They act as middlemen between buyers and sellers of cryptocurrencies, similar to traditional stock exchanges.": "Merkezi borsalar, tek bir varlık veya şirket tarafından yönetilen platformlardır. Kripto para alıcıları ve satıcıları arasında, geleneksel hisse senedi borsalarına benzer şekilde aracı olarak hareket ederler.",
-  "MAP on centralized exchanges is in the ERC-20 token standard, and ERC-20 MAP is available on Kucoin, Bithumb, Coinone and MEXC Global.": "Merkezi borsalardaki MAP, ERC-20 token standardındadır ve ERC-20 MAP, <link1>Kucoin</link1>, <link2>Bithumb</link2>, <link3>Coinone</link3> ve <link4>MEXC Global</link4> üzerinde mevcuttur.",
+  "ERC-20 MAP (MAP Protocol's native token on Ethereum) is available on Kucoin, Bithumb, Coinone and MEXC Global. MRC-20 MAPO (MAP Protocol's native token on MAP Relay Chain thus the MAPO Mainnet) is available on LBank.": "ERC-20 MAP (MAP Protocol's native token on Ethereum) is available on <link1>Kucoin</link1>, <link2>Bithumb</link2>, <link3>Coinone</link3> and <link4>MEXC Global</link4>. MRC-20 MAPO (MAP Protocol's native token on MAP Relay Chain thus the MAPO Mainnet) is available on <link5>LBank</link5>.",
   "Exchange": "Takas",
   "Pairs": "Çiftler",
   "Price": "Fiyat",

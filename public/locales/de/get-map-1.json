@@ -37,7 +37,7 @@
   "*If you would like to get MAPO instead of MAP, please go to Butter Swap to swap directly.": "*Wenn Sie MAPO anstelle von MAP erhalten möchten, gehen Sie bitte direkt zu <link1>Butter Swap</link1>, um zu tauschen.",
   "On Centralized Exchanges (CEXs)": "An zentralisierten Börsen (CEXs)",
   "Centralized exchanges are platforms that are managed by a single entity or company. They act as middlemen between buyers and sellers of cryptocurrencies, similar to traditional stock exchanges.": "Zentralisierte Börsen sind Plattformen, die von einer einzelnen Entität oder einem Unternehmen verwaltet werden. Sie fungieren als Vermittler zwischen Käufern und Verkäufern von Kryptowährungen, ähnlich wie traditionelle Aktienbörsen.",
-  "MAP on centralized exchanges is in the ERC-20 token standard, and ERC-20 MAP is available on Kucoin, Bithumb, Coinone and MEXC Global.": "MAP an zentralisierten Börsen ist im ERC-20 Token-Standard, und ERC-20 MAP ist verfügbar auf <link1>Kucoin</link1>, <link2>Bithumb</link2>, <link3>Coinone</link3> und <link4>MEXC Global</link4>.",
+  "ERC-20 MAP (MAP Protocol's native token on Ethereum) is available on Kucoin, Bithumb, Coinone and MEXC Global. MRC-20 MAPO (MAP Protocol's native token on MAP Relay Chain thus the MAPO Mainnet) is available on LBank.": "ERC-20 MAP (MAP Protocol's native token on Ethereum) is available on <link1>Kucoin</link1>, <link2>Bithumb</link2>, <link3>Coinone</link3> and <link4>MEXC Global</link4>. MRC-20 MAPO (MAP Protocol's native token on MAP Relay Chain thus the MAPO Mainnet) is available on <link5>LBank</link5>.",
   "Exchange": "Börse",
   "Pairs": "Paare",
   "Price": "Preis",

@@ -41,7 +41,8 @@
  
   "On Centralized Exchanges (CEXs)": "On Centralized Exchanges (CEXs)",
   "Centralized exchanges are platforms that are managed by a single entity or company. They act as middlemen between buyers and sellers of cryptocurrencies, similar to traditional stock exchanges.": "Centralized exchanges are platforms that are managed by a single entity or company. They act as middlemen between buyers and sellers of cryptocurrencies, similar to traditional stock exchanges.",
-  "MAP on centralized exchanges is in the ERC-20 token standard, and ERC-20 MAP is available on Kucoin, Bithumb, Coinone and MEXC Global.": "MAP on centralized exchanges is in the ERC-20 token standard, and ERC-20 MAP is available on <link1>Kucoin</link1>, <link2>Bithumb</link2>, <link3>Coinone</link3> and <link4>MEXC Global</link4>.",
+  "ERC-20 MAP (MAP Protocol's native token on Ethereum) is available on Kucoin, Bithumb, Coinone and MEXC Global. MRC-20 MAPO (MAP Protocol's native token on MAP Relay Chain thus the MAPO Mainnet) is available on LBank.": "ERC-20 MAP (MAP Protocol's native token on Ethereum) is available on <link1>Kucoin</link1>, <link2>Bithumb</link2>, <link3>Coinone</link3> and <link4>MEXC Global</link4>. MRC-20 MAPO (MAP Protocol's native token on MAP Relay Chain thus the MAPO Mainnet) is available on <link5>LBank</link5>.",
+  
   "Exchange": "Exchange",
   "Pairs": "Pairs",
   "Price": "Price",

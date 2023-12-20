@@ -11,6 +11,7 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { absoluteDecimal, convertToBillion1, convertToMillion, convertToMillion1, toThousands } from '@/utils/number';
 import queryMaprelayeChainData from '@/api/queryMaprelayeChainData';
 import CustomHead from '@/components/CustimHead';
+import Router, { useRouter } from 'next/router';
 
 
 
@@ -26,6 +27,8 @@ export default function Top(
   })
   const { t } = useTranslation('stake-mapo');
   const [fade, setFade] = useState(styles.main)
+
+
 
   useEffect(() => {
     setFade(`${styles.main} ${styles.fade}`)
@@ -72,6 +75,28 @@ export default function Top(
           <div className={styles.title}>{t('Get rewarded while securing MAP Protocol omnichain network')}</div>
           <div className={styles.desc}>{t('Staking MAPO is public good for the whole MAP Protocol omnichain ecosystem. Validators need to have sufficient stake once they have their nodes appropriately set up.')}</div>
           <div className={styles.desc}>{t('As a permissionless Delegated Proof-of-Stake (DPoS) blockchain, MAP Protocol allows users to stake by delegating their MAPO to validators who process transactions and run the network.')}</div>
+
+          <div className={styles.button}>
+            <Button
+              onClick={
+                () => {
+                  Router.push('/get-map')
+                }}
+              style={{
+                marginRight: "12px"
+              }} variant="contained">{t('Get MAPO')}</Button>
+
+            <Button
+              onClick={
+                () => {
+                  window.open('https://staking.mapprotocol.io/')
+                }}
+              variant="outlined">{t('Stake MAPO')}</Button>
+          </div>
+          <div>
+
+          </div>
+
         </div>
         <div className={styles.mapCoinsImage}
           style={{
