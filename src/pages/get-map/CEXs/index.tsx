@@ -76,7 +76,7 @@ export default function GetMapCEXs() {
                         height={28}
                         src={`/images/${item.name}.webp`}
                         alt="logo" />{item.name}</div>
-                    <div>{item.pairs}</div>
+                    <div>{item.name =="DeGate"? "MAP/USDT":item.pairs}</div>
                     <div>{`$${item.price}`}</div>
                     <div>{`$${toThousands(item.cost_to_move_up_usd)}`}</div>
                     <div>{`$${toThousands(item.cost_to_move_down_usd)}`}</div>
