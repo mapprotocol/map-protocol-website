@@ -37,7 +37,8 @@
   "*If you would like to get MAPO instead of MAP, please go to Butter Swap to swap directly.": "*Якщо ви хочете отримати MAPO замість MAP, будь ласка, перейдіть на <link1>Butter Swap</link1>, щоб обміняти безпосередньо.",
   "On Centralized Exchanges (CEXs)": "На централізованих біржах (CEXs)",
   "Centralized exchanges are platforms that are managed by a single entity or company. They act as middlemen between buyers and sellers of cryptocurrencies, similar to traditional stock exchanges.": "Централізовані біржі - це платформи, які керуються однією особою або компанією. Вони виступають посередниками між покупцями та продавцями криптовалют, подібно до традиційних фондових бірж.",
-  "MAP on centralized exchanges is in the ERC-20 token standard, and ERC-20 MAP is available on Kucoin, Bithumb, Coinone and MEXC Global.": "MAP на централізованих біржах є у стандарті токена ERC-20, і ERC-20 MAP доступний на <link1>Kucoin</link1>, <link2>Bithumb</link2>, <link3>Coinone</link3> та <link4>MEXC Global</link4>.",
+  "ERC-20 MAP (MAP Protocol's native token on Ethereum) is available on Kucoin, Bithumb, Coinone and MEXC Global. MRC-20 MAPO (MAP Protocol's native token on MAP Relay Chain thus the MAPO Mainnet) is available on LBank.": "ERC-20 MAP (MAP Protocol's native token on Ethereum) is available on <link1>Kucoin</link1>, <link2>Bithumb</link2>, <link3>Coinone</link3> and <link4>MEXC Global</link4>. MRC-20 MAPO (MAP Protocol's native token on MAP Relay Chain thus the MAPO Mainnet) is available on <link5>LBank</link5>.",
+
   "Exchange": "Обмін",
   "Pairs": "Пари",
   "Price": "Ціна",
