@@ -49,16 +49,18 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 23.2px;
+  line-height: 24px;
+  padding: 0;
   /* 145% */
-  margin-top: 24px;
+  margin-top: 32px;
+  margin-bottom: 0;
 }
 
 .docsH1 {
-  margin-top: 48px;
+  margin-top: 60px;
   color: rgba(0, 0, 0, 0.8);
 
-  font-size: 36px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
   line-height: 58px;
@@ -69,10 +71,10 @@
 .docsH2 {
   color: #000;
 
-
+  margin-top: 48px;
   color: rgba(0, 0, 0, 0.8);
 
-  font-size: 26px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 600;
   line-height: 40px;
@@ -80,6 +82,33 @@
 
 }
 
+.docsH3 {
+  color: #000;
+
+  margin-top: 48px;
+  color: rgba(0, 0, 0, 0.8);
+
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.docsH4 {
+  color: #000;
+
+  margin-top: 48px;
+  color: rgba(0, 0, 0, 0.8);
+
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+}
+.hr{
+
+  margin-top: 48px;
+}
 .docsContent {
   margin-right: 48px;
   padding-top: 24px;
@@ -117,7 +146,7 @@
 
 .docsTitle {
   color: #000;
-  
+
   border-bottom: #ECECEC 1px solid;
   font-size: 36px;
   font-style: normal;

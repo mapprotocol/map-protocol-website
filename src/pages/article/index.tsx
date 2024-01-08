@@ -78,6 +78,10 @@ export default function SamplePage(
         a: (props: any) => <a style={{ color: '#1976d2' }} {...props} />,
         h1: (props: any) => <H1 className={styles.docsH1} {...props} />,
         h2: (props: any) => <h2 className={styles.docsH2} {...props} />,
+        h3: (props: any) => <h3 className={styles.docsH3} {...props} />,
+        h4: (props: any) => <h4 className={styles.docsH4} {...props} />,
+        hr: (props: any) => <hr className={styles.hr} {...props} />,
+
         li: (props: any) => <li className={styles.li} {...props} />,
         img: (props: any) => <img className={styles.img}  {...props} />
 
