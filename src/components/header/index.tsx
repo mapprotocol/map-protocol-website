@@ -198,6 +198,11 @@ export const tabsArray: TabsArray = {
             path: 'https://testnet.maposcan.io/'
 
         },
+        {
+            name: 'Github',
+            path: 'https://github.com/mapprotocol'
+
+        },
         // {
         //     name: 'Tutorials',
         //     path: '/stake-mapo'
