@@ -37,7 +37,7 @@
   "*If you would like to get MAPO instead of MAP, please go to Butter Swap to swap directly.": "*MAP ではなく MAPO を入手したい場合は、<link1>Butter Swap</link1> に直接行って交換してください。",
   "On Centralized Exchanges (CEXs)": "中央集権型取引所（CEX）で",
   "Centralized exchanges are platforms that are managed by a single entity or company. They act as middlemen between buyers and sellers of cryptocurrencies, similar to traditional stock exchanges.": "中央集権型取引所は、単一のエンティティまたは会社によって管理されるプラットフォームです。彼らは、従来の株式市場と同様に、暗号通貨の買い手と売り手の間の仲介者として機能します。",
-  "ERC-20 MAP (MAP Protocol's native token on Ethereum) is available on Kucoin, Bithumb, Coinone and MEXC Global. MRC-20 MAPO (MAP Protocol's native token on MAP Relay Chain thus the MAPO Mainnet) is available on LBank.": "ERC-20 MAP（Ethereum上のMAPプロトコルのネイティブトークン）は<link1>Kucoin</link1>、<link2>Bithumb</link2>、<link3>Coinone</link3>、および<link4>MEXC Global</link4>で利用できます。 MRC-20 MAPO（MAPリレーチェーン上のMAPプロトコルのネイティブトークン、つまりMAPOメインネット）は<link5>LBank</link5>で利用できます。",
+  "ERC-20 MAP (MAP Protocol's native token on Ethereum) is available on Kucoin, Bithumb, Coinone and MEXC Global. MRC-20 MAPO (MAP Protocol's native token on MAP Relay Chain thus the MAPO Mainnet) is available on LBank.": "ERC-20 MAP（Ethereum上のMAPプロトコルのネイティブトークン）は<link1>Kucoin</link1>、<link2>Bithumb</link2>、<link3>Coinone</link3>、 <link6>HTX</link6> および<link4>MEXC Global</link4>で利用できます。 MRC-20 MAPO（MAPリレーチェーン上のMAPプロトコルのネイティブトークン、つまりMAPOメインネット）は<link5>LBank</link5>で利用できます。",
 
   "Exchange": "交換",
   "Pairs": "ペア",
