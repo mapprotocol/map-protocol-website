@@ -56,7 +56,8 @@ export default function GetMapCEXs() {
                 link2: <Link target="_blank" href={"https://www.bithumb.com/react/trade/order/MAP-KRW"} className={styles.linkText}></Link>,
                 link3: <Link target="_blank" href={"https://coinone.co.kr/exchange/trade/map/krw"} className={styles.linkText}></Link>,
                 link4: <Link target="_blank" href={"https://www.mexc.com/exchange/MAP_USDT?_from=search"} className={styles.linkText}></Link>,
-                link5: <Link target="_blank" href={"https://www.lbank.com/trade/mapo_usdt/"} className={styles.linkText}></Link>
+                link5: <Link target="_blank" href={"https://www.lbank.com/trade/mapo_usdt/"} className={styles.linkText}></Link>,
+                link6: <Link target="_blank" href={"https://www.htx.com.bo/en-us/trade/map_usdt?type=spot"} className={styles.linkText}></Link>
 
             }} /> </div>
 
