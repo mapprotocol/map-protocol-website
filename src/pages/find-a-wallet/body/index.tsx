@@ -41,6 +41,12 @@ export default function Body(
     src: "/images/find-a-wallet/particle.png",
     webSite: 'https://wallet-debug.particle.network/',
     x: "https://twitter.com/ParticleNtwrk",
+  },
+  {
+    cardTitle: 'Bitget Wallet',
+    src: "/images/find-a-wallet/bitget.png",
+    webSite: 'https://web3.bitget.com/',
+    x: "https://twitter.com/BitgetWallet",
   }]
   return (
     <>

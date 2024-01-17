@@ -35,14 +35,15 @@
 
 .walletCards {
     justify-content: space-between;
-    gap: 24px;
+    /* gap: 24px; */
     display: flex;
+    flex-wrap: wrap;
 }
 
 .walletCard {
     border-radius: 12px;
     background: #F7F7F7;
-    flex-basis: 32%;
+    flex-basis: 28.2%;
     gap: 24px;
     margin-top: 24px;
     display: flex;
