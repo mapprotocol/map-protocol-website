@@ -70,6 +70,18 @@ There are two ways for you to add MAP Relay Chain or MAP Mainnet, directly to yo
 * Check the network name on the wallet page. 
 
 
+## **On Bitget Wallet**
+
+![alt_text](/images/article/images/add-map-relay-chain-4.png "image_tooltip")
+
+* Log in to your [Bitget Wallet](https://web3.bitget.com/en) on mobile or PC.
+* Click the network you’re on and go to the network selection page.
+* Click “Add a network” button
+* Search “MAP Relay Chain” and click the “+” sign to add the MAP Protocol network.
+* Check if you can switch to the MAP Protocol network.
+
+
+
 # **Add MAP**
 
 MAP is available on Ethereum, BNB Smart Chain, and Polygon. You can follow the guide below to add MAP to your Metamask, TOken Pocket, and Particle wallet.
