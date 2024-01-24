@@ -68,6 +68,15 @@ _注意：MAPO 是 MAP Protocol 在 MAP Relay Chain 上的原生代币的代码�
 * 在搜索栏搜索并选择 “MAP Relay Chain”。
 * 在钱包页面检查网络名称。
 
+## 在Bitget钱包上
+
+![alt_text](/images/article/images/add-map-relay-chain-4.png "image_tooltip")
+
+* 在移动设备或电脑上登录[Bitget钱包](https://web3.bitget.com/en)。
+* 点击所在的网络，并进入网络选择页面。
+* 点击"添加网络"按钮。
+* 搜索"MAP Relay Chain"并点击"+"符号添加MAP协议网络。
+* 检查是否可以切换到MAP协议网络。
 
 # **添加 MAP**
 
