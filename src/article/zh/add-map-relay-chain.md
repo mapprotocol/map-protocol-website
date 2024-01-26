@@ -167,7 +167,7 @@ MAP 可在 Ethereum、BNB 智能链和 Polygon 上获取。您可以按照以下
     * 登陆你的Trust Wallet上账户并滚动到“管理加密货币”页面。
     * 点击“+”标志进入“选择一个链”页面并选择“智能链”。
     * 在搜索框中输入在 [BSC Scan](https://bscscan.com/address/0x8105ECe4ce08B6B6449539A5db23e23b973DfA8f) 上的合约地址0x8105ECe4ce08B6B6449539A5db23e23b973DfA8f然后点击“添加代币”。
-* **如果你在 Polygon**
+* **在 Polygon 链上添加 MAP**
     * 登陆你的 Trust Wallet 上账户并滚动到“管理加密货币”页面。
     * 点击“+”标志进入“选择一个链”页面并选择“Polygon”。
     * 在搜索框中输入在 [Polygon Scan](https://polygonscan.com/address/0xBAbceE78586d3e9E80E0d69601A17f983663Ba6a) 上的合约地址0xBAbceE78586d3e9E80E0d69601A17f983663Ba6a然后点击“添加代币”。
