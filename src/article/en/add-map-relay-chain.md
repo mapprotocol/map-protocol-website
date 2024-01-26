@@ -137,3 +137,44 @@ After you have entered to Token Pocket homepage,  check the chain you are on. Th
     * View the contract address 0xBAbceE78586d3e9E80E0d69601A17f983663Ba6a [on Polygon Scan](https://polygonscan.com/address/0xBAbceE78586d3e9E80E0d69601A17f983663Ba6a).
     * Copy and paste it back to  “Custom Token”
     * Add the token symbol MAP
+
+
+
+## **On Bitget Wallet**
+
+![alt_text](/images/article/images/add-map-relay-chain-6.png "image_tooltip")
+
+
+* **Add MAP on Ethereum**
+    * Switch your network connection to Ethereum. 
+    * Click “+” sign to enter the “Add a token” page.
+    * Enter MAP or the contract address 0x9E976F211daea0D652912AB99b0Dc21a7fD728e4 on [Etherscan](https://etherscan.io/token/0x9e976f211daea0d652912ab99b0dc21a7fd728e4) in the search box and choose “MAP”.
+* **Add MAP on BNB Chian**
+    * View the contract address 0x8105ECe4ce08B6B6449539A5db23e23b973DfA8f on [BSC Scan](https://bscscan.com/address/0x8105ECe4ce08B6B6449539A5db23e23b973DfA8f).
+    * Copy and paste it back to the “Add a token” page.
+    * Click the token symbol MAP and add.
+* **Add MAP on Polygon**
+    * View the contract address 0xBAbceE78586d3e9E80E0d69601A17f983663Ba6a [on Polygon Scan](https://polygonscan.com/address/0xBAbceE78586d3e9E80E0d69601A17f983663Ba6a).
+    * Copy and paste it back to the “Add a token” page.
+    * Click the token symbol MAP and add.
+
+
+
+
+## **On Trust Wallet**
+
+![alt_text](/images/article/images/add-map-relay-chain-5.png "image_tooltip")
+
+
+* **Add MAP on Ethereum**
+    * Log in to your Trust Wallet account and scroll down to the “Manage crypto” page. 
+    * Click the “+” sign to enter the “Select a chain” page and choose “Ethereum”.
+    * Enter the contract address 0x9E976F211daea0D652912AB99b0Dc21a7fD728e4 on [Etherscan](https://etherscan.io/token/0x9e976f211daea0d652912ab99b0dc21a7fd728e4) in the search box and click “Add token”.
+* **Add MAP on Binance Smart Chian**
+    * Log in to your Trust Wallet account and scroll down to the “Manage crypto” page.
+    * Click the “+” sign to enter the “Select a chain” page and choose “Smart Chain”.
+    * Enter the contract address  0x8105ECe4ce08B6B6449539A5db23e23b973DfA8f [on BSC Scan](https://bscscan.com/address/0x8105ECe4ce08B6B6449539A5db23e23b973DfA8f) in the search box and click “Add token”.
+* **If you’re on Polygon**
+    * Log in to your Trust Wallet account and scroll down to the “Manage crypto” page.
+    * Click the “+” sign to enter the “Select a chain” page and choose “Polygon”.
+    * Enter the contract address  0xBAbceE78586d3e9E80E0d69601A17f983663Ba6a [on Polygon Scan](https://polygonscan.com/address/0xBAbceE78586d3e9E80E0d69601A17f983663Ba6a) in the search box and click “Add token”.

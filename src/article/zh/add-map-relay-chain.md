@@ -133,3 +133,41 @@ MAP 可在 Ethereum、BNB 智能链和 Polygon 上获取。您可以按照以下
     * 在 [Polygon Scan](https://polygonscan.com/address/0xBAbceE78586d3e9E80E0d69601A17f983663Ba6a) 上查看合约地址 0xBAbceE78586d3e9E80E0d69601A17f983663Ba6a
     * 复制并粘贴回 “自定义代币”
     * 添加代币符号 MAP
+
+## **在 Bitget 钱包上**
+
+![alt_text](/images/article/images/add-map-relay-chain-6.png "image_tooltip")
+
+
+* **在以太坊上添加 MAP**
+    * 将您的网络连接切换到以太坊。
+    * 点击“+”标志进入“添加代币”页面。
+    * 在搜索框中输入 MAP 或者在 [Etherscan](https://etherscan.io/token/0x9e976f211daea0d652912ab99b0dc21a7fd728e4) 上的合约地址0x9E976F211daea0D652912AB99b0Dc21a7fD728e4然后选择“MAP”。
+* **在BNB链上添加 MAP**
+    * 浏览在 [BSC Scan](https://bscscan.com/address/0x8105ECe4ce08B6B6449539A5db23e23b973DfA8f) 上的合约地址0x8105ECe4ce08B6B6449539A5db23e23b973DfA8f。
+    * 复制并粘贴回到“添加代币”页面。
+    * 点击代币符号 MAP 并添加。
+* **在Polygon上添加 MAP**
+    * 浏览在 [Polygon Scan](https://polygonscan.com/address/0xBAbceE78586d3e9E80E0d69601A17f983663Ba6a) 上的合约地址0xBAbceE78586d3e9E80E0d69601A17f983663Ba6a。
+    * 复制并粘贴回到“添加代币”页面。
+    * 点击代币符号 MAP 并添加。
+
+
+
+## **在 Trust Wallet 上**
+
+![alt_text](/images/article/images/add-map-relay-chain-5.png "image_tooltip")
+
+
+* **在以太坊上添加 MAP**
+    * 登陆你的 Trust Wallet 上账户并滚动到“管理加密货币”页面。
+    * 点击“+”标志进入“选择一个链”页面并选择“以太坊”。
+    * 在搜索框中输入在 [Etherscan](https://etherscan.io/token/0x9e976f211daea0d652912ab99b0dc21a7fd728e4) 上的合约地址0x9E976F211daea0D652912AB99b0Dc21a7fD728e4然后点击“添加代币”。
+* **在币安智能链上添加 MAP**
+    * 登陆你的Trust Wallet上账户并滚动到“管理加密货币”页面。
+    * 点击“+”标志进入“选择一个链”页面并选择“智能链”。
+    * 在搜索框中输入在 [BSC Scan](https://bscscan.com/address/0x8105ECe4ce08B6B6449539A5db23e23b973DfA8f) 上的合约地址0x8105ECe4ce08B6B6449539A5db23e23b973DfA8f然后点击“添加代币”。
+* **如果你在 Polygon**
+    * 登陆你的 Trust Wallet 上账户并滚动到“管理加密货币”页面。
+    * 点击“+”标志进入“选择一个链”页面并选择“Polygon”。
+    * 在搜索框中输入在 [Polygon Scan](https://polygonscan.com/address/0xBAbceE78586d3e9E80E0d69601A17f983663Ba6a) 上的合约地址0xBAbceE78586d3e9E80E0d69601A17f983663Ba6a然后点击“添加代币”。
