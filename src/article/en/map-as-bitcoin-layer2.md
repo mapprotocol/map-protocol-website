@@ -10,13 +10,13 @@ Bitcoin is by far the largest, most well-known blockchain. It boasts the most de
 
 With the emergence of numerous Bitcoin L2 solutions, blockchain users and assets may become further isolated. Integrating the diverse infrastructures of Bitcoin L2 networks into a unified, interoperable ledger is a significant technical challenge. This integration is particularly complex when considering the transfer of assets from Turing-complete public chains, like Ethereum, to the Bitcoin network. Achieving such interoperability, while also preserving the high level of decentralization and security inherent to Bitcoin, requires a sophisticated solution. Utilizing ZK-LightClient technology is key in this process.
 
-# From Bitcoin-Level Point-to-Point Cross-chain Communication to Layer-0 of Bitcoin's Layer 2s
+# From Bitcoin-level peer-to-peer cross-chain communication to Bitcoin layer-2
 
 From its very first line of code, MAP Protocol embodies Satoshi Nakamoto's peer-to-peer, no-third-party philosophy and has refactored light clients with ZK technology. Via light client’s independent self-verifying nature, MAP Protocol has achieved this purely peer-to-peer, third-party-free cross-chain verification network.
 
 Now, as a Bitcoin L2 as well as the Layer 0 of Bitcoin L2s, MAP Protocol enables interoperability among various Bitcoin L2 networks in a 100% Nakamoto-style decentralized way. This also provides Bitcoin ecosystem developers with a unified, interoperable infrastructure that covers a wide range of interoperable Bitcoin L2s.
 
-# What does it mean for MAP Protocol to be Bitcoin Layer 2?
+# What does it mean for MAP Protocol as a Bitcoin layer-2?
 
 The Bitcoin network possibly has the strongest security. Since the first transaction block in 2009, the network has never been down and no Bitcoins have been stolen from the blockchain. Bitcoin itself is the lighthouse of the whole crypto community.
 
@@ -33,7 +33,7 @@ Each technology has its advantages and disadvantages. In specific engineering sc
 
 Additionally, MAP Protocol has already achieved peer-to-peer interoperability among many Bitcoin L2s and between the Bitcoin ecosystem and other ecosystems, thus achieving the Layer0 of Bitcoin L2s  for a fully interoperable, peer-to-peer blockchain ecosystem.
 
-## Enhanced Market Liquidity of BRC-20 Tokens Through BRC-201
+## Level up the BRC-20 tokens market liquidity with BRC-201
 
 MAP Protocol’s technical community has released the [BRC-201 protocol](/article?id=from-BRC-20-to-EVMs), which enables BRC-20 and ORC-20 assets on the Bitcoin network to cross-chain and be transferred to MAP Protocol — a Bitcoin layer-2. This cross-chain ability will allow BRC-20 tokens on the Bitcoin network to interact with other tokens on other public chains, thus increasing the market liquidity for BRC-20 tokens.
 
@@ -52,7 +52,7 @@ Bitcoin itself serves as a beacon for the whole industry, able to gather a more 
 With MAP Protocol being Bitcoin layer-2,  any asset on any chain can easily interact with the Bitcoin network. This will add other types of assets and communities to the existing Bitcoin ecosystem and community. In this way, Bitcoin will be more than just a store of value but will extend interoperability and open doors for new types of decentralized applications and innovations.
 
 
-# The Future of the Bitcoin Ecosystem
+# The future of Bitcoin Ecosystem
 
 On October 31, 2008, Satoshi Nakamoto published the [Bitcoin White Paper](https://bitcoin.org/bitcoin.pdf), defining Bitcoin as a peer-to-peer electronic cash system—that is, initiated by one party, accepted by another, and not dependent on any third-party institutions. Inspired by this, MAP Protocol has always carried on the belief of "peer-to-peer, no privileged third party." 
 
