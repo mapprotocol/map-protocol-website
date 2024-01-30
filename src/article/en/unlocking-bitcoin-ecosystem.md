@@ -10,18 +10,15 @@ Bitcoin network may have the most robust security. Since the first transaction b
 
 However, as BCR-20 tokens and Ordinal NFTs took over the Web3 sphere in May 2023, people saw new possibilities to grow the Bitcoin ecosystem. Below is what’s possible with MAP Protocol for Bitcoin.
 
+# Greater Bitcoin ecosystem interoperability
+
+As the Layer0 of Bitcoin L2s, MAP Protocol allows any assets on Bitcoin L2 or other chains to easily interact with one another. This will facilitate interoperability among assets on various Bitcoin L2s and add other assets and communities to the existing Bitcoin ecosystem and community. Through this, Bitcoin will not only serve as a means of value storage but also expand its interoperability and pave the way for decentralized applications and innovations.
 
 # Enhanced BRC-20 liquidity
 
 [BRC-201 protocol](/article?id=from-BRC-20-to-EVMs), a  cross-chain extension protocol to BRC-20 tokens, enables BRC-20 and ORC-20 assets on the Bitcoin network to cross-chain and be transferred to MAP Protocol — a Bitcoin layer-2 and an interoperable omnichain infrastructure. This cross-chain ability will allow BRC-20 tokens on the Bitcoin network to interact with other tokens on other public chains, thus increasing the market liquidity for BRC-20 tokens.
 
 Through the MAP Protocol, a peer-to-peer cross-chain interoperable network, BRC-20 community members can trade with other tokens on other chains more conveniently and at a lower cost. This layer of Bitcoin network cross-chain interoperability will also grow the Bitcoin community as a whole.
-
-
-# Greater Bitcoin ecosystem interoperability
-
-With MAP Protocol being Bitcoin layer-2,  any asset on any chain can easily interact with the Bitcoin network. This will add other assets and communities to the existing Bitcoin ecosystem and community. In this way, Bitcoin will be more than just a store of value but will extend interoperability and open doors for new types of decentralized applications and innovations.
-
 
 # Better and safer Bitcoin trading option
 
