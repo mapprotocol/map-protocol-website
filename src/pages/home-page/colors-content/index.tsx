@@ -20,8 +20,7 @@ export default function ColorsContent(
                     </div>
                     <div className={styles.desc}>
                         <Trans ns="home-page" i18nKey="MAP Protocol serves as a Bitcoin layer-2 dedicated to Bitcoin ecosystem development. It also provides the essential infrastructure for achieving interoperability among blockchain-based assets, storage, and computing. Built upon the light client and zero-knowledge proof technology, our interoperable cross-chain solution is peer-to-peer, without any trusted third-party entities, thus turning siloed blockchains or blockchains using third-party bridges into an all-in-one Web3 development platform and Web3 user gateway." components={{
-                            link1: <Link href={"/article?id=light-clients"} ></Link>,
-                            link2: <Link href={"/article?id=zero-knoeledge-proofs"} ></Link>,
+                            link1: <Link target="_blank" href={"https://github.com/mapprotocol/map-contracts/tree/main/mapclients/zkLightClient"} ></Link>,
                         }} />
                     </div>
                     <div className={styles.button}>

@@ -38,7 +38,7 @@ lang: zh
 
 通过增强可扩展性、速度和功能，二层解决方案在比特币从数字黄金到更多样化的金融基础设施的演变中发挥着关键作用。随着比特币继续被广泛采用，这些二层解决方案的重要性不可低估。
 
-MAP Protocol 也是一个比特币二层。更多关于此的信息，请阅读 [MAP Protocol 作为比特币二层](/article?id=map-as-bitcoin-layer2)。
+MAP Protocol 也是一个比特币二层，但更是比特币二层们的第零层，旨在实现众多比特币二层的互操作性，让比特币二层成为统一互操作性账本，便于用户和开发者。更多关于此的信息，请阅读 [MAP Protocol 作为比特币二层](/article?id=map-as-bitcoin-layer2)。
 
 _参考资料：_
 
@@ -55,3 +55,4 @@ Poon, Joseph, 和 Thaddeus Dryja. "比特币闪电网络：可扩展的链下即
 "Drivechain：简单的双向挂钩。" Drivechain, Drivechain
 
 "Omni Layer：推进比特币到 2.0。" Omni Layer, Omni Layer
+

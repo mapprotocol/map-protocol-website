@@ -13,7 +13,7 @@ type Props = {
 }
 interface CardInfo {
   cardTitle: String,
-  cardContent: String,
+  cardContent: any,
 }
 
 
@@ -55,15 +55,25 @@ export default function HomePageTop(
 
   const cardData: Array<CardInfo> = [{
     cardTitle: t('The Bitcoin layer-2 for Bitcoin ecosystem transformation'),
-    cardContent: t("By leveraging the Bitcoin network’s security mechanism, MAP Protocol strengthened its network security and serves as a Bitcoin layer-2 to enable BRC-20 cross-chain and allow assets and users to from other public chains interact with the Bitcoin network via peer-to-peer cross-chain."),
+    cardContent: <Trans ns="home-page" i18nKey=
+      'By leveraging the Bitcoin network’s security mechanism, MAP Protocol strengthened its network security and serves as a Bitcoin layer-2 to enable BRC-20 cross-chain and allow assets and users to from other public chains interact with the Bitcoin network via peer-to-peer cross-chain.' components={{
+        link1: <Link target="_blank" href={"https://mapo.gitbook.io/docs-en/base/index_en-2/brc201"} ></Link>,
+      }} />
+    ,
   }, {
     cardTitle: t('The Bitcoin-level peer-to-peer cross-chain network'),
     cardContent: t("Similar to the “purely peer-to-peer” Bitcoin network, MAP Protocol’s cross-chain network is also peer-to-peer without going through any third party. The validity of a cross-chain request depends purely on the fact that it has occurred on the source chain, not on decisions or proofs made by trusted third parties."),
   },
   {
     cardTitle: t('The frontier for building anything cross-chain'),
-    cardContent: t('Cross-chain should be made easy. We provide a full suite of development tools, tutorials, and SDKs for you to build your cross-chain dApps or expand your chain connectivity with as little effort as possible. Building things cross-chain is as easy as building on a single chain.'),
-  }, {
+
+
+    cardContent: <Trans ns="home-page" i18nKey=
+      'Cross-chain should be made easy. We provide a full suite of development tools, tutorials, and SDKs for you to build your cross-chain dApps or expand your chain connectivity with as little effort as possible. Building things cross-chain is as easy as building on a single chain.' components={{
+        link1: <Link target="_blank" href={"https://mapo.gitbook.io/docs-en/"} ></Link>,
+      }} />,
+  },
+  {
     cardTitle: t('The infra for interoperable on-chain assets, storage, and computing'),
     cardContent: t('Interoperability goes beyond connecting different tokens on different chains. A truly decentralized Web3 is where assets, storage, and computing are all on-chain and interoperable. We provide the infrastructure for interoperable on-chain assets, storage, and computing.'),
   }]
