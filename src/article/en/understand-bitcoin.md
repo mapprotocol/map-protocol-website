@@ -48,7 +48,7 @@ Layer-2 solutions also open the door to new functionalities and applications, su
 
 By enhancing scalability, speed, and functionality, Layer-2 solutions play a critical role in the evolution of Bitcoin from a digital gold to a more versatile, financial infrastructure. As the adoption of Bitcoin continues to grow, the importance of these Layer-2 solutions cannot be overstated. 
 
-MAP Protocol is also a Bitcoin Layer 2, but more than that, it's the Layer 0 of all Bitcoin Layer 2s, aimed at achieving interoperability among numerous Bitcoin Layer 2s, making Bitcoin Layer 2 a unified interoperable ledger for the convenience of users and developers. For more information on this, please read [MAP Protocol as Bitcoin Layer 2](/article?id=map-as-bitcoin-layer2).
+MAP Protocol is also a Bitcoin Layer 2, but it extends beyond a single solution for Bitcoin scalability –  it is the Layer 0 of Bitcoin L2s, aimed at achieving interoperability among various Bitcoin L2s, turning different Bitcoin L2s into a unified interoperable ledger so that users and developers can more easily interact with the blockchain space. More on this, read [MAP Protocol as Bitcoin Layer 2](/article?id=map-as-bitcoin-layer2).
 
 _References:_
 
