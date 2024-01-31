@@ -333,7 +333,7 @@ Users who interact cross-chain through the front end usually feel the changes ha
 After the third step's transaction is packaged, the front end can prompt: "The zk-proof and cross-chain request have been processed by the target chain.
 
 
-## Further Ensure MAP Relay Chain Security through the Bitcoin Network
+## Further Ensure MAP Protocol Network Security through the Bitcoin Network
 
 
 Long-range attacks are a type of assault specifically aimed at Proof of Stake (PoS) systems. Attackers attempt to create a forked chain starting from the early history of the blockchain. If successful, this could redefine the authoritative historical record of the chain, leading to double-spending issues or undermining network trust. In the relay chain architectures, this issue is particularly critical because they often coordinate interactions between multiple independent blockchains within a network. If a relay chain suffers a long-range attack, it could impact all chains that rely on it as a basis for trust and communication.
@@ -364,7 +364,7 @@ The MOS layer includes Messenger, Vault & Data, and other cross-chain message co
 
 Messenger is an independent inter-chain program. It listens to relevant events as preset in the program and builds a proof on the ledger of the source chain; then transmits the message of the event and proof to Vault or Data on the target chain.
 
-Messenger prepays the gas fee in MAP Relay Chain and the target chain for users; but since the gas fee for target chains cannot be estimated, rewards for Messenger will be provided by dApps. The flexibility of the application provides Messenger with numerous possibilities. Applications can collect customizable transaction fees from omnichain users and consequently reward Messenger. As a main component of MOS, Messenger SDK is fully open to dApp developers.
+Messenger prepays the gas fee in MAP Protocol Network and the target chain for users; but since the gas fee for target chains cannot be estimated, rewards for Messenger will be provided by dApps. The flexibility of the application provides Messenger with numerous possibilities. Applications can collect customizable transaction fees from omnichain users and consequently reward Messenger. As a main component of MOS, Messenger SDK is fully open to dApp developers.
 
 Messenger is a high-concurrency inter-chain program. Theoretically, as long as one honest Messenger is working in between chains, all cross-chain transaction messages of the dApp can be transferred. Malicious attacks from Messengers will not result in asset loss, but rather, they will cause the cross-chain verification of MAP Protocol at the protocol layer to fail
 
@@ -438,14 +438,14 @@ The total supply of MAPO is 10 billion. MAP Protocol’s token allocation is in 
 * 21% are for Ecosystem DAO, not locked, and fully decided by the MAPO Community on how the token should be used. For MAPDAO governance, all major decisions that may impact community members need to be fully discussed on the MAP forum and subsequently be voted on-chain.
 * 12% are for MAP Foundation for building the initial state of the MAP Protocol ecosystem and the web3 omnichain ecosystem before it becomes fully decentralized.
 * 22% are for its investors and early supporters.
-* 30% are mining rewards for validators on MAP Relay Chain, and Maintainers.
+* 30% are mining rewards for validators on MAP Protocol Network, and Maintainers.
 
 
 ## Fee Model
 
-MAP Protocol will only charge the gas fee generated on MAP Relay Chain for each cross-chain transaction. Maintainer can get extra rewards from MAP Protocol for updating and maintaining Light-Clients.
+MAP Protocol will only charge the gas fee generated on MAP Protocol Network for each cross-chain transaction. Maintainer can get extra rewards from MAP Protocol for updating and maintaining Light-Clients.
 
-As an inter-chain program, Messenger is an essential part of MOS. Messenger needs to prepay the gas fees of MAP Relay Chain and the target chain for omnichain users. Fees on the target chain cannot be estimated, so MAP Protocol provides the Messenger SDK to developers. Application Layer provides the flexibility for dApp developers to determine the cross-chain transaction fee standard, rewards to Messengers, and their entry requirements.
+As an inter-chain program, Messenger is an essential part of MOS. Messenger needs to prepay the gas fees of MAP Protocol Network and the target chain for omnichain users. Fees on the target chain cannot be estimated, so MAP Protocol provides the Messenger SDK to developers. Application Layer provides the flexibility for dApp developers to determine the cross-chain transaction fee standard, rewards to Messengers, and their entry requirements.
 
 Vault & Data deployed on each chain are also essential parts of MAP Omnichain Service (MOS) Layer, responsible for managing assets (fungible tokens and NFTs) and data on each chain. For developers of Vault & Data, MOS will not charge any fees. Applications can determine the fee structure for sharing the liquidity in vaults and data pools at their discretion.
 
@@ -471,7 +471,7 @@ Each layer of MAP Protocol offers opportunities for community members to partici
 
 
 
-* Run a node and become a validator: Validators are the foundation of the MAP relay chain. Community members can stake a certain amount of $MAPO and run a node with required computational power. Community members can also delegate their $MAPO to validation node operators.
+* Run a node and become a validator: Validators are the foundation of the MAP Protocol Network. Community members can stake a certain amount of $MAPO and run a node with required computational power. Community members can also delegate their $MAPO to validation node operators.
 * Become a Maintainer: The value of Maintainers lies in updating the status of light clients deployed on the target chain, ensuring the smooth operation of the verification network. When a Maintainer updates a light client, a transaction must be written to the chain, incurring gas fees. Therefore, the MAP Protocol's economic model includes a separate component designed to incentivize and compensate Maintainers. Running as a Maintainer requires computational capacity, sufficient cash flow to prepay gas fees on the target chain, and staking $MAPO.
 
 
@@ -480,7 +480,7 @@ Each layer of MAP Protocol offers opportunities for community members to partici
 
 
 * Become a Liquidity Provider: Community members can provide liquidity to Vaults on each chain through dApps deployed within the MAP Protocol ecosystem. Each dApp designs its own incentive model.
-* Run Messenger: Running Messenger requires providing sufficient gas fees for the MAP relay chain ($MAPO) and the target chain (native tokens). Each dApp establishes its incentivization scheme.
+* Run Messenger: Running Messenger requires providing sufficient gas fees for the MAP Protocol Network ($MAPO) and the target chain (native tokens). Each dApp establishes its incentivization scheme.
 
 
 ## On Application Layer
@@ -524,14 +524,14 @@ With the rise of the cryptocurrency industry and the concept of the metaverse, m
 
 Omnichain and fully on-chain games extends beyond cross-chain but means that every aspect of the game other than the front end (the part of the game the player sees on their screen) is run solely using blockchain technology.  Even the narrative and governance for the development of the game will also be decentralized based on DAOs.
 
-MAP protocol supports different types of blockchains to cross-chain and interoperable. Through MAP Protocol, not only GameFi projects can connect to EVMs and non-EVMs, but also have their storage and computing on-chain. Additionally, since MAP Relay Chain actively connects with all types of chains, GameFi projects can fully focus on enhancing user experiences without concerning about any scalability and security issues.
+MAP protocol supports different types of blockchains to cross-chain and interoperable. Through MAP Protocol, not only GameFi projects can connect to EVMs and non-EVMs, but also have their storage and computing on-chain. Additionally, since MAP Protocol Network actively connects with all types of chains, GameFi projects can fully focus on enhancing user experiences without concerning about any scalability and security issues.
 
 
 ## On-Chain Data: On-chain Oracle and Derivatives
 
 Decentralized derivative and synthetic assets are usually constrained by the accuracy and timeliness of asset prices and quantities originating from other chains. Such issue can be solved by multi-chain deployment, but this is extremely complex.
 
-By building a reliable omnichain network, MAP Protocol has enabled Data cross-chain and is nurturing a completely new 预言机 (Oracle) market - On-Chain Oracle. By deploying on MAP Relay Chain, derivative and synthetic asset applications can easily acquire reliable multi-chain data from On-Chain Oracle.
+By building a reliable omnichain network, MAP Protocol has enabled Data cross-chain and is nurturing a completely new 预言机 (Oracle) market - On-Chain Oracle. By deploying on MAP Protocol Network, derivative and synthetic asset applications can easily acquire reliable multi-chain data from On-Chain Oracle.
 
 
 ## Omnichain Governance -- Aave
@@ -564,6 +564,6 @@ MAP Protocol is a Bitcoin layer-2 as well as a peer-to-peer omnichain network bu
 
 As an omnichain infrastructure, MAP Protocol does not rely on any trusted third party for cross-chain communication. The only trust is put in the code, which leverages the self-verifying nature of light clients to ensure cross-chain interaction in a completely peer-to-peer manner. When a cross-chain request occurs on the source chain, it is transmitted to the target chain via an off-chain role. Then, the light client deployed on the source chain will verify the validity of the cross-chain request sent by the off-chain role in a peer-to-peer manner.
 
-The security of MAP Protocol is further enhanced through the Bitcoin network.  All relevant information, such as epochs and the PoS consensus of the MAP relay chain, is written into the Bitcoin blockchain as transactions. This prevents[ long-range attacks](https://messari.io/report/long-range-attack) on the relay chain and further ensures the security of the relay chain by utilizing the security mechanisms of the Bitcoin network.
+The security of MAP Protocol is further enhanced through the Bitcoin network.  All relevant information, such as epochs and the PoS consensus of the MAP Protocol Network, is written into the Bitcoin blockchain as transactions. This prevents[ long-range attacks](https://messari.io/report/long-range-attack) on the relay chain and further ensures the security of the relay chain by utilizing the security mechanisms of the Bitcoin network.
 
 MAP Protocol is a flexible and innovative omnichain infrastructure as well as a platform for peer-to-peer cross-chain interoperability and Web3 dApp development, rather than a closed, single-use protocol specifically for a particular use case. It is open in terms of technical design and community development, and we look forward to serving as the foundation for many new financial and non-financial protocols.
