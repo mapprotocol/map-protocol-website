@@ -1,5 +1,5 @@
 ---
-title: "Add MAP Protocol Network and MAP to your wallets"
+title: "Add MAP Protocol and MAP to your wallets"
 description: 
 lang: en
 ---
@@ -7,9 +7,9 @@ lang: en
 Once you have chosen a wallet among Metamask, Token Pocket, and Particle Wallet, you can start adding MAP Protocol Network and MAP to the wallet. To get MAPO, please read where to [get MAPO](/get-map).
 
 
-# **Add MAP Protocol Network**
+# **Add MAP Protocol**
 
-_Note: MAPO is the ticker name for MAP Protocol’s native token on the MAP Protocol Network. To see MAPO in your wallet, simply add the MAP Protocol Network._
+_Note: MAPO is the ticker name for MAP Protocol’s native token on MAP Protocol. To see MAPO in your wallet, simply add MAP Protocol._
 
 
 ## **On Metamask**
@@ -22,7 +22,7 @@ There are two ways for you to add MAP Protocol Network or MAP Mainnet, directly 
 
     Pull out the Add Network option and add the network information as shown below.
 
-* Network name: MAP Protocol Network (You can also enter MAP Mainnet)
+* Network name: MAP Protocol 
 * New RPC URL: https://rpc.maplabs.io
 * Chain ID: 22776
 * Currency symbol: MAPO
@@ -47,7 +47,7 @@ There are two ways for you to add MAP Protocol Network or MAP Mainnet, directly 
 
 
 * Enter the Custom RPC page and either choose to enter the Chain info below or choose “Easy add” to visit Chainlist to add MAP Protocol Network.
-    * Network name: MAP Mainnet
+    * Network name: MAP Protocol
     * New RPC URL: https://rpc.maplabs.io
     * Chain ID: 22776
     * Currency symbol: MAPO
@@ -66,7 +66,7 @@ There are two ways for you to add MAP Protocol Network or MAP Mainnet, directly 
 
 
 * Log in to your [Particle Wallet](https://wallet.particle.network/) account.
-* Search and choose “MAP Protocol Network” in the search bar.
+* Search and choose “MAP Protocol” in the search bar.
 * Check the network name on the wallet page. 
 
 
@@ -77,7 +77,7 @@ There are two ways for you to add MAP Protocol Network or MAP Mainnet, directly 
 * Log in to your [Bitget Wallet](https://web3.bitget.com/en) on mobile or PC.
 * Click the network you’re on and go to the network selection page.
 * Click “Add a network” button
-* Search “MAP Protocol Network” and click the “+” sign to add the MAP Protocol network.
+* Search “MAP Protocol” and click the “+” sign to add the MAP Protocol network.
 * Check if you can switch to the MAP Protocol network.
 
 
