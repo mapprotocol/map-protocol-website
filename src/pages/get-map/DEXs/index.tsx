@@ -49,7 +49,7 @@ export default function GetMapDEXs() {
         cardTitle: 'Hiveswap',
         cardContent: 'Hiveswap supports token exchanges on the MAP Relay Chain. You can get MAPO right within Hiveswap.',
         cardLink: '',
-        swapLink: "https://swap.hiveswap.io/#/swap"
+        swapLink: "https://app.hiveswap.io/#/swap"
     },
     {
         cardTitle: 'Uniswap',
@@ -75,7 +75,7 @@ export default function GetMapDEXs() {
                 <div className={styles.swapTip}>
                     <Trans ns="get-map-1" i18nKey="You can get MAPO directly on Butter Swap and Hiveswap, and MAP on Uniswap, PancakeSwap, and Butter Swap." components={{
                         link1: <Link target="_blank" href={"https://www.butterswap.io/"} className={styles.linkText}></Link>,
-                        link2: <Link target="_blank" href={"https://swap.hiveswap.io/#/swap"} className={styles.linkText}></Link>,
+                        link2: <Link target="_blank" href={"https://app.hiveswap.io/#/swap"} className={styles.linkText}></Link>,
                         link3: <Link target="_blank" href={"https://app.uniswap.org/#/swap?outputCurrency=0x9e976f211daea0d652912ab99b0dc21a7fd728e4"} className={styles.linkText}></Link>,
                         link4: <Link target="_blank" href={"https://pancakeswap.finance/swap?inputCurrency=0x8105ECe4ce08B6B6449539A5db23e23b973DfA8f&outputCurrency=BNB"} className={styles.linkText}></Link>,
                         link5: <Link target="_blank" href={"https://www.butterswap.io/"} className={styles.linkText}></Link>
