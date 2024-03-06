@@ -26,7 +26,7 @@ interface QueryMaprelayeChainDataResponse {
 const queryMaprelayeChainData = async (params?: QueryDateParams): Promise<QueryMaprelayeChainDataResponse> => {
     const config: AxiosRequestConfig = {
         method: 'get',
-        url: 'https://makalu-api.mapscan.io/scan/queryMaprelayeChainData',
+        url: 'https://ms-mainnet-api.chainservice.io/scan/queryMaprelayeChainData',
         params,
     };
 
