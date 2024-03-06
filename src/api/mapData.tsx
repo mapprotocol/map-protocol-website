@@ -23,7 +23,7 @@ interface QueryDateResponse {
 const queryDate = async (params?: QueryDateParams): Promise<QueryDateResponse> => {
     const config: AxiosRequestConfig = {
         method: 'get', 
-        url: 'https://makalu-api.mapscan.io/scan/queryDate',
+        url: 'https://ms-mainnet-api.chainservice.io/scan/queryDate',
         params, 
     };
 
