@@ -57,7 +57,9 @@ export default function GetMapCEXs() {
                 link3: <Link target="_blank" href={"https://coinone.co.kr/exchange/trade/map/krw"} className={styles.linkText}></Link>,
                 link4: <Link target="_blank" href={"https://www.mexc.com/exchange/MAP_USDT?_from=search"} className={styles.linkText}></Link>,
                 link5: <Link target="_blank" href={"https://www.lbank.com/trade/mapo_usdt/"} className={styles.linkText}></Link>,
-                link6: <Link target="_blank" href={"https://www.htx.com.bo/en-us/trade/map_usdt?type=spot"} className={styles.linkText}></Link>
+                link6: <Link target="_blank" href={"https://www.htx.com.bo/en-us/trade/map_usdt?type=spot"} className={styles.linkText}></Link>,    
+                link7: <Link target="_blank" href={"https://www.Bitget.com/spot/MAPOUSDT"} className={styles.linkText}></Link>,
+                link8: <Link target="_blank" href={"https://www.gate.io/trade/MAPO_USDT"} className={styles.linkText}></Link>,
 
             }} /> </div>
 
