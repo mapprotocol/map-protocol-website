@@ -74,7 +74,7 @@ There are two ways for you to add MAP Protocol Network or MAP Mainnet, directly 
 
 ![alt_text](/images/article/images/add-map-relay-chain-4.png "image_tooltip")
 
-* Log in to your [Bitget Wallet](https://web3.bitget.com/en) on mobile or PC.
+* Log in to your [Bitget Wallet](https://web3.Bitget.com/en) on mobile or PC.
 * Click the network you’re on and go to the network selection page.
 * Click “Add a network” button
 * Search “MAP Protocol” and click the “+” sign to add the MAP Protocol network.

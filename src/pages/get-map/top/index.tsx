@@ -192,7 +192,9 @@ export default function GetMapTop(
               link1: <Link target="_blank" href={"https://www.kucoin.com/ko/trade/MAP-USDT"} className={styles.linkText}></Link>,
               link2: <Link target="_blank" href={"https://www.bithumb.com/react/trade/order/MAP-KRW"} className={styles.linkText}></Link>,
               link3: <Link target="_blank" href={"https://coinone.co.kr/exchange/trade/map/krw"} className={styles.linkText}></Link>,
-              link4: <Link target="_blank" href={"https://www.mexc.com/exchange/MAP_USDT?_from=search"} className={styles.linkText}></Link>
+              link4: <Link target="_blank" href={"https://www.mexc.com/exchange/MAP_USDT?_from=search"} className={styles.linkText}></Link>,
+              link5: <Link target="_blank" href={"https://www.Bitget.com/spot/MAPOUSDT"} className={styles.linkText}></Link>,
+              link6: <Link target="_blank" href={"https://www.gate.io/trade/MAPO_USDT"} className={styles.linkText}></Link>,
 
             }} /></div>
           <div className={styles.mapoContent}>{t("Currently, MAP is available on Ethereum, BNB Smart Chain, and Polygon; MAPO is on MAP Relay Chain. You can get MAP on both centralized and decentralized exchanges, and MAPO on decentralized exchanges only.")}</div>

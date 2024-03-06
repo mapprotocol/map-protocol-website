@@ -44,8 +44,8 @@ export default function Body(
   },
   {
     cardTitle: 'Bitget Wallet',
-    src: "/images/find-a-wallet/bitget.png",
-    webSite: 'https://web3.bitget.com/',
+    src: "/images/find-a-wallet/Bitget.png",
+    webSite: 'https://web3.Bitget.com/',
     x: "https://twitter.com/BitgetWallet",
   }]
   return (
