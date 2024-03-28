@@ -18,17 +18,6 @@ lang: zh
 
 [MAP Protocol 验证者](https://forum.mapprotocol.io/t/about-the-validator-category/3943) – 我们的验证者使用这个空间来介绍他们自己，为什么 MAP 成员应该为他们投票，潜在的验证者寻求支持，以及成员可以就验证者进行一般讨论。
 
-# **聊天室**
-
-[打个招呼和聊天](https://discord.gg/BCqhGdEa) – 发送一个“Hi”并开始聊天
-
-[普通聊天](https://discord.gg/waPmuCkD)– 面向社区的，聊任何关于 MAP Protocol 的事情
-
-[Turkish-türkçe](https://discord.gg/WAEaqDwU) – 为讲土耳其语的成员设置的聊天室
-
-[Chinese-华语](https://discord.gg/UzcDZYce) - 为讲中文的成员设置的聊天室
-
-[Korean- 한국어](https://discord.gg/jKgs5egU)– 为讲韩语的成员设置的聊天室
 
 # **社交媒体**
 

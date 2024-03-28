@@ -87,7 +87,7 @@ export default function HomePageTop(
       title: t('MAP Protocol events'),
       boxShadow: "#DAD4FF",
       desc: t('Find and participate in MAP Protocol conferences, hackathons, or meetups.'),
-      src: 'https://discord.com/invite/kt4beeTVnw'
+      src: ''
     },
     {
       width: '306px',
