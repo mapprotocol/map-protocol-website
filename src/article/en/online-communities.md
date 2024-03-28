@@ -21,19 +21,6 @@ Hundreds of thousands of MAP Protocol members gather in these online forums to s
 [MAP Protocol validators](https://forum.mapprotocol.io/t/about-the-validator-category/3943) – our validators use this space to introduce themselves, give a pitch on why the MAP members should vote for them, where would-be validators seek support, and where members can have general discussions on validators.
 
 
-# **Chat rooms**
-
-[Say hi and chat](https://discord.gg/BCqhGdEa) – drop a “Hi” and start to chat
-
-[General chat ](https://discord.gg/waPmuCkD)–  community-oriented, chat anything about MAP Protocol
-
-[Turkish-türkçe](https://discord.gg/WAEaqDwU) – chat room for Turkish-speaking members
-
-[Chinese-华语](https://discord.gg/UzcDZYce) - chat room for Chinese-speaking members
-
-[Korean- 한국어](https://discord.gg/jKgs5egU)– chat room for Korean-speaking members
-
-
 # **Social Media**
 
 Telegram [@MAPprotocol ](https://t.me/MAPprotocol)– the only official Telegram community of MAP Protocol

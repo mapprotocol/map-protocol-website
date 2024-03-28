@@ -16,10 +16,6 @@ const iconArray = [
         link: 'https://blog.naver.com/mapprotocol'
     },
     {
-        src: '/fonts/discord.svg',
-        link: 'https://discord.com/invite/kt4beeTVnw'
-    },
-    {
         src: '/fonts/github.svg',
         link: 'https://github.com/mapprotocol'
     },
