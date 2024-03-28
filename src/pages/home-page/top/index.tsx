@@ -134,6 +134,12 @@ export default function HomePageTop(
         <link rel="icon" href="/images/logo-h5.png" />
       </Head>
       <div dir="ltr" className={fade} >
+        
+        {/* <iframe
+          src="https://bnb-reiki.web3go.xyz/aiweb/chatbot/4vdiUIU1cOZFXQwQ"
+          frameborder="0"
+          allow="microphone">
+        </iframe> */}
         <div className={styles.homepageImage} >
           {imageArray.map((item, index) =>
             <div
