@@ -11,7 +11,7 @@ type Props = {}
 import Image from 'next/image'
 import axios from 'axios'
 
-export default function aiHelp(
+export default function AiHelp(
     _props: InferGetServerSidePropsType<typeof getServerSideProps>
 ) {
     const [chatCard, setChatCard] = useState<any[]>([])
@@ -110,7 +110,7 @@ export default function aiHelp(
                 <div className={styles.title}>MAP Protocol AI Assistant</div>
                 <div className={styles.chatContent}>
                     <div ref={scrollRef} className={styles.chatCards}>
-                        {chatCard.map(item => <div className={styles.chatCard}
+                        {chatCard.map((item,index) => <div key={index} className={styles.chatCard}
                             style={{
                                 justifyContent: item.type == 0 ? 'start' : 'end'
                             }}>
