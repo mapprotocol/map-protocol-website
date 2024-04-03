@@ -19,22 +19,20 @@ export default function AiHelp(
     const scrollRef = useRef(null);
 
     const [loading, setLoading] = useState(false)
-    const useIsomorphicLayoutEffect =
-        typeof window !== 'undefined' ? useLayoutEffect : useEffect;
-    useIsomorphicLayoutEffect(() => {
+
+    useLayoutEffect(() => {
         const scrollDiv = scrollRef.current;
 
         if (scrollDiv) {
             //@ts-ignore
             scrollDiv.scrollTop = scrollDiv.scrollHeight;
         }
-    }, [chatCard]); // 添加你的数据作为依赖
+    }, [chatCard]);
+
     useEffect(() => {
 
         if (localStorage.getItem("chatContent")) {
             setChatCard(JSON.parse(localStorage.getItem("chatContent") as string))
-
-
         }
     }, [])
 
@@ -42,12 +40,12 @@ export default function AiHelp(
         if (event.key === 'Enter') {
             sendMessage()
         }
-        localStorage.setItem("chatContent", "")
+     
 
     }
     const clear = () => {
         setChatCard([])
-
+        localStorage.setItem("chatContent", "")
     }
     const sendMessage = () => {
         if (!inputValue || loading)
@@ -110,7 +108,7 @@ export default function AiHelp(
                 <div className={styles.title}>MAP Protocol AI Assistant</div>
                 <div className={styles.chatContent}>
                     <div ref={scrollRef} className={styles.chatCards}>
-                        {chatCard.map((item,index) => <div key={index} className={styles.chatCard}
+                        {chatCard.map((item, index) => <div key={index} className={styles.chatCard}
                             style={{
                                 justifyContent: item.type == 0 ? 'start' : 'end'
                             }}>
