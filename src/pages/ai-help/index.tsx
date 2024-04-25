@@ -143,7 +143,6 @@ export default function AiHelp(
                             <Image
                                 width={36}
                                 height={36}
-
                                 className={styles.sendButton}
                                 src="/images/send.jpg"
                                 alt="" />
