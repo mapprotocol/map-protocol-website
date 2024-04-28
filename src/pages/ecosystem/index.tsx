@@ -493,7 +493,7 @@ export default function Language(
       </div>
       <div className={styles.select}>
         <FormControl fullWidth>
-          <InputLabel id="demo-simple-select-standard-label">category</InputLabel>
+          <InputLabel id="demo-simple-select-standard-label">Category</InputLabel>
           <Select
             labelId="demo-simple-select-standard-label"
             id="demo-simple-select-standard"
