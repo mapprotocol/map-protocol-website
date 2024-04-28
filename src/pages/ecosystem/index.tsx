@@ -53,8 +53,132 @@ const tagColor = {
 
 export const languageCards: Array<project> = [
   {
+    name: 'Ethereum',
+    desc: "Ethereum is the community-run technology powering the cryptocurrency ether (ETH) and thousands of decentralized applications.",
+    tag: 'Layer1',
+    image: "https://pbs.twimg.com/profile_images/1627642622645878784/TP1GH9TM_400x400.jpg",
+    website: 'https://ethereum.org/en/',
+    x: 'https://twitter.com/ethereum',
+  },
+
+  {
+    name: 'BNB Chain',
+    desc: "A community-driven blockchain ecosystem of Layer-1 and Layer-2 scaling solutions.",
+    tag: 'Layer1',
+    image: "https://pbs.twimg.com/profile_images/1565354861616832513/ovh5FyDN_400x400.png",
+    website: 'https://www.bnbchain.org/en',
+    x: 'https://twitter.com/BNBChain',
+  },
+
+  {
+    name: 'Polygon',
+    desc: "Enabling an infinitely scalable web of sovereign blockchains that feels like a single chain. Powered by ZK tech.",
+    tag: 'Layer2',
+    image: "https://pbs.twimg.com/profile_images/1781425963265327104/TB5fMI9O_x96.jpg",
+    website: 'https://polygon.technology/',
+    x: 'https://twitter.com/0xPolygon',
+  },
+
+  {
+    name: 'Klaytn',
+    desc: "Klaytn is an open source public blockchain designed for tomorrow’s on-chain world.",
+    tag: 'Layer1',
+    image: "https://pbs.twimg.com/profile_images/1747551844405297152/732rFLWS_x96.jpg",
+    website: 'https://klaytn.foundation/',
+    x: 'https://twitter.com/klaytn_official',
+  },
+
+  {
+    name: 'Base',
+    desc: "A new Ethereum L2, incubated by Coinbase and built on the open-source OP Stack. We have no plans to issue a new network token.",
+    tag: 'Layer2',
+    image: "https://pbs.twimg.com/profile_images/1484586799921909764/A9yYenz3_bigger.png",
+    website: 'https://www.base.org/',
+    x: 'https://twitter.com/base',
+  },
+
+  {
+    name: 'Blast',
+    desc: "The L2 with native yield.",
+    tag: 'Layer2',
+    image: "https://pbs.twimg.com/profile_images/1726739354700173312/OeT9Ef1J_400x400.jpg",
+    website: 'https://blast.io/en',
+    x: 'https://twitter.com/Blast_L2',
+  },
+
+  {
+    name: 'zkSync',
+    desc: "Scaling Ethereum’s technology and values.",
+    tag: 'Layer2',
+    image: "https://pbs.twimg.com/profile_images/1647563917349060608/S1P_lNAN_400x400.jpg",
+    website: 'https://zksync.io/',
+    x: 'https://twitter.com/zksync',
+  },
+
+
+  {
+    name: 'NEAR',
+    desc: "Delivering on the promises of Web3, with Chain Abstraction.",
+    tag: 'Layer1',
+    image: "https://pbs.twimg.com/profile_images/1631021064171196431/_ahCp9jR_400x400.jpg",
+    website: 'https://near.org/',
+    x: 'https://twitter.com/NEARProtocol',
+  },
+  {
+    name: 'Merlin Chain',
+    desc: "A Native Bitcoin Layer2 powered by BitmapTech, building upon the native assets, protocols, and products on Bitcoin Layer1, to Make #Bitcoin Fun Again.",
+    tag: 'Layer2',
+    image: "https://pbs.twimg.com/profile_images/1752499460175962112/C4IPI-zt_x96.jpg",
+    website: 'https://zksync.io/',
+    x: 'https://twitter.com/MerlinLayer2',
+  },
+  {
+    name: 'BEVM',
+    desc: "BEVM is the first fully decentralized EVM-compatible Bitcoin L2 that uses BTC as Gas. It allows all DApps which can run in the Ethereum ecosystem to operate on Bitcoin L2.",
+    tag: 'Layer2',
+    image: "https://pbs.twimg.com/profile_images/1738138565874425856/xOG10LN0_400x400.jpg",
+    website: 'https://zksync.io/',
+    x: 'https://twitter.com/BTClayer2',
+  },
+  {
+    name: 'AINN Layer2',
+    desc: "The Ultimate AI-modular Bitcoin Layer2 solution.",
+    tag: 'Layer2',
+    image: "https://pbs.twimg.com/profile_images/1763669638033084416/Zlup0Y1B_x96.jpg",
+    website: 'https://zksync.io/',
+    x: 'https://twitter.com/AINNLayer2',
+  },
+
+  {
+    name: 'MerlinStarter',
+    desc: "The 1st native launchpad on Merlin Chain. The accelerator for all #BTCLayer2 projects.",
+    tag: 'Launchpad',
+    image: "https://pbs.twimg.com/profile_images/1760956700981698561/i0vaeLiR_normal.jpg",
+    website: 'https://merlinstarter.com/',
+    x: 'https://twitter.com/Merlin_Starter',
+  },
+
+  {
+    name: 'BSquaredNetwork',
+    desc: "The Most Practical Bitcoin Layer-2 Network .The First Bitcoin DA Layer.",
+    tag: 'Layer2',
+    image: "https://pbs.twimg.com/profile_images/1722440713886130176/JxGtDv9Y_x96.jpg",
+    website: 'https://www.bsquared.network/',
+    x: 'https://twitter.com/BSquaredNetwork',
+  },
+
+  {
+    name: 'Conflux',
+    desc: "Blockchain Without Barriers.Conflux enables creators, communities, and markets to connect across borders and protocols.",
+    tag: 'Layer1',
+    image: "https://pbs.twimg.com/profile_images/1742189475072008192/b4Bi3zUv_400x400.png",
+    website: 'https://confluxnetwork.org/en',
+    x: 'https://twitter.com/Conflux_Network',
+  },
+
+  {
     name: 'LessGas',
-    desc: 'LessGas is inscription platform with ultra-low gas fees, 0 failure &  0 congestion, deployed on Bitcoin L2s',
+    desc: 'LessGas is inscription platform with ultra-low gas fees, 0 failure &  0 congestion, deployed on Bitcoin L2s.',
     tag: 'Launchpad',
     image: "https://pbs.twimg.com/profile_images/1734191984175353856/zQDl03Yb_400x400.jpg",
     website: 'https://app.lessgas.xyz/',
@@ -131,7 +255,7 @@ export const languageCards: Array<project> = [
 
   {
     name: 'rootMUD',
-    desc: "rootMUD is an AI-powered text-based virtual web3 community & buidl the autonomous AI Agent network",
+    desc: "rootMUD is an AI-powered text-based virtual web3 community & buidl the autonomous AI Agent network.",
     tag: 'AI',
     image: "https://pbs.twimg.com/profile_images/1744641658262872064/D3mOmDur_x96.jpg",
     website: 'https://rootmud.xyz/',
@@ -158,7 +282,7 @@ export const languageCards: Array<project> = [
 
   {
     name: 'Mirak Finance',
-    desc: "Miark Finance is an all-in-one Bitcoin farming solution, offering Yield Farming, Lending, Staking, Restaking, and more for streamlined investment growth",
+    desc: "Miark Finance is an all-in-one Bitcoin farming solution, offering Yield Farming, Lending, Staking, Restaking, and more for streamlined investment growth.",
     tag: 'DEX',
     image: "https://pbs.twimg.com/profile_images/1754820780301459456/V1a8f3-A_200x200.jpg",
     website: 'https://www.mirak.finance/',
@@ -168,7 +292,7 @@ export const languageCards: Array<project> = [
 
   {
     name: 'DRPX',
-    desc: "DRPX is your gateway to effortless token innovation, cross-chain synergy, and smart contract automation, harmonizing with Bitcoin Layer2",
+    desc: "DRPX is your gateway to effortless token innovation, cross-chain synergy, and smart contract automation, harmonizing with Bitcoin Layer2.",
     tag: 'Infra',
     image: "https://pbs.twimg.com/profile_images/1760950392026693632/OJQ92ryL_x96.jpg",
     website: 'https://t.me/DropX_DAO',
@@ -185,7 +309,7 @@ export const languageCards: Array<project> = [
   },
   {
     name: 'POP2',
-    desc: "Candy Designer open source community, copyright-free open source material, Mapo-based NFT platform",
+    desc: "Candy Designer open source community, copyright-free open source material, Mapo-based NFT platform.",
     tag: 'NFT',
     image: "https://pbs.twimg.com/profile_images/1755809473149763584/mxGrCMWX_x96.jpg",
     website: 'https://pop2.io/#/',
@@ -213,7 +337,7 @@ export const languageCards: Array<project> = [
 
   {
     name: 'Bitscale Labs',
-    desc: "Infuse AI power into the BTC network for mass adoption",
+    desc: "Infuse AI power into the BTC network for mass adoption.",
     tag: 'AI',
     image: "https://pbs.twimg.com/profile_images/1543950982828023808/EEFbeEL9_400x400.jpg",
     website: 'https://www.bitscale.one/',
@@ -240,7 +364,7 @@ export const languageCards: Array<project> = [
 
   {
     name: 'Particle Wallet',
-    desc: "The Modular L1 Powering Chain Abstraction ✨",
+    desc: "The Modular L1 Powering Chain Abstraction ✨.",
     tag: 'Wallet',
     image: "https://pbs.twimg.com/profile_images/1623919818108997633/o2JfMaqi_x96.png",
     website: 'https://wallet-debug.particle.network/',
@@ -258,7 +382,7 @@ export const languageCards: Array<project> = [
 
   {
     name: 'TrustGo',
-    desc: "Build The AI-Powered Identity and Reputation Layer for Web3",
+    desc: "Build The AI-Powered Identity and Reputation Layer for Web3.",
     tag: 'Infra',
     image: "https://pbs.twimg.com/profile_images/1690974162049982464/ef1r05g1_400x400.jpg",
     website: 'https://www.trustalabs.ai/',
@@ -304,7 +428,7 @@ export const languageCards: Array<project> = [
 
   {
     name: 'Babylon',
-    desc: "Unlocking 21 Million Bitcoins to Secure the Decentralized Economy ",
+    desc: "Unlocking 21 Million Bitcoins to Secure the Decentralized Economy.",
     tag: 'DeFi',
     image: "https://pbs.twimg.com/profile_images/1781168613661274112/DVPEQLrM_x96.jpg",
     website: 'https://babylonchain.io/',
@@ -312,133 +436,10 @@ export const languageCards: Array<project> = [
   },
 
 
-  {
-    name: 'Ethereum',
-    desc: "Ethereum is the community-run technology powering the cryptocurrency ether (ETH) and thousands of decentralized applications.",
-    tag: 'Layer1',
-    image: "https://pbs.twimg.com/profile_images/1627642622645878784/TP1GH9TM_400x400.jpg",
-    website: 'https://ethereum.org/en/',
-    x: 'https://twitter.com/ethereum',
-  },
-
-  {
-    name: 'BNB Chain',
-    desc: "A community-driven blockchain ecosystem of Layer-1 and Layer-2 scaling solutions.",
-    tag: 'Layer1',
-    image: "https://pbs.twimg.com/profile_images/1565354861616832513/ovh5FyDN_400x400.png",
-    website: 'https://www.bnbchain.org/en',
-    x: 'https://twitter.com/BNBChain',
-  },
-
-  {
-    name: 'Polygon',
-    desc: "Enabling an infinitely scalable web of sovereign blockchains that feels like a single chain. Powered by ZK tech.",
-    tag: 'Layer2',
-    image: "https://pbs.twimg.com/profile_images/1781425963265327104/TB5fMI9O_x96.jpg",
-    website: 'https://polygon.technology/',
-    x: 'https://twitter.com/0xPolygon',
-  },
-
-  {
-    name: 'Klaytn',
-    desc: "Klaytn is an open source public blockchain designed for tomorrow’s on-chain world.",
-    tag: 'Layer1',
-    image: "https://pbs.twimg.com/profile_images/1747551844405297152/732rFLWS_x96.jpg",
-    website: 'https://klaytn.foundation/',
-    x: 'https://twitter.com/klaytn_official',
-  },
-
-  {
-    name: 'Base',
-    desc: "A new Ethereum L2, incubated by Coinbase and built on the open-source OP Stack. We have no plans to issue a new network token.",
-    tag: 'Layer2',
-    image: "https://pbs.twimg.com/profile_images/1484586799921909764/A9yYenz3_bigger.png",
-    website: 'https://www.base.org/',
-    x: 'https://twitter.com/base',
-  },
-
-  {
-    name: 'Blast',
-    desc: "The L2 with native yield.",
-    tag: 'Layer2',
-    image: "https://pbs.twimg.com/profile_images/1726739354700173312/OeT9Ef1J_400x400.jpg",
-    website: 'https://blast.io/en',
-    x: 'https://twitter.com/Blast_L2',
-  },
-
-  {
-    name: 'zkSync',
-    desc: "Scaling Ethereum’s technology and values",
-    tag: 'Layer2',
-    image: "https://pbs.twimg.com/profile_images/1647563917349060608/S1P_lNAN_400x400.jpg",
-    website: 'https://zksync.io/',
-    x: 'https://twitter.com/zksync',
-  },
-
-
-  {
-    name: 'NEAR',
-    desc: "Delivering on the promises of Web3, with Chain Abstraction.",
-    tag: 'Layer1',
-    image: "https://pbs.twimg.com/profile_images/1631021064171196431/_ahCp9jR_400x400.jpg",
-    website: 'https://near.org/',
-    x: 'https://twitter.com/NEARProtocol',
-  },
-  {
-    name: 'Merlin Chain',
-    desc: "A Native Bitcoin Layer2 powered by BitmapTech, building upon the native assets, protocols, and products on Bitcoin Layer1, to Make #Bitcoin Fun Again",
-    tag: 'Layer2',
-    image: "https://pbs.twimg.com/profile_images/1752499460175962112/C4IPI-zt_x96.jpg",
-    website: 'https://zksync.io/',
-    x: 'https://twitter.com/MerlinLayer2',
-  },
-  {
-    name: 'BEVM',
-    desc: "BEVM is the first fully decentralized EVM-compatible Bitcoin L2 that uses BTC as Gas. It allows all DApps which can run in the Ethereum ecosystem to operate on Bitcoin L2",
-    tag: 'Layer2',
-    image: "https://pbs.twimg.com/profile_images/1738138565874425856/xOG10LN0_400x400.jpg",
-    website: 'https://zksync.io/',
-    x: 'https://twitter.com/BTClayer2',
-  },
-  {
-    name: 'AINN Layer2',
-    desc: "The Ultimate AI-modular Bitcoin Layer2 solution",
-    tag: 'Layer2',
-    image: "https://pbs.twimg.com/profile_images/1763669638033084416/Zlup0Y1B_x96.jpg",
-    website: 'https://zksync.io/',
-    x: 'https://twitter.com/AINNLayer2',
-  },
-
-  {
-    name: 'MerlinStarter',
-    desc: "The 1st native launchpad on Merlin Chain. The accelerator for all #BTCLayer2 projects.",
-    tag: 'Launchpad',
-    image: "https://pbs.twimg.com/profile_images/1760956700981698561/i0vaeLiR_normal.jpg",
-    website: 'https://merlinstarter.com/',
-    x: 'https://twitter.com/Merlin_Starter',
-  },
-
-  {
-    name: 'BSquaredNetwork',
-    desc: "The Most Practical Bitcoin Layer-2 Network | The First Bitcoin DA Layer | B² Buzz |",
-    tag: 'Layer2',
-    image: "https://pbs.twimg.com/profile_images/1722440713886130176/JxGtDv9Y_x96.jpg",
-    website: 'https://www.bsquared.network/',
-    x: 'https://twitter.com/BSquaredNetwork',
-  },
-
-  {
-    name: 'Conflux',
-    desc: "Blockchain Without Barriers.Conflux enables creators, communities, and markets to connect across borders and protocols",
-    tag: 'Layer1',
-    image: "https://pbs.twimg.com/profile_images/1742189475072008192/b4Bi3zUv_400x400.png",
-    website: 'https://confluxnetwork.org/en',
-    x: 'https://twitter.com/Conflux_Network',
-  },
-
+ 
   {
     name: 'TrustWallet',
-    desc: "The worlds most trusted & secure #crypto wallet & #Web3 gateway, with 100 million+ users.",
+    desc: "The worlds most trusted & secure crypto wallet & Web3 gateway, with 100 million+ users.",
     tag: 'Wallet',
     image: "https://pbs.twimg.com/profile_images/1744535601574301696/B6nMXZBV_400x400.jpg",
     website: 'https://trustwallet.com/download?utm_source=twitter&utm_medium=about_section&utm_campaign=branding',
@@ -492,7 +493,7 @@ export default function Language(
       </div>
       <div className={styles.select}>
         <FormControl fullWidth>
-          <InputLabel id="demo-simple-select-standard-label">Type</InputLabel>
+          <InputLabel id="demo-simple-select-standard-label">category</InputLabel>
           <Select
             labelId="demo-simple-select-standard-label"
             id="demo-simple-select-standard"

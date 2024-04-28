@@ -20,10 +20,6 @@ export interface TabsArray {
     [key: string]: TabItem[];
 }
 export const tabsArray: TabsArray = {
-    'AI':[{
-        name: 'AI help',
-        path: '/ai-help'
-    },],
     'Bitcoin layer-2': [
         {
             name: 'Understand Bitcoin layer-2',
@@ -60,6 +56,10 @@ export const tabsArray: TabsArray = {
         {
             name: 'Find a wallet',
             path: '/find-a-wallet'
+        },
+        {
+            name: 'MAPO Ecosystem',
+            path: '/ecosystem'
         },
         {
             name: 'Get MAPO',
@@ -255,7 +255,7 @@ export const tabsArray: TabsArray = {
     ]
 }
 export const tabs = [
-    'AI','Bitcoin layer-2', 'Use MAP Protocol', 'Learn', 'Developer', 'Enterprise', 'Community'
+    'Bitcoin layer-2', 'Use MAP Protocol', 'Learn', 'Developer', 'Enterprise', 'Community'
 
 ]
 const Header = (
