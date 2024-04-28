@@ -41,7 +41,14 @@ const tagColor = {
   "NFT": "#C584F1",
   "Infra": "#FFC8AB",
   "RWA": "#D4EDBC",
-  "Bridge": "#BFE1F6"
+  "Bridge": "#BFE1F6",
+  "Liquid Staking": "#927AB3",
+  "Wallet": "#FFC8AA",
+  "Layer1": "#B28BEB",
+  "Layer2": "#F19FDD",
+  "DeFi": "#ECDB0F"
+
+
 }
 
 export const languageCards: Array<project> = [
@@ -84,6 +91,14 @@ export const languageCards: Array<project> = [
     image: "https://pbs.twimg.com/profile_images/1749358202985295872/FcxNf6dw_x96.png",
     website: 'https://supra.com/',
     x: 'https://twitter.com/SUPRA_Labs',
+  },
+  {
+    name: 'StaQ',
+    desc: 'Liquidity for staked tokens in the Bitcoin L2 ecosystem.',
+    tag: 'Liquid Staking',
+    image: "https://pbs.twimg.com/profile_images/1765225598535032832/RqX3YFvK_400x400.jpg",
+    website: 'https://bitstaq.io/',
+    x: 'https://twitter.com/StaQ_io',
   },
 
   {
@@ -194,6 +209,212 @@ export const languageCards: Array<project> = [
     website: 'http://app.bitrealms.ai/',
     x: 'https://twitter.com/BitRealms_web3',
   },
+  {
+    name: 'Consensus Core',
+    desc: "The high-performance GPU  infrastructure for AI and the Cloud Partner of NVIDIA.",
+    tag: 'AI',
+    image: "https://pbs.twimg.com/profile_images/1062827295067463680/LPMZQ5i6_400x400.jpg",
+    website: 'https://www.consensuscore.com/',
+    x: 'https://twitter.com/consensuscore',
+  },
+
+  {
+    name: 'Bitscale Labs',
+    desc: "Infuse AI power into the BTC network for mass adoption",
+    tag: 'AI',
+    image: "https://pbs.twimg.com/profile_images/1543950982828023808/EEFbeEL9_400x400.jpg",
+    website: 'https://www.bitscale.one/',
+    x: 'https://twitter.com/BitscaleLabs',
+  },
+
+  {
+    name: 'Friend3AI',
+    desc: "Make friends & profits with Friend3 | An open #SocialFi platform that blends social dApp, inscriptions marketplace, AI, BTC eco, & trending tech.",
+    tag: 'AI',
+    image: "https://pbs.twimg.com/profile_images/1744435081140387841/OkWORgfK_400x400.jpg",
+    website: 'https://friend3.group/',
+    x: 'https://twitter.com/Friend3AI',
+  },
+
+  {
+    name: 'Bitget Wallet',
+    desc: "Join 20M users in seamlessly navigating the Web3 space with Bitget Wallet-Your Web3 Trading Wallet of the Future.",
+    tag: 'Wallet',
+    image: "https://pbs.twimg.com/profile_images/1742532543507992576/Kg_Q4dU__400x400.png",
+    website: 'https://web3.bitget.com/en',
+    x: 'https://twitter.com/BitgetWallet',
+  },
+
+  {
+    name: 'Particle Wallet',
+    desc: "The Modular L1 Powering Chain Abstraction ✨",
+    tag: 'Wallet',
+    image: "https://pbs.twimg.com/profile_images/1623919818108997633/o2JfMaqi_x96.png",
+    website: 'https://wallet-debug.particle.network/',
+    x: 'https://twitter.com/ParticleNtwrk',
+  },
+
+  {
+    name: 'Rabby Wallet',
+    desc: "The game-changing wallet for Ethereum and all EVM chains.",
+    tag: 'Wallet',
+    image: "https://pbs.twimg.com/profile_images/1414514212915748873/Grz0B2t2_400x400.jpg",
+    website: 'https://rabby.io/',
+    x: 'https://twitter.com/Rabby_io',
+  },
+
+  {
+    name: 'TrustGo',
+    desc: "Build The AI-Powered Identity and Reputation Layer for Web3",
+    tag: 'Infra',
+    image: "https://pbs.twimg.com/profile_images/1690974162049982464/ef1r05g1_400x400.jpg",
+    website: 'https://www.trustalabs.ai/',
+    x: 'https://twitter.com/TrustaLabs',
+  },
+
+  {
+    name: 'Solv Protocol',
+    desc: "Shaping the Future of BTCFi With SolvBTC, the World’s First Ever Yield Bearing Bitcoin. Backed by  BinanceLabs and Bockchaincap.",
+    tag: 'Defi',
+    image: "https://pbs.twimg.com/profile_images/1638065819581300737/gM2GUNLi_400x400.jpg",
+    website: 'https://solv.finance/',
+    x: 'https://twitter.com/SolvProtocol',
+  },
+
+  // {
+  //   name: 'GreenBTC Club',
+  //   desc: "SClimate Actions For Greening BTC",
+  //   tag: 'Infra',
+  //   image: "https://pbs.twimg.com/profile_images/1638065819581300737/gM2GUNLi_400x400.jpg",
+  //   website: 'https://www.greenbtc.club/?channel=mapprotocol',
+  //   x: 'https://twitter.com/SolvProtocol',
+  // },
+
+
+  {
+    name: 'Bitsmiley',
+    desc: "BTC-Native stablecoin protocol. BTC-Native AMM.",
+    tag: 'Defi',
+    image: "https://pbs.twimg.com/profile_images/1742786697606340608/449zhZuK_400x400.jpg",
+    website: 'https://www.bitsmiley.io/',
+    x: 'https://twitter.com/bitsmiley_labs',
+  },
+
+  {
+    name: 'Surf Protocol',
+    desc: "The Defi Hub on Bitcoin Ecosystem.",
+    tag: 'DEX',
+    image: "https://pbs.twimg.com/profile_images/1710521347670257664/Pq8lYeHT_x96.png",
+    website: 'https://www.surf.one/',
+    x: 'https://twitter.com/surf_protocol',
+  },
+
+  {
+    name: 'Babylon',
+    desc: "Unlocking 21 Million Bitcoins to Secure the Decentralized Economy ",
+    tag: 'DeFi',
+    image: "https://pbs.twimg.com/profile_images/1781168613661274112/DVPEQLrM_x96.jpg",
+    website: 'https://babylonchain.io/',
+    x: 'https://twitter.com/babylon_chain',
+  },
+
+
+  {
+    name: 'Ethereum',
+    desc: "Ethereum is the community-run technology powering the cryptocurrency ether (ETH) and thousands of decentralized applications.",
+    tag: 'Layer1',
+    image: "https://pbs.twimg.com/profile_images/1627642622645878784/TP1GH9TM_400x400.jpg",
+    website: 'https://ethereum.org/en/',
+    x: 'https://twitter.com/ethereum',
+  },
+
+  {
+    name: 'BNB Chain',
+    desc: "A community-driven blockchain ecosystem of Layer-1 and Layer-2 scaling solutions.",
+    tag: 'Layer1',
+    image: "https://pbs.twimg.com/profile_images/1565354861616832513/ovh5FyDN_400x400.png",
+    website: 'https://www.bnbchain.org/en',
+    x: 'https://twitter.com/BNBChain',
+  },
+
+  {
+    name: 'Polygon',
+    desc: "Enabling an infinitely scalable web of sovereign blockchains that feels like a single chain. Powered by ZK tech.",
+    tag: 'Layer2',
+    image: "https://pbs.twimg.com/profile_images/1781425963265327104/TB5fMI9O_x96.jpg",
+    website: 'https://polygon.technology/',
+    x: 'https://twitter.com/0xPolygon',
+  },
+
+  {
+    name: 'Klaytn',
+    desc: "Klaytn is an open source public blockchain designed for tomorrow’s on-chain world.",
+    tag: 'Layer1',
+    image: "https://pbs.twimg.com/profile_images/1747551844405297152/732rFLWS_x96.jpg",
+    website: 'https://klaytn.foundation/',
+    x: 'https://twitter.com/klaytn_official',
+  },
+
+  {
+    name: 'Base',
+    desc: "A new Ethereum L2, incubated by Coinbase and built on the open-source OP Stack. We have no plans to issue a new network token.",
+    tag: 'Layer2',
+    image: "https://pbs.twimg.com/profile_images/1484586799921909764/A9yYenz3_bigger.png",
+    website: 'https://www.base.org/',
+    x: 'https://twitter.com/base',
+  },
+
+  {
+    name: 'Blast',
+    desc: "The L2 with native yield.",
+    tag: 'Layer2',
+    image: "https://pbs.twimg.com/profile_images/1726739354700173312/OeT9Ef1J_400x400.jpg",
+    website: 'https://blast.io/en',
+    x: 'https://twitter.com/Blast_L2',
+  },
+
+  {
+    name: 'zkSync',
+    desc: "Scaling Ethereum’s technology and values",
+    tag: 'Layer2',
+    image: "https://pbs.twimg.com/profile_images/1647563917349060608/S1P_lNAN_400x400.jpg",
+    website: 'https://zksync.io/',
+    x: 'https://twitter.com/zksync',
+  },
+
+
+  {
+    name: 'NEAR',
+    desc: "Delivering on the promises of Web3, with Chain Abstraction.",
+    tag: 'Layer1',
+    image: "https://pbs.twimg.com/profile_images/1631021064171196431/_ahCp9jR_400x400.jpg",
+    website: 'https://near.org/',
+    x: 'https://twitter.com/NEARProtocol',
+  },
+  {
+    name: 'Merlin Chain',
+    desc: "A Native Bitcoin Layer2 powered by BitmapTech, building upon the native assets, protocols, and products on Bitcoin Layer1, to Make #Bitcoin Fun Again",
+    tag: 'Layer2',
+    image: "https://pbs.twimg.com/profile_images/1752499460175962112/C4IPI-zt_x96.jpg",
+    website: 'https://zksync.io/',
+    x: 'https://twitter.com/MerlinLayer2',
+  },
+  {
+    name: 'BEVM',
+    desc: "BEVM is the first fully decentralized EVM-compatible Bitcoin L2 that uses BTC as Gas. It allows all DApps which can run in the Ethereum ecosystem to operate on Bitcoin L2",
+    tag: 'Layer2',
+    image: "https://pbs.twimg.com/profile_images/1738138565874425856/xOG10LN0_400x400.jpg",
+    website: 'https://zksync.io/',
+    x: 'https://twitter.com/BTClayer2',
+  },
+  {
+    name: 'AINN Layer2',
+    desc: "The Ultimate AI-modular Bitcoin Layer2 solution",
+    tag: 'Layer2',
+    image: "https://pbs.twimg.com/profile_images/1763669638033084416/Zlup0Y1B_x96.jpg",
+    website: 'https://zksync.io/',
+    x: 'https://twitter.com/AINNLayer2',
+  },
 ]
 export default function Language(
   _props: InferGetServerSidePropsType<typeof getServerSideProps>
@@ -211,8 +432,8 @@ export default function Language(
     setFade(`${styles.main} ${styles.fade}`)
   }, [])
 
-  
-  
+
+
   return (
     <>
       <CustomHead
@@ -234,37 +455,42 @@ export default function Language(
         <div className={styles.mainContent}>
           <div className={styles.title}>{t('ECOSYSTEM')}</div>
           <div className={styles.desc}>
-            {t('Discover a vibrant MAP Protocol Bitcoin L2 dApps — spanning DeFi, Inscription, NFTs, Gaming, and more. Each designed to harness the full potential of Bitcoin Layer 2!')}
+            {t('Discover various networks that MAP Protocol has connected as an interoperable layer in the Bitcoin ecosystem and vibrant interoeprable MAPO dApps — spanning DeFi, Inscription, NFTs, Gaming, and more. Each designed to harness the full potential in the Bitcoin ecosystem')}
           </div>
 
         </div>
 
       </div>
       <div className={styles.select}>
-      <FormControl fullWidth>
-        <InputLabel id="demo-simple-select-standard-label">Type</InputLabel>
-        <Select
-          labelId="demo-simple-select-standard-label"
-          id="demo-simple-select-standard"
-          value={type}
-          onChange={handleChange}
-          label="type"
-        >
-          <MenuItem value="">
-            <em>All</em>
-          </MenuItem>
-          <MenuItem value={"Launchpad"}>Launchpad</MenuItem>
-          <MenuItem value={"Dex"}>Dex</MenuItem>
-          <MenuItem value={"Oracle"}>Oracle</MenuItem>
-          <MenuItem value={"Game"}>Game</MenuItem>
-          <MenuItem value={"AI"}>AI</MenuItem>
-          <MenuItem value={"Meme"}>Meme</MenuItem>
-          <MenuItem value={"NFT"}>NFT</MenuItem>
-          <MenuItem value={"Infra"}>Infra</MenuItem>
-          <MenuItem value={"RWA"}>RWA</MenuItem>
-          <MenuItem value={"Bridge"}>Bridge</MenuItem>
-        </Select>
-      </FormControl>
+        <FormControl fullWidth>
+          <InputLabel id="demo-simple-select-standard-label">Type</InputLabel>
+          <Select
+            labelId="demo-simple-select-standard-label"
+            id="demo-simple-select-standard"
+            value={type}
+            onChange={handleChange}
+            label="type"
+          >
+            <MenuItem value="">
+              <em>All</em>
+            </MenuItem>
+            <MenuItem value={"Launchpad"}>Launchpad</MenuItem>
+            <MenuItem value={"Dex"}>Dex</MenuItem>
+            <MenuItem value={"Oracle"}>Oracle</MenuItem>
+            <MenuItem value={"Game"}>Game</MenuItem>
+            <MenuItem value={"AI"}>AI</MenuItem>
+            <MenuItem value={"Meme"}>Meme</MenuItem>
+            <MenuItem value={"NFT"}>NFT</MenuItem>
+            <MenuItem value={"Infra"}>Infra</MenuItem>
+            <MenuItem value={"RWA"}>RWA</MenuItem>
+            <MenuItem value={"Bridge"}>Bridge</MenuItem>
+            <MenuItem value={"Liquid Staking"}>Liquid Staking</MenuItem>
+            <MenuItem value={"Wallet"}>Wallet</MenuItem>
+            <MenuItem value={"Layer1"}>Layer1</MenuItem>
+            <MenuItem value={"Layer2"}>Layer2</MenuItem>
+            <MenuItem value={"DeFi"}>DeFi</MenuItem>
+          </Select>
+        </FormControl>
         {/* <div className={styles.selectTitle}>
           {t('MAP Protocol is available in the following languages:')}
         </div> */}
@@ -287,7 +513,7 @@ export default function Language(
         {/* <div className={styles.input}></div> */}
         <div className={styles.languageCards}>
           {languageResCard.map((item: project) =>
-            <>{(type == "" || type==item.tag) && <div
+            <>{(type == "" || type == item.tag) && <div
               key={item.name}
               onClick={() => { }} className={styles.card}>
               <div className={styles.cardTop}>
