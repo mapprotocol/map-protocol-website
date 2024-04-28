@@ -33,7 +33,7 @@ type project = {
 
 const tagColor = {
   "Launchpad": '#4FBE46',
-  "Dex": '#CBF148',
+  "DEX": '#CBF148',
   "Oracle": '#FFCFC9',
   "Game": '#C6DBE1',
   "AI": "#FFE5A0",
@@ -63,7 +63,7 @@ export const languageCards: Array<project> = [
   {
     name: 'SATSAT',
     desc: 'SATSAT is a Community-Oriented Bitcoin Layer2 BRC-20 Trading Platform.',
-    tag: 'Dex',
+    tag: 'DEX',
     image: "https://pbs.twimg.com/profile_images/1739880682804109312/oXV9cR4Y_x96.jpg",
     website: 'https://app.satsat.exchange/',
     x: 'https://twitter.com/satsatstst',
@@ -71,7 +71,7 @@ export const languageCards: Array<project> = [
   {
     name: 'ButterSwap',
     desc: 'ButterSwap is the first t ZK light-client cross-chain aggregator swap with minimized ZK verification time & optimized gas fees. One-click exchanges btw popular chains & BTC ecosystem.',
-    tag: 'Dex',
+    tag: 'DEX',
     image: "https://pbs.twimg.com/profile_images/1597090686825730049/pmw3ioiY_x96.jpg",
     website: 'https://www.butternetwork.io/',
     x: 'https://twitter.com/ButterNetworkio',
@@ -79,7 +79,7 @@ export const languageCards: Array<project> = [
   {
     name: 'HiveSwap',
     desc: 'HiveSwap is the No.1 swap in the Bitcoin ecosystem, providing liquidity services for assets in the Bitcoin ecosystem.',
-    tag: 'Dex',
+    tag: 'DEX',
     image: "https://pbs.twimg.com/profile_images/1739171953133645824/u9ZSQUX9_200x200.jpg",
     website: 'https://app.hiveswap.io/swap',
     x: 'https://twitter.com/hiveswap_io',
@@ -116,14 +116,14 @@ export const languageCards: Array<project> = [
     desc: "EEAA is the world's first gaming application on Bitcoin Layer 2, pioneering new experiences in the web3 ecosystem.",
     tag: 'Game',
     image: "https://pbs.twimg.com/profile_images/1737054067279400960/YL56YEpD_200x200.jpg",
-    website: 'https://eeaa.world/',
-    x: 'https://twitter.com/EEAA_Community',
+    website: 'https://eeaa.life/',
+    x: 'https://twitter.com/EAFE_Dao',
   },
 
   {
     name: 'FoxPool',
     desc: "FoxPool is the world's first BTC mining pool to introduce the concept of a native platform token.",
-    tag: 'Dex',
+    tag: 'DEX',
     image: "https://pbs.twimg.com/profile_images/1746789554823327744/Zrnbv8Xo_200x200.jpg",
     website: 'https://foxpool.io/',
     x: 'https://twitter.com/FoxPool_BTC',
@@ -159,7 +159,7 @@ export const languageCards: Array<project> = [
   {
     name: 'Mirak Finance',
     desc: "Miark Finance is an all-in-one Bitcoin farming solution, offering Yield Farming, Lending, Staking, Restaking, and more for streamlined investment growth",
-    tag: 'Dex',
+    tag: 'DEX',
     image: "https://pbs.twimg.com/profile_images/1754820780301459456/V1a8f3-A_200x200.jpg",
     website: 'https://www.mirak.finance/',
     x: 'https://twitter.com/MirakFinance',
@@ -201,14 +201,7 @@ export const languageCards: Array<project> = [
     website: 'https://www.rolluper.xyz/en',
     x: 'https://twitter.com/brc20roup',
   },
-  {
-    name: 'BitRealms',
-    desc: "AI-driven entertainment metaverse in the Bitcoin ecosystem ᛤ enhancing community engagement with custom short dramas, interactive games & meme coins adventure",
-    tag: 'AI',
-    image: "https://pbs.twimg.com/profile_images/1763495057280176128/K_Y2Go5m_200x200.jpg",
-    website: 'http://app.bitrealms.ai/',
-    x: 'https://twitter.com/BitRealms_web3',
-  },
+  
   {
     name: 'Consensus Core',
     desc: "The high-performance GPU  infrastructure for AI and the Cloud Partner of NVIDIA.",
@@ -415,6 +408,42 @@ export const languageCards: Array<project> = [
     website: 'https://zksync.io/',
     x: 'https://twitter.com/AINNLayer2',
   },
+
+  {
+    name: 'MerlinStarter',
+    desc: "The 1st native launchpad on Merlin Chain. The accelerator for all #BTCLayer2 projects.",
+    tag: 'Launchpad',
+    image: "https://pbs.twimg.com/profile_images/1760956700981698561/i0vaeLiR_normal.jpg",
+    website: 'https://merlinstarter.com/',
+    x: 'https://twitter.com/Merlin_Starter',
+  },
+
+  {
+    name: 'BSquaredNetwork',
+    desc: "The Most Practical Bitcoin Layer-2 Network | The First Bitcoin DA Layer | B² Buzz |",
+    tag: 'Layer2',
+    image: "https://pbs.twimg.com/profile_images/1722440713886130176/JxGtDv9Y_x96.jpg",
+    website: 'https://www.bsquared.network/',
+    x: 'https://twitter.com/BSquaredNetwork',
+  },
+
+  {
+    name: 'Conflux',
+    desc: "Blockchain Without Barriers.Conflux enables creators, communities, and markets to connect across borders and protocols",
+    tag: 'Layer1',
+    image: "https://pbs.twimg.com/profile_images/1742189475072008192/b4Bi3zUv_400x400.png",
+    website: 'https://confluxnetwork.org/en',
+    x: 'https://twitter.com/Conflux_Network',
+  },
+
+  {
+    name: 'TrustWallet',
+    desc: "The worlds most trusted & secure #crypto wallet & #Web3 gateway, with 100 million+ users.",
+    tag: 'Wallet',
+    image: "https://pbs.twimg.com/profile_images/1744535601574301696/B6nMXZBV_400x400.jpg",
+    website: 'https://trustwallet.com/download?utm_source=twitter&utm_medium=about_section&utm_campaign=branding',
+    x: 'https://twitter.com/TrustWallet',
+  },
 ]
 export default function Language(
   _props: InferGetServerSidePropsType<typeof getServerSideProps>
@@ -453,7 +482,7 @@ export default function Language(
             alt="" />
         </div>
         <div className={styles.mainContent}>
-          <div className={styles.title}>{t('ECOSYSTEM')}</div>
+          <div className={styles.title}>{t('Ecosystem')}</div>
           <div className={styles.desc}>
             {t('Discover various networks that MAP Protocol has connected as an interoperable layer in the Bitcoin ecosystem and vibrant interoeprable MAPO dApps — spanning DeFi, Inscription, NFTs, Gaming, and more. Each designed to harness the full potential in the Bitcoin ecosystem')}
           </div>
@@ -475,7 +504,7 @@ export default function Language(
               <em>All</em>
             </MenuItem>
             <MenuItem value={"Launchpad"}>Launchpad</MenuItem>
-            <MenuItem value={"Dex"}>Dex</MenuItem>
+            <MenuItem value={"DEX"}>DEX</MenuItem>
             <MenuItem value={"Oracle"}>Oracle</MenuItem>
             <MenuItem value={"Game"}>Game</MenuItem>
             <MenuItem value={"AI"}>AI</MenuItem>
