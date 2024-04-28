@@ -1,0 +1,126 @@
+.main {
+
+  width: 100%;
+  /* background: linear-gradient(90deg, #DEF8FD 0%, #F3EDFF 100%), linear-gradient(90deg, #E5D9FF 1.48%, #EDF6FA 94.08%); */
+  background-color: #FDF5F1;
+  padding-left: calc(50% - 520px);
+  padding-right: calc(50% - 520px);
+  box-sizing: border-box;
+}
+
+.title {
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:  12px 0;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.chatContent {
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 24px;
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+
+}
+
+.chatCards {
+  width: 100%;
+  box-sizing: border-box;
+  height: 530px;
+  overflow: auto;
+  padding: 24px 12px;
+
+}
+
+.chatCard {
+  width: 100%;
+  display: flex;
+  margin-top: 12px;
+  color: #101828;
+  font-size: 14px;
+}
+
+.aiChatCard {
+  display: flex;
+  padding: 12px 12px;
+  align-items: center;
+  border-radius: 0px 12px 12px 12px;
+  border: 1px solid #63432e;
+  max-width: 60%;
+
+  min-height: 24px;
+  background-color: rgb(252, 250, 245);
+}
+
+.userChatCard {
+  display: flex;
+  padding: 12px 12px;
+  max-width: 60%;
+  min-height: 24px;
+
+  justify-self: end;
+  align-items: center;
+  border-radius: 12px 0px 12px 12px;
+  border: 1px solid #63432e;
+  background-color: rgb(91, 203, 181);
+}
+
+.input {
+  border: 1px solid #63432e;
+  height: 20px;
+  padding: 13px 130px 13px 12px;
+  outline: none;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.send {
+  cursor: pointer;
+  right: 12px;
+  top: 8px;
+  position: absolute;
+}
+
+.clear {
+  margin-right: 12px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.buttom {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  position: relative;
+  display: flex;
+
+}
+.loader {
+  border: 1px solid #413f3e; /* Light grey */
+  border-top: 1px solid #FDF5F1; /* Blue */
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@media (max-width: 1288px) {
+  .main {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+}

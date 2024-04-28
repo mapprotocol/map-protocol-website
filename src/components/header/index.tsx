@@ -58,6 +58,10 @@ export const tabsArray: TabsArray = {
             path: '/find-a-wallet'
         },
         {
+            name: 'MAPO Ecosystem',
+            path: '/ecosystem'
+        },
+        {
             name: 'Get MAPO',
             path: '/get-map'
 

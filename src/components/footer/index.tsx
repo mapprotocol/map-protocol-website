@@ -116,7 +116,7 @@ export const Footer = () => {
                 </div>
                 <div className={styles.footerList}>
                     <div className={styles.category}>
-                        {Object.keys(tabsArray).slice(0, 1).map((category) => (
+                        {Object.keys(tabsArray).slice(1, 2).map((category) => (
                             <div key={category}
                                 style={{
                                     marginBottom: '48px'
@@ -132,7 +132,7 @@ export const Footer = () => {
                                 </div>
                             </div>
                         ))}
-                        {Object.keys(footerArray).slice(0, 1).map((category) => (
+                        {Object.keys(footerArray).slice(1, 2).map((category) => (
                             <div key={category} className={styles.category}>
                                 <div className={styles.categoryTitle}>{t(category)}</div>
                                 <div>
@@ -146,7 +146,7 @@ export const Footer = () => {
                         ))}
                     </div>
 
-                    {Object.keys(tabsArray).slice(1, 3).map((category) => (
+                    {Object.keys(tabsArray).slice(2, 4).map((category) => (
                         <div key={category} className={styles.category}>
                             <div className={styles.categoryTitle}>{t(category)}</div>
                             <div>
@@ -159,7 +159,7 @@ export const Footer = () => {
                         </div>
                     ))}
                     <div className={styles.category}>
-                        {Object.keys(tabsArray).slice(3, 5).map((category) => (
+                        {Object.keys(tabsArray).slice(4, 6).map((category) => (
                             <div style={{
                                 marginBottom: '48px'
                             }}
