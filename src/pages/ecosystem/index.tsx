@@ -451,7 +451,7 @@ export const languageCards: Array<project> = [
     desc: "Orient Asset Management (Hong Kong) Limited is a wholly-owned subsidiary of Orient Securities International Financial Group Co., Ltd.",
     tag: 'Asset Management',
     image: "/images/dongfang.png",
-    website: 'https://trustwallet.com/download?utm_source=twitter&utm_medium=about_section&utm_campaign=branding',
+    website: 'https://www.dfzq.com.hk/',
     x: 'https://twitter.com/MapProtocol/status/1782675033640624563',
   },
 
@@ -467,7 +467,7 @@ export const languageCards: Array<project> = [
     name: 'Meson Finance',
     desc: "Meson is the faster and safer way to execute low-cost, zero-slippage BTC ETH and Stablecoin cross-chain swaps.",
     tag: 'DEX',
-    image: "https://pbs.twimg.com/profile_images/1744535601574301696/B6nMXZBV_400x400.jpg",
+    image: "https://pbs.twimg.com/profile_images/1486771068115116038/okULTyez_200x200.jpg",
     website: 'https://meson.fi/',
     x: 'https://twitter.com/mesonfi',
    
