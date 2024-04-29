@@ -8,7 +8,7 @@ import Image from 'next/image'
 import InputAdornment from '@mui/material/InputAdornment';
 import styles from './index.module.css'
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import Router, { useRouter } from 'next/router';
 
 import TextField from '@mui/material/TextField';
 
@@ -19,7 +19,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import { useEffect, useState } from 'react';
 import Footer from '@/components/footer';
 import CustomHead from '@/components/CustimHead';
-import { FormControl, InputLabel, MenuItem, Select, SelectChangeEvent } from '@mui/material';
+import { Button, FormControl, InputLabel, MenuItem, Select, SelectChangeEvent } from '@mui/material';
 type Props = {}
 
 type project = {
@@ -47,7 +47,7 @@ const tagColor = {
   "Layer1": "#B28BEB",
   "Layer2": "#F19FDD",
   "DeFi": "#ECDB0F",
-  "Asset Management":"#E79AE4"
+  "Asset Management": "#E79AE4"
 
 }
 
@@ -325,7 +325,7 @@ export const languageCards: Array<project> = [
     website: 'https://www.rolluper.xyz/en',
     x: 'https://twitter.com/brc20roup',
   },
-  
+
   {
     name: 'Consensus Core',
     desc: "The high-performance GPU  infrastructure for AI and the Cloud Partner of NVIDIA.",
@@ -436,7 +436,7 @@ export const languageCards: Array<project> = [
   },
 
 
- 
+
   {
     name: 'TrustWallet',
     desc: "The worlds most trusted & secure crypto wallet & Web3 gateway, with 100 million+ users.",
@@ -470,7 +470,7 @@ export const languageCards: Array<project> = [
     image: "https://pbs.twimg.com/profile_images/1486771068115116038/okULTyez_200x200.jpg",
     website: 'https://meson.fi/',
     x: 'https://twitter.com/mesonfi',
-   
+
   },
   {
     name: 'Owlto Finance',
@@ -544,10 +544,17 @@ export default function Language(
         <div className={styles.mainContent}>
           <div className={styles.title}>{t('Ecosystem')}</div>
           <div className={styles.desc}>
-            {t('Discover various networks that MAP Protocol has connected as an interoperable layer in the Bitcoin ecosystem and vibrant interoeprable MAPO dApps — spanning DeFi, Inscription, NFTs, Gaming, and more. Each designed to harness the full potential in the Bitcoin ecosystem')}
+            {t('Discover various networks that MAP Protocol has connected as an interoperable layer in the Bitcoin ecosystem and vibrant interoperable MAPO dApps — spanning DeFi, Inscription, NFTs, Gaming, and more. Each is designed to harness the full potential of the Bitcoin ecosystem.')}
           </div>
 
         </div>
+
+        <Button
+          style={{ marginBottom: '48px' }}
+          onClick={() => {
+            window.open('https://forms.gle/18EUYDSxW3EA6Ady5')
+          }}
+          variant="contained">{t('Add Project')}</Button>
 
       </div>
       <div className={styles.select}>
