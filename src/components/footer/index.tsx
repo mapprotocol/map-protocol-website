@@ -38,17 +38,12 @@ export const footerArray: TabsArray = {
     'Official contract addresses': [
         {
             name: 'Ethereum',
-            path: 'https://etherscan.io/token/0x9e976f211daea0d652912ab99b0dc21a7fd728e4'
+            path: 'https://etherscan.io/token/0x66D79B8f60ec93Bfce0b56F5Ac14A2714E509a99'
         },
         {
             name: 'BNB Smart Chain',
-            path: 'https://bscscan.com/address/0x8105ECe4ce08B6B6449539A5db23e23b973DfA8f'
+            path: 'https://bscscan.com/token/0x66d79b8f60ec93bfce0b56f5ac14a2714e509a99'
         },
-        {
-            name: 'Polygon',
-            path: 'https://polygonscan.com/address/0xBAbceE78586d3e9E80E0d69601A17f983663Ba6a'
-
-        }
     ],
     'Ecosystem': [
         {
@@ -116,7 +111,7 @@ export const Footer = () => {
                 </div>
                 <div className={styles.footerList}>
                     <div className={styles.category}>
-                        {Object.keys(tabsArray).slice(1, 2).map((category) => (
+                        {Object.keys(tabsArray).slice(0, 1).map((category) => (
                             <div key={category}
                                 style={{
                                     marginBottom: '48px'
@@ -132,7 +127,7 @@ export const Footer = () => {
                                 </div>
                             </div>
                         ))}
-                        {Object.keys(footerArray).slice(1, 2).map((category) => (
+                        {Object.keys(footerArray).slice(0, 1).map((category) => (
                             <div key={category} className={styles.category}>
                                 <div className={styles.categoryTitle}>{t(category)}</div>
                                 <div>
@@ -146,7 +141,7 @@ export const Footer = () => {
                         ))}
                     </div>
 
-                    {Object.keys(tabsArray).slice(2, 4).map((category) => (
+                    {Object.keys(tabsArray).slice(1, 3).map((category) => (
                         <div key={category} className={styles.category}>
                             <div className={styles.categoryTitle}>{t(category)}</div>
                             <div>
@@ -159,7 +154,7 @@ export const Footer = () => {
                         </div>
                     ))}
                     <div className={styles.category}>
-                        {Object.keys(tabsArray).slice(4, 6).map((category) => (
+                        {Object.keys(tabsArray).slice(3, 5).map((category) => (
                             <div style={{
                                 marginBottom: '48px'
                             }}

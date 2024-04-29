@@ -46,8 +46,8 @@ const tagColor = {
   "Wallet": "#FFC8AA",
   "Layer1": "#B28BEB",
   "Layer2": "#F19FDD",
-  "DeFi": "#ECDB0F"
-
+  "DeFi": "#ECDB0F",
+  "Asset Management":"#E79AE4"
 
 }
 
@@ -445,6 +445,65 @@ export const languageCards: Array<project> = [
     website: 'https://trustwallet.com/download?utm_source=twitter&utm_medium=about_section&utm_campaign=branding',
     x: 'https://twitter.com/TrustWallet',
   },
+
+  // {
+  //   name: 'Orient Asset Management (Hong Kong) Limited',
+  //   desc: "Orient Asset Management (Hong Kong) Limited has established a strategic partnership with MAP Protocol to jointly advance the integration and innovation of traditional financial institutions with Web3 digital assets.",
+  //   tag: 'Asset Management',
+  //   image: "https://pbs.twimg.com/profile_images/1744535601574301696/B6nMXZBV_400x400.jpg",
+  //   website: 'https://trustwallet.com/download?utm_source=twitter&utm_medium=about_section&utm_campaign=branding',
+  //   x: 'https://twitter.com/MapProtocol/status/1782675033640624563',
+  // },
+
+  // {
+  //   name: 'CPIC IMHK',
+  //   desc: "CPIC Investment Management (Hong Kong) Limited (CPIC IMHK), a wholly owned Hong Kong asset management platform of China Pacific Insurance (Group) Co. Ltd. (CPIC), has become the investment advisor to the technology company MAPO Labs, the developer of MAP Protocol.",
+  //   tag: 'Asset Management',
+  //   image: "https://pbs.twimg.com/profile_images/1486771068115116038/okULTyez_200x200.jpg",
+  //   website: 'https://meson.fi/',
+  //   x: 'https://twitter.com/mesonfi',
+  // },
+  // {
+  //   name: 'Meson Finance',
+  //   desc: "Meson is the faster and safer way to execute low-cost, zero-slippage BTC ETH and Stablecoin cross-chain swaps.",
+  //   tag: 'DEX',
+  //   image: "https://pbs.twimg.com/profile_images/1744535601574301696/B6nMXZBV_400x400.jpg",
+  //   website: 'https://meson.fi/',
+  //   x: 'https://twitter.com/mesonfi',
+   
+  // },
+  // {
+  //   name: 'Owlto Finance',
+  //   desc: 'Owlto Finance is an intent-centric interoperability protocol, "Bridge the World with AI Agent".',
+  //   tag: 'DEX',
+  //   image: "https://pbs.twimg.com/profile_images/1742900205241106432/OAYGxT31_200x200.jpg",
+  //   website: 'https://owlto.finance/',
+  //   x: 'https://twitter.com/Owlto_Finance',
+  // },
+  // {
+  //   name: 'Bitcoin Store',
+  //   desc: "Bitcoin Store is first Croatian #Bitcoin exchange with physical stores and online exchange service. Buy, sell and store more than 170 cryptocurrencies.",
+  //   tag: 'DeFi',
+  //   image: "https://pbs.twimg.com/profile_images/1612824788296146944/obFhTbDS_200x200.jpg",
+  //   website: 'https://www.bitstore.net/',
+  //   x: 'https://twitter.com/storebitcoin',
+  // },
+  // {
+  //   name: 'Gate Web3 Wallet',
+  //   desc: "Your GateWay to Web3 FREE Airdrops | Wallet | Trade | NFT | DeFi",
+  //   tag: 'Wallet',
+  //   image: "https://pbs.twimg.com/profile_images/1711414778072322048/luieKMM8_x96.jpg",
+  //   website: 'https://trustwallet.com/download?utm_source=twitter&utm_medium=about_section&utm_campaign=branding',
+  //   x: 'https://twitter.com/TrustWallet',
+  // },
+  // {
+  //   name: 'AlchemyPay',
+  //   desc: "Alchemy Pay bridges fiat and crypto global economies through its real-world payment network and direct access to Web3 services via its Ramp Solution.",
+  //   tag: 'Infra',
+  //   image: "https://pbs.twimg.com/profile_images/1739915334768041984/LB9lrAsB_200x200.jpg",
+  //   website: 'https://alchemypay.org/',
+  //   x: 'https://twitter.com/AlchemyPay',
+  // },
 ]
 export default function Language(
   _props: InferGetServerSidePropsType<typeof getServerSideProps>
@@ -519,6 +578,9 @@ export default function Language(
             <MenuItem value={"Layer1"}>Layer1</MenuItem>
             <MenuItem value={"Layer2"}>Layer2</MenuItem>
             <MenuItem value={"DeFi"}>DeFi</MenuItem>
+            <MenuItem value={"Asset Management"}>Asset Management</MenuItem>
+
+
           </Select>
         </FormControl>
         {/* <div className={styles.selectTitle}>
