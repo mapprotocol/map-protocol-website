@@ -33,6 +33,9 @@
 }
 
 .languageImage {
+    position: relative;
+    width: 498px;
+     height: 307px;
     /* margin-left: 20px; */
     position: relative;
     margin-top: 50px;
@@ -207,9 +210,11 @@
         align-items: center; */
 
     }
+.languageImage {
 
+width: 100%;}
     .card {
-        min-width: 46%;
+        min-width: 90%;
     }
 
     .main {

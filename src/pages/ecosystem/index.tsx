@@ -531,9 +531,7 @@ export default function Language(
       <Header />
       <div className={fade} >
         <div className={styles.languageImage}
-          style={{
-            position: 'relative', width: '498px', height: '307px'
-          }}
+
         >
           <Image
             fill
