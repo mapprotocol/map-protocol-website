@@ -235,14 +235,7 @@ export const languageCards: Array<project> = [
   },
 
 
-  {
-    name: 'EEAA',
-    desc: "EEAA is the world's first gaming application on Bitcoin Layer 2, pioneering new experiences in the web3 ecosystem.",
-    tag: 'Game',
-    image: "https://pbs.twimg.com/profile_images/1737054067279400960/YL56YEpD_200x200.jpg",
-    website: 'https://eeaa.life/',
-    x: 'https://twitter.com/EAFE_Dao',
-  },
+ 
 
   {
     name: 'FoxPool',
