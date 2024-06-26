@@ -131,9 +131,9 @@ export default function Data(
             <Button
               onClick={
                 () => {
-                  window.open('https://tally.so/r/wgdPal')
+                  window.open('https://t.me/MAPprotocol/')
                 }}
-               variant="contained">{t('Join MAPDAO')}</Button>
+               variant="contained">{t('Join Telegram')}</Button>
             <Button
               onClick={
                 () => {

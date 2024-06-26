@@ -50,18 +50,18 @@ export default function GetMapCEXs() {
         <div id={"cexs"} className={styles.exchanges}>
             <div className={styles.title}>{t('On Centralized Exchanges (CEXs)')} </div>
             <div className={styles.content}>{t('Centralized exchanges are platforms that are managed by a single entity or company. They act as middlemen between buyers and sellers of cryptocurrencies, similar to traditional stock exchanges.')} </div>
-            <div className={styles.content}> 
-             <Trans ns="get-map-1" i18nKey="ERC-20 MAP (MAP Protocol's native token on Ethereum) is available on Kucoin, Bithumb, Coinone and MEXC Global. MRC-20 MAPO (MAP Protocol's native token on MAP Relay Chain thus the MAPO Mainnet) is available on LBank." components={{
-                link1: <Link target="_blank" href={"https://www.kucoin.com/ko/trade/MAP-USDT"} className={styles.linkText}></Link>,
-                link2: <Link target="_blank" href={"https://www.bithumb.com/react/trade/order/MAP-KRW"} className={styles.linkText}></Link>,
-                link3: <Link target="_blank" href={"https://coinone.co.kr/exchange/trade/map/krw"} className={styles.linkText}></Link>,
-                link4: <Link target="_blank" href={"https://www.mexc.com/exchange/MAP_USDT?_from=search"} className={styles.linkText}></Link>,
-                link5: <Link target="_blank" href={"https://www.lbank.com/trade/mapo_usdt/"} className={styles.linkText}></Link>,
-                link6: <Link target="_blank" href={"https://www.htx.com.bo/en-us/trade/map_usdt?type=spot"} className={styles.linkText}></Link>,    
-                link7: <Link target="_blank" href={"https://www.Bitget.com/spot/MAPOUSDT"} className={styles.linkText}></Link>,
-                link8: <Link target="_blank" href={"https://www.gate.io/trade/MAPO_USDT"} className={styles.linkText}></Link>,
+            <div className={styles.content}>
+                <Trans ns="get-map-1" i18nKey="ERC-20 MAP (MAP Protocol's native token on Ethereum) is available on Kucoin, Bithumb, Coinone and MEXC Global. MRC-20 MAPO (MAP Protocol's native token on MAP Relay Chain thus the MAPO Mainnet) is available on LBank." components={{
+                    link1: <Link target="_blank" href={"https://www.kucoin.com/ko/trade/MAP-USDT"} className={styles.linkText}></Link>,
+                    link2: <Link target="_blank" href={"https://www.bithumb.com/react/trade/order/MAP-KRW"} className={styles.linkText}></Link>,
+                    link3: <Link target="_blank" href={"https://coinone.co.kr/exchange/trade/map/krw"} className={styles.linkText}></Link>,
+                    link4: <Link target="_blank" href={"https://www.mexc.com/exchange/MAP_USDT?_from=search"} className={styles.linkText}></Link>,
+                    link5: <Link target="_blank" href={"https://www.lbank.com/trade/mapo_usdt/"} className={styles.linkText}></Link>,
+                    link6: <Link target="_blank" href={"https://www.htx.com.bo/en-us/trade/map_usdt?type=spot"} className={styles.linkText}></Link>,
+                    link7: <Link target="_blank" href={"https://www.Bitget.com/spot/MAPOUSDT"} className={styles.linkText}></Link>,
+                    link8: <Link target="_blank" href={"https://www.gate.io/trade/MAPO_USDT"} className={styles.linkText}></Link>,
 
-            }} /> </div>
+                }} /> </div>
 
             <div className={styles.form}>
                 <div className={styles.formItem}   >
@@ -74,12 +74,12 @@ export default function GetMapCEXs() {
                     <div>{t('Updated')}</div>
                 </div>
                 {tickers.map((item, index) => <div className={styles.formItem} key={index}>
-                    <div className={styles.dexTitle}><Image
+                    <div className={styles.dexTitle}><img
                         width={28}
                         height={28}
-                        src={`/images/${item.name}.webp`}
+                        src={`${item.logo}`}
                         alt="logo" />{item.name}</div>
-                    <div>{item.name =="DeGate"? "MAP/USDC":item.pairs}</div>
+                    <div>{item.name == "DeGate" || item.name == "Pancakeswap V3 (BSC)" ? "MAP/USDC" : item.pairs}</div>
                     <div>{`$${item.price}`}</div>
                     <div>{`$${toThousands(item.cost_to_move_up_usd)}`}</div>
                     <div>{`$${toThousands(item.cost_to_move_down_usd)}`}</div>
@@ -101,8 +101,8 @@ export default function GetMapCEXs() {
                     <div key={index} className={styles.step} >
                         <div className={styles.up}>
                             <div className={styles.round}>{index + 1}</div>
-                            {index !== 4 &&<div className={styles.line}></div>}
-                            </div>
+                            {index !== 4 && <div className={styles.line}></div>}
+                        </div>
 
                         <div className={styles.stepCard}>
                             <div className={styles.stepTitle}>{step.title}</div>
