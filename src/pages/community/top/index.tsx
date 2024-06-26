@@ -199,9 +199,9 @@ export default function HomePageTop(
         
             <Button variant="outlined"
               onClick={() => {
-                window.open('https://tally.so/r/wgdPal')
+                window.open('https://t.me/MAPprotocol/')
               }}
-            >{t('Join MAPDAO')}</Button>
+            >{t('Join Telegram')}</Button>
           </div>
         </div>
         <div className={styles.contributeImage}>

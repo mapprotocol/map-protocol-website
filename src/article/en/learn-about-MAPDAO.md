@@ -28,4 +28,4 @@ MAPDAO is more than just an organization; it's a community-driven initiative tha
 As the transition from Web 2 to Web 3.0 becomes increasingly evident, MAPDAO provides a platform for individuals to discover their roles in this profound transformation. Whether you're passionate about technology, operations, translation, or investment, MAPDAO welcomes your contribution and values your input. It's a space where ideas take flight, innovation knows no bounds, and the future of Web 3.0 is shaped by a diverse and engaged community.
 
 In conclusion, MAPDAO represents a pioneering force in the Web 3.0 landscape, built on the solid foundation of the Map Protocol. With its four distinct guilds, it empowers individuals from various backgrounds to actively participate in the growth and evolution of the Map ecosystem. As we navigate the transition from Web 2 to Web 3.0, MAPDAO invites you to be a part of this transformative journey, where the possibilities are limitless, and the future is in our hands.
-> [Join now by filling out the form](https://tally.so/r/wgdPal)!
+> [Join Telegram](https://t.me/MAPprotocol/)!
