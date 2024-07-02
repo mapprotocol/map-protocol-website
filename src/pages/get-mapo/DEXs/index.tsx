@@ -61,7 +61,7 @@ export default function GetMapDEXs() {
         cardTitle: 'PancakeSwap',
         cardContent: "PancakeSwap supports tokens on BNB Smart Chain to exchange with MAP on BNB Smart Chain, which means the MAP you get on PancakeSwap will be in the BEP-20 token standard.",
         cardLink: "https://academy.binance.com/en/glossary/bep-20",
-        swapLink: "https://pancakeswap.finance/swap?inputCurrency=0x8105ECe4ce08B6B6449539A5db23e23b973DfA8f&outputCurrency=BNB"
+        swapLink: "https://pancakeswap.finance/swap?inputCurrency=BNB&outputCurrency=0x66D79B8f60ec93Bfce0b56F5Ac14A2714E509a99"
     }]
 
     return (
@@ -77,7 +77,7 @@ export default function GetMapDEXs() {
                         link1: <Link target="_blank" href={"https://www.butterswap.io/"} className={styles.linkText}></Link>,
                         link2: <Link target="_blank" href={"https://app.hiveswap.io/#/swap"} className={styles.linkText}></Link>,
                         link3: <Link target="_blank" href={"https://app.uniswap.org/#/swap?outputCurrency=0x9e976f211daea0d652912ab99b0dc21a7fd728e4"} className={styles.linkText}></Link>,
-                        link4: <Link target="_blank" href={"https://pancakeswap.finance/swap?inputCurrency=0x8105ECe4ce08B6B6449539A5db23e23b973DfA8f&outputCurrency=BNB"} className={styles.linkText}></Link>,
+                        link4: <Link target="_blank" href={"https://pancakeswap.finance/swap?inputCurrency=BNB&outputCurrency=0x66D79B8f60ec93Bfce0b56F5Ac14A2714E509a99"} className={styles.linkText}></Link>,
                         link5: <Link target="_blank" href={"https://www.butterswap.io/"} className={styles.linkText}></Link>
                     }} /></div>
 

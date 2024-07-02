@@ -61,7 +61,7 @@ export default function Body(
 
         <div className={styles.desc}>
           <Trans ns="find-a-wallet" i18nKey="More on where to get MAPO and how to add MAP Relay Chain and MAP to your wallet." components={{
-            link1: <Link href={"/get-map"} className={styles.linkText}></Link>,
+            link1: <Link href={"/get-mapo"} className={styles.linkText}></Link>,
             link2: <Link href={"/article?id=add-map-relay-chain"} className={styles.linkText}></Link>
           }} />
         </div>

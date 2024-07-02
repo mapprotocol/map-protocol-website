@@ -102,7 +102,7 @@ const CardList: React.FC = () => {
                 id: 4,
                 title: t('Get MAPO'),
                 content: t('MAPO is the native token on the MAP Relay Chain. It is the cryptocurrency you use to pay for the network fees on the MAP Relay Chain. Learn about how to get MAPO.'),
-                link: '/get-map',
+                link: '/get-mapo',
                 src: '/images/map-coin-colors.png',
     
             },

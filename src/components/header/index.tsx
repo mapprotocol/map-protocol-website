@@ -63,7 +63,7 @@ export const tabsArray: TabsArray = {
         },
         {
             name: 'Get MAPO',
-            path: '/get-map'
+            path: '/get-mapo'
 
         },
         {

@@ -4,7 +4,7 @@ description:
 lang: zh
 ---
 
-一旦您在 Metamask、Token Pocket 和 Particle Wallet 中选择了一个钱包，您就可以开始添加 MAP Protocol 网络 和 MAP 到钱包中。要获取 MAPO，请阅读 [获取 MAPO](/get-map) 的地方。
+一旦您在 Metamask、Token Pocket 和 Particle Wallet 中选择了一个钱包，您就可以开始添加 MAP Protocol 网络 和 MAP 到钱包中。要获取 MAPO，请阅读 [获取 MAPO](/get-mapo) 的地方。
 
 
 # **添加 MAP Protocol 网络**

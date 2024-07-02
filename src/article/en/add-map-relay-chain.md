@@ -4,7 +4,7 @@ description:
 lang: en
 ---
 
-Once you have chosen a wallet among Metamask, Token Pocket, and Particle Wallet, you can start adding MAP Protocol Network and MAP to the wallet. To get MAPO, please read where to [get MAPO](/get-map).
+Once you have chosen a wallet among Metamask, Token Pocket, and Particle Wallet, you can start adding MAP Protocol Network and MAP to the wallet. To get MAPO, please read where to [get MAPO](/get-mapo).
 
 
 # **Add MAP Protocol**

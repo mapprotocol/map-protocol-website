@@ -96,7 +96,7 @@ export default function Body(
 
           <div className={styles.moreButton}>
             <Button onClick={() => {
-              Router.push('/get-map')
+              Router.push('/get-mapo')
             }} variant="contained">{t('More on how to get MAPO')}</Button>
           </div>
         </div>
@@ -186,7 +186,7 @@ export default function Body(
             }} />}</div>
             <div className={styles.moreButton}>
               <Button onClick={() => {
-                Router.push('/get-map')
+                Router.push('/get-mapo')
               }} variant="contained">{t('Check validator info')}</Button>
             </div>
             <HandTip style={{

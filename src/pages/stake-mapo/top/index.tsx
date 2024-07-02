@@ -80,7 +80,7 @@ export default function Top(
             <Button
               onClick={
                 () => {
-                  Router.push('/get-map')
+                  Router.push('/get-mapo')
                 }}
               style={{
                 marginRight: "12px"
