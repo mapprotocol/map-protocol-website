@@ -73,21 +73,27 @@ export default function GetMapCEXs() {
                     <div>{t('24h Volume')}</div>
                     <div>{t('Updated')}</div>
                 </div>
-                {tickers.map((item, index) => <div className={styles.formItem} key={index}>
-                    <div className={styles.dexTitle}><img
-                        width={28}
-                        height={28}
-                        src={`${item.logo}`}
-                        alt="logo" />{item.name}</div>
-                    <div>{item.name == "DeGate" || item.name == "Pancakeswap V3 (BSC)" ? "MAP/USDC" : item.pairs}</div>
-                    <div>{`$${item.price}`}</div>
-                    <div>{`$${toThousands(item.cost_to_move_up_usd)}`}</div>
-                    <div>{`$${toThousands(item.cost_to_move_down_usd)}`}</div>
+                {tickers.map((item, index) => {
+                    if (item.name == "Pancakeswap V3 (BSC)")
+                        item.pairs = "MAPO/USDC"
+                    else if (item.name == "Coinone")
+                        item.pairs = "MAPO/KRW"
+                    return <div className={styles.formItem} key={index}>
+                        <div className={styles.dexTitle}><img
+                            width={28}
+                            height={28}
+                            src={`${item.logo}`}
+                            alt="logo" />{item.name}</div>
+                        <div>{ item.pairs}</div>
+                        <div>{`$${item.price}`}</div>
+                        <div>{`$${toThousands(item.cost_to_move_up_usd)}`}</div>
+                        <div>{`$${toThousands(item.cost_to_move_down_usd)}`}</div>
 
-                    <div>{`$${toThousands(item.volume)}`}</div>
-                    <div>{t('Recently')}</div>
+                        <div>{`$${toThousands(item.volume)}`}</div>
+                        <div>{t('Recently')}</div>
 
-                </div>)}
+                    </div>
+                })}
             </div>
 
         </div>

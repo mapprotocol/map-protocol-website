@@ -52,7 +52,7 @@ export default function Body(
           <div className={styles.whereToGetMAPODesc}>{t('You can get MAPO from a centralized exchange or decentralized exchange but different countries may have different policies. Check to see which would be the best way for you to get MAPO.')}</div>
           <div className={styles.whereToGetMAPOButton}>
             <Button onClick={
-              () => { Router.push('/get-map') }
+              () => { Router.push('/get-mapo') }
             } variant="contained">{t('Get MAPO')}</Button>
           </div>
         </div>

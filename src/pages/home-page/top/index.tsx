@@ -98,7 +98,7 @@ export default function HomePageTop(
       title: t('Get some MAPO'),
       boxShadow: "#DAD4FF",
       desc: t('MAPO is the currency of MAP Protocol — you can use it for various purposes.'),
-      link: '/get-map'
+      link: '/get-mapo'
 
     },
     {
@@ -109,7 +109,7 @@ export default function HomePageTop(
       boxShadow: "#FFEDC8",
       title: t('Try decentralized exchanges (DEXs)'),
       desc: t('DEXs hold transformative significance for decentralized finance (DeFi). Grab your MAPO and familiarize yourself with the mechanics of trading on a DEX.'),
-      link: '/get-map#dexs'
+      link: '/get-mapo#dexs'
 
     },
     {

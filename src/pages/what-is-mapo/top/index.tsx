@@ -139,7 +139,7 @@ export default function GetMapTop(
             </div>
           </div>
           <div className={styles.getMapButton}><Button onClick={() => {
-            Router.push('/get-map')
+            Router.push('/get-mapo')
           }} variant="contained">{t('Get MAPO')}</Button></div>
         </div>
         <div className={styles.mapCoinsImage}>
@@ -173,7 +173,7 @@ export default function GetMapTop(
           <div>{t("Want to buy some MAPO? It's common to mix up MAP and MAPO. MAPO is the ticker name on the MAP Relay Chain, while MAP is the name on other chains.")}</div>
           <div style={{ marginTop: '6px' }}>{
             <Trans ns="what-is-mapo" i18nKey="To explore the MAP Protocol ecosystem,  MAPO is what you're probably looking to buy. More on Get MAPO." components={{
-              link1: <Link href={"/get-map"} ></Link>,
+              link1: <Link href={"/get-mapo"} ></Link>,
             }} />}</div>
         </div>}
         </HandTip>

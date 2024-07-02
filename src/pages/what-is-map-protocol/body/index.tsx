@@ -271,7 +271,7 @@ export default function ColorsContent(
 
                         <Button
                             onClick={() => {
-                                Router.push('/get-map')
+                                Router.push('/get-mapo')
                             }}
                             variant="outlined">{t('Get MAPO')}</Button>
                     </div>
