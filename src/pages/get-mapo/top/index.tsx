@@ -192,7 +192,6 @@ export default function GetMapTop(
               link6: <Link target="_blank" href={"https://www.gate.io/trade/MAPO_USDT"} className={styles.linkText}></Link>,
 
             }} /></div>
-          <div className={styles.mapoContent}>{t("Currently, MAP is available on Ethereum, BNB Smart Chain, and Polygon; MAPO is on MAP Relay Chain. You can get MAP on both centralized and decentralized exchanges, and MAPO on decentralized exchanges only.")}</div>
 
         </div>
 
