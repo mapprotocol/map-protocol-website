@@ -35,11 +35,7 @@ const DexCard = ({ cardInfo, index }: { cardInfo: CardInfo, index: number }) => 
         <div className={styles.cardDesc}> <Trans ns="get-map-1" i18nKey={cardInfo?.cardContent as string & string[]} components={{
             link1: <Link target="_blank" href={cardInfo?.cardLink} className={styles.linkText}></Link>
         }} /></div>
-        <div className={styles.cardLink}>
-            <Trans ns="get-map-1" i18nKey="*If you would like to get MAPO instead of MAP, please go to Butter Swap to swap directly." components={{
-                link1: <Link target="_blank" href={"https://www.butterswap.io/"} className={styles.linkText}>Butter Swap</Link>
-            }} />
-        </div>
+       
     </div>)
 }
 
@@ -55,7 +51,7 @@ export default function GetMapDEXs() {
         cardTitle: 'Uniswap',
         cardContent: "Uniswap supports a diversity of tokens on Ethereum to exchange with MAP on Ethereum, which means the MAP you get on Uniswap will be in ERC-20 token standard.",
         cardLink: 'https://ethereum.org/en/developers/docs/standards/tokens/erc-20/',
-        swapLink: "https://app.uniswap.org/#/swap?outputCurrency=0x9e976f211daea0d652912ab99b0dc21a7fd728e4"
+        swapLink: "https://app.uniswap.org/swap?outputCurrency=0x66D79B8f60ec93Bfce0b56F5Ac14A2714E509a99"
 
     }, {
         cardTitle: 'PancakeSwap',
