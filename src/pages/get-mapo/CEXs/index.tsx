@@ -74,10 +74,12 @@ export default function GetMapCEXs() {
                     <div>{t('Updated')}</div>
                 </div>
                 {tickers.map((item, index) => {
-                    if (item.name == "Pancakeswap V3 (BSC)")
+                    if (item.name == "PancakeSwap V3 (BSC)")
                         item.pairs = "MAPO/USDC"
                     else if (item.name == "Coinone")
                         item.pairs = "MAPO/KRW"
+                        else if (item.name == "Matcha (BSC)")
+                        item.pairs = "MAPO/USDC"
                     return <div className={styles.formItem} key={index}>
                         <div className={styles.dexTitle}><img
                             width={28}

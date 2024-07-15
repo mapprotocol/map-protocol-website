@@ -65,12 +65,7 @@ export default function GetMapTop(
     setAnchorEl(null);
   };
 
-  const cardData: Array<CardInfo> = [{
-    cardTitle: t('MAPO and MAP'),
-    cardContent: t("Both MAPO and MAP are MAP Protocol’s native token. It's the same token. Using different ticker symbols is to differeciate the chains they are on."),
-    cardLink: 'mapo',
-    cardLinkText: t('View more details'),
-  },
+  const cardData: Array<CardInfo> = [
   {
     cardTitle: t('Decentralized Exchanges (DEXs)'),
     cardContent: t('DEXs give you more control over your funds. With a DEX, you can trade MAPO with more freedom and flexibility.'),
@@ -185,7 +180,7 @@ export default function GetMapTop(
         </div>
 
         <div className={styles.mapoDescRight}>
-          <div className={styles.mapoTitle}>{t('MAPO and MAP')}</div>
+          <div className={styles.mapoTitle}>{t('MAPO')}</div>
 
           <div className={styles.mapoContent}>
             <Trans ns="get-map-1" i18nKey="MAPO is the ticker name for MAP Protocol’s native token on the MAP Relay Chain, while MAP is the ticker name of MAP Protocol’s native token on other chains such as Ethereum, BNB Smart Chain, and Polygon. It can be obtained and traded directly in centralized exchanges such as Kucoin, Bithumb, Coinone, and MEXC Global." components={{
