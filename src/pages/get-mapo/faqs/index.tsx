@@ -80,12 +80,7 @@ export default function GetMapFaqs() {
                 </Ul>
             </>, // Add content for this item
         },
-        {
-            title: t('How do I convert MAP to MAPO?'),
-            content: <Trans ns="get-map-2" i18nKey="MAP is on Ethereum" components={{
-                link1: <Link target="_blank" href={"https://www.butterswap.io/"} className={styles.linkText}></Link>,
-            }} />,
-        },
+        
         {
             title: t('How do I transfer MAP across Ethereum, BNB Smart Chain, Polygon, Klaytn, and others?'),
             content: <Trans ns="get-map-2" i18nKey="In the world of cryptocurrencies, transferring assets from one chain to another usually requires using a bridge. However, when transferring MAP across different chains, you can simply go to ButterSwap to easily exchange your MAP on different chains in a peer-to-peer way. To get MAPO on MAP Relay Chain, you can also use ButterSwap." components={{
