@@ -78,7 +78,9 @@ export default function GetMapCEXs() {
                         item.pairs = "MAPO/USDC"
                     else if (item.name == "Coinone")
                         item.pairs = "MAPO/KRW"
-                        else if (item.name == "Matcha (BSC)")
+                    else if (item.name == "Bithumb")
+                        item.pairs = "MAPO/KRW"
+                    else if (item.name == "Matcha (BSC)")
                         item.pairs = "MAPO/USDC"
                     return <div className={styles.formItem} key={index}>
                         <div className={styles.dexTitle}><img
@@ -86,7 +88,7 @@ export default function GetMapCEXs() {
                             height={28}
                             src={`${item.logo}`}
                             alt="logo" />{item.name}</div>
-                        <div>{ item.pairs}</div>
+                        <div>{item.pairs}</div>
                         <div>{`$${item.price}`}</div>
                         <div>{`$${toThousands(item.cost_to_move_up_usd)}`}</div>
                         <div>{`$${toThousands(item.cost_to_move_down_usd)}`}</div>
