@@ -33,7 +33,7 @@
   "IMPORTANT: Please double-check the token info and the chain info you have selected before confirming “Swap”.": "重要提示：请在确认“交换”之前仔细核对你所选择的代币信息和链信息。",
   "Hiveswap supports token exchanges on the MAP Relay Chain. You can get MAPO right within Hiveswap.": "Hiveswap 支持在 MAP Protocol主网上的代币交换。你可以直接在 Hiveswap 上获取 MAPO。",
   "Uniswap supports a diversity of tokens on Ethereum to exchange with MAP on Ethereum, which means the MAP you get on Uniswap will be in ERC-20 token standard.": "Uniswap 支持在 Ethereum 上与 MAPO 交换的多种代币，这意味着你在 Uniswap 上获取的 MAPO 将是 <link1>ERC-20 代币标准</link1>。",
-  "PancakeSwap supports tokens on BNB Smart Chain to exchange with MAP on BNB Smart Chain, which means the MAP you get on PancakeSwap will be in the BEP-20 token standard.": "PancakeSwap 支持在 BNB Smart Chain 上与 MAP 交换的代币，这意味着你在 PancakeSwap 上获取的 MAP 将是 <link1>BEP-20 代币标准</link1>。",
+  "PancakeSwap supports tokens on BNB Smart Chain to exchange with MAP on BNB Smart Chain, which means the MAP you get on PancakeSwap will be in the BEP-20 token standard.": "PancakeSwap 支持在 BNB Smart Chain 上与 MAPO 交换的代币，这意味着你在 PancakeSwap 上获取的 MAPO 将是 <link1>BEP-20 代币标准</link1>。",
   "*If you would like to get MAPO instead of MAP, please go to Butter Swap to swap directly.": "*如果你想获取 MAPO 而不是 MAP，请直接前往 <link1>Butter Swap</link1> 进行交换。",
   "On Centralized Exchanges (CEXs)": "在中心化交易所（CEXs）上",
   "Centralized exchanges are platforms that are managed by a single entity or company. They act as middlemen between buyers and sellers of cryptocurrencies, similar to traditional stock exchanges.": "中心化交易所是由单一实体或公司管理的平台。它们充当加密货币买卖双方之间的中介，类似于传统股票交易所。",
@@ -56,8 +56,8 @@
   "For asset security, it’s recommended to enable Two-step Verification.": "为了资产安全，建议启用双因素验证。",
   "Use fiat to buy USDT, ETH, BTC, or any other tokens supported. You can use the OTC option right in a CEX.": "使用法定货币购买 USDT、ETH、BTC 或支持的其他代币。您可以直接在中心化交易所中使用场外交易选项。",
   "Additionally, you can use an onramp platform that has your desired fiat-to-crypto option.": "此外，您可以使用提供您所需的法币兑加密货币选项的上车平台。",
-  "Transfer the USDT, BTC, etc. you purchased by fiat to a CEX that supports MAP trading.": "将您用法币购买的 USDT、BTC 等转移到支持 MAP 交易的中心化交易所。",
-  "If the CEX you use supports onramp and the MAP-USDT or MAP-BTC trading pair at the same time, you can skip this.": "如果您使用的中心化交易所同时支持上车服务和 MAP-USDT 或 MAP-BTC 交易对，则可以跳过此步骤。",
-  "Buy MAP in the spot market via the MAP-USDT or MAP-BTC trading pair.": "通过 MAP-USDT 或 MAP-BTC 交易对在现货市场购买 MAP。",
+  "Transfer the USDT, BTC, etc. you purchased by fiat to a CEX that supports MAP trading.": "将您用法币购买的 USDT、BTC 等转移到支持 MAPO 交易的中心化交易所。",
+  "If the CEX you use supports onramp and the MAP-USDT or MAP-BTC trading pair at the same time, you can skip this.": "如果您使用的中心化交易所同时支持上车服务和 MAPO-USDT 或 MAPO-BTC 交易对，则可以跳过此步骤。",
+  "Buy MAP in the spot market via the MAP-USDT or MAP-BTC trading pair.": "通过 MAPO-USDT 或 MAPO-BTC 交易对在现货市场购买 MAPO。",
   "In the spot market, select either the “Limit” or “Market” option based on your trading preference.": "在现货市场中，根据您的交易偏好选择“限价”或“市价”选项。"
 }
