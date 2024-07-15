@@ -33,7 +33,7 @@
   "IMPORTANT: Please double-check the token info and the chain info you have selected before confirming “Swap”.": "IMPORTANT: Please double-check the token info and the chain info you have selected before confirming “Swap”.",
   "Hiveswap supports token exchanges on the MAP Relay Chain. You can get MAPO right within Hiveswap.": "Hiveswap supports token exchanges on the MAP Protocol mainnet. You can get MAPO right within Hiveswap.",
   "Uniswap supports a diversity of tokens on Ethereum to exchange with MAP on Ethereum, which means the MAP you get on Uniswap will be in ERC-20 token standard.": "Uniswap supports a diversity of tokens on Ethereum to exchange with MAPO on Ethereum, which means the MAPO you get on Uniswap will be in <link1>ERC-20 token standard</link1>.",
-  "PancakeSwap supports tokens on BNB Smart Chain to exchange with MAP on BNB Smart Chain, which means the MAP you get on PancakeSwap will be in the BEP-20 token standard.": "PancakeSwap supports tokens on BNB Smart Chain to exchange with MAP on BNB Smart Chain, which means the MAP you get on PancakeSwap will be in the <link1>BEP-20 token standard</link1>.",
+  "PancakeSwap supports tokens on BNB Smart Chain to exchange with MAP on BNB Smart Chain, which means the MAP you get on PancakeSwap will be in the BEP-20 token standard.": "PancakeSwap supports tokens on BNB Smart Chain to exchange with MAPO on BNB Smart Chain, which means the MAPO you get on PancakeSwap will be in the <link1>BEP-20 token standard</link1>.",
   "*If you would like to get MAPO instead of MAP, please go to Butter Swap to swap directly.": "*If you would like to get MAPO instead of MAP, please go to <link1>Butter Swap</link1> to swap directly.",
   "On Centralized Exchanges (CEXs)": "On Centralized Exchanges (CEXs)",
   "Centralized exchanges are platforms that are managed by a single entity or company. They act as middlemen between buyers and sellers of cryptocurrencies, similar to traditional stock exchanges.": "Centralized exchanges are platforms that are managed by a single entity or company. They act as middlemen between buyers and sellers of cryptocurrencies, similar to traditional stock exchanges.",
@@ -56,8 +56,8 @@
   "For asset security, it’s recommended to enable Two-step Verification.": "For asset security, it’s recommended to enable Two-step Verification.",
   "Use fiat to buy USDT, ETH, BTC, or any other tokens supported. You can use the OTC option right in a CEX.": "Use fiat to buy USDT, ETH, BTC, or any other tokens supported. You can use the OTC option right in a CEX.",
   "Additionally, you can use an onramp platform that has your desired fiat-to-crypto option.": "Additionally, you can use an onramp platform that has your desired fiat-to-crypto option.",
-  "Transfer the USDT, BTC, etc. you purchased by fiat to a CEX that supports MAP trading.": "Transfer the USDT, BTC, etc. you purchased by fiat to a CEX that supports MAP trading. ",
-  "If the CEX you use supports onramp and the MAP-USDT or MAP-BTC trading pair at the same time, you can skip this.": "If the CEX  you use supports onramp and the MAP-USDT or MAP-BTC trading pair at the same time, you can skip this.",
-  "Buy MAP in the spot market via the MAP-USDT or MAP-BTC trading pair.": "Buy MAP in the spot market via the MAP-USDT or MAP-BTC trading pair.",
+  "Transfer the USDT, BTC, etc. you purchased by fiat to a CEX that supports MAP trading.": "Transfer the USDT, BTC, etc. you purchased by fiat to a CEX that supports MAPO trading. ",
+  "If the CEX you use supports onramp and the MAP-USDT or MAP-BTC trading pair at the same time, you can skip this.": "If the CEX  you use supports onramp and the MAPO-USDT or MAPO-BTC trading pair at the same time, you can skip this.",
+  "Buy MAP in the spot market via the MAP-USDT or MAP-BTC trading pair.": "Buy MAPO in the spot market via the MAPO-USDT or MAPO-BTC trading pair.",
   "In the spot market, select either the “Limit” or “Market” option based on your trading preference.": "In the spot market, select either the “Limit” or “Market” option based on your trading preference."
 }

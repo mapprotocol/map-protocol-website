@@ -72,7 +72,7 @@ export default function GetMapDEXs() {
                     <Trans ns="get-map-1" i18nKey="You can get MAPO directly on Butter Swap and Hiveswap, and MAP on Uniswap, PancakeSwap, and Butter Swap." components={{
                         link1: <Link target="_blank" href={"https://www.butterswap.io/"} className={styles.linkText}></Link>,
                         link2: <Link target="_blank" href={"https://app.hiveswap.io/#/swap"} className={styles.linkText}></Link>,
-                        link3: <Link target="_blank" href={"https://app.uniswap.org/#/swap?outputCurrency=0x9e976f211daea0d652912ab99b0dc21a7fd728e4"} className={styles.linkText}></Link>,
+                        link3: <Link target="_blank" href={"https://app.uniswap.org/swap?outputCurrency=0x66D79B8f60ec93Bfce0b56F5Ac14A2714E509a99"} className={styles.linkText}></Link>,
                         link4: <Link target="_blank" href={"https://pancakeswap.finance/swap?inputCurrency=BNB&outputCurrency=0x66D79B8f60ec93Bfce0b56F5Ac14A2714E509a99"} className={styles.linkText}></Link>,
                         link5: <Link target="_blank" href={"https://www.butterswap.io/"} className={styles.linkText}></Link>
                     }} /></div>
