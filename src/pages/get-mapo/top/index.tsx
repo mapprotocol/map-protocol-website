@@ -191,6 +191,7 @@ export default function GetMapTop(
               link5: <Link target="_blank" href={"https://www.Bitget.com/spot/MAPOUSDT"} className={styles.linkText}></Link>,
               link6: <Link target="_blank" href={"https://www.gate.io/trade/MAPO_USDT"} className={styles.linkText}></Link>,
 
+              link7: <Link target="_blank" href={"https://www.htx.com/trade/mapo_usdt?type=spot"} className={styles.linkText}></Link>,
             }} /></div>
 
         </div>
