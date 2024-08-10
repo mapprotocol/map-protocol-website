@@ -209,7 +209,7 @@ export default function HomePageTop(
                   <Image
                     fill
                     style={{ objectFit: "contain" }}
-                    src={`/logos/${index + 1}.png`}
+                    src={`/logos/${index + 1}.svg`}
                     alt={item.title} />
                 </div>
               </div>
@@ -259,7 +259,7 @@ export default function HomePageTop(
                 <Image
                   fill
                   style={{ objectFit: "contain" }}
-                  src={`/logos/${index + 17}.png`}
+                  src={`/logos/${index + 17}.svg`}
                   alt={item.title} />
               </div>
             </div>
