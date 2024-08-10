@@ -362,7 +362,7 @@ const Header = (
                 }} className={styles.logoImage} >
                     <div className={styles.pc}>
                         <Image
-                            width={178}
+                            width={190}
                             height={30}
                             src="/images/logo.png"
                             alt="logo" />

@@ -40,25 +40,25 @@ export default function HomePageTop(
 
   const logoCard: any[] = [
     {
-      title: 'Fuchsia Logo #1',
-      src: '/images/brand-assets/fuchsia-logo-1.png',
+      title: 'Gradient Blue Logo #1',
+
       width: "234px",
       height: "47px"
     },
     {
-      title: 'Fuchsia Logo #2',
-      src: '/images/brand-assets/fuchsia-logo-2.png',
+      title: 'Gradient Blue Logo #2',
+
       width: "234px",
       height: "47px"
     },
     {
-      title: 'Fuchsia Logo #3',
+      title: 'Gradient Blue Logo #3',
       src: '/images/brand-assets/fuchsia-logo-3.png',
       width: "160px",
       height: "86px"
     },
     {
-      title: 'Fuchsia Logo #4',
+      title: 'Gradient Blue Logo #4',
       src: '/images/brand-assets/fuchsia-logo-4.png',
       width: "160px",
       height: "86px"
@@ -78,17 +78,18 @@ export default function HomePageTop(
       height: "47px"
     },
     {
-      title: 'Fuchsia Logo',
+      title: 'Blue Logo #1',
       src: '/images/brand-assets/fuchsia-logo-3.png',
       width: "234px",
       height: "47px"
     },
     {
-      title: 'Gradient Logo',
+      title: 'Blue Logo #2',
       src: '/images/brand-assets/fuchsia-logo-4.png',
       width: "234px",
       height: "47px"
     },
+
     {
       title: 'Black Logo',
       src: '/images/brand-assets/fuchsia-logo-1.png',
@@ -102,17 +103,18 @@ export default function HomePageTop(
       height: "84px"
     },
     {
-      title: 'Fuchsia Logo',
+      title: 'Blue Logo #1',
       src: '/images/brand-assets/fuchsia-logo-3.png',
       width: "158px",
       height: "84px"
     },
     {
-      title: 'Fuchsia Logo',
+      title: 'Blue Logo #2',
       src: '/images/brand-assets/fuchsia-logo-4.png',
       width: "158px",
       height: "84px"
     },
+
     {
       title: 'Black Symbol',
       src: '/images/brand-assets/fuchsia-logo-1.png',
@@ -126,13 +128,13 @@ export default function HomePageTop(
       height: "64px"
     },
     {
-      title: 'Fuchsia Symbol',
+      title: 'Blue Logo',
       src: '/images/brand-assets/fuchsia-logo-3.png',
       width: "72px",
       height: "64px"
     },
     {
-      title: 'Fuchsia Symbol',
+      title: 'Gradient Blue Logo',
       src: '/images/brand-assets/fuchsia-logo-4.png',
       width: "72px",
       height: "64px"
@@ -142,25 +144,25 @@ export default function HomePageTop(
 
   const badgesCard: any[] = [
     {
-      title: 'Fuchsia Logo #1',
+      title: 'Gradient Blue Badge #1',
       src: '/images/brand-assets/fuchsia-logo-1.png',
       width: "264px",
       height: "54px"
     },
     {
-      title: 'Fuchsia Logo #2',
+      title: 'Gradient Blue Badge #2',
       src: '/images/brand-assets/fuchsia-logo-2.png',
       width: "264px",
       height: "54px"
     },
     {
-      title: 'Fuchsia Logo #3',
+      title: 'Blue Badge',
       src: '/images/brand-assets/fuchsia-logo-3.png',
       width: "264px",
       height: "54px"
     },
     {
-      title: 'Fuchsia Logo #4',
+      title: 'Blue Badge',
       src: '/images/brand-assets/fuchsia-logo-4.png',
       width: "264px",
       height: "54px"
