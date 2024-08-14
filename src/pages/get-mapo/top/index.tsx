@@ -184,7 +184,7 @@ export default function GetMapTop(
 
           <div className={styles.mapoContent}>
             <Trans ns="get-map-1" i18nKey="MAPO is the ticker name for MAP Protocol’s native token on the MAP Relay Chain, while MAP is the ticker name of MAP Protocol’s native token on other chains such as Ethereum, BNB Smart Chain, and Polygon. It can be obtained and traded directly in centralized exchanges such as Kucoin, Bithumb, Coinone, and MEXC Global." components={{
-              link1: <Link target="_blank" href={"https://www.kucoin.com/ko/trade/MAP-USDT"} className={styles.linkText}></Link>,
+              link1: <Link target="_blank" href={"https://www.kucoin.com/trade/MAPO-USDT"} className={styles.linkText}></Link>,
               link2: <Link target="_blank" href={"https://www.bithumb.com/react/trade/order/MAP-KRW"} className={styles.linkText}></Link>,
               link3: <Link target="_blank" href={"https://coinone.co.kr/exchange/trade/mapo/krw"} className={styles.linkText}></Link>,
               link4: <Link target="_blank" href={"https://www.mexc.com/exchange/MAP_USDT?_from=search"} className={styles.linkText}></Link>,
