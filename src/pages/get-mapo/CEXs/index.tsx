@@ -52,7 +52,7 @@ export default function GetMapCEXs() {
             <div className={styles.content}>{t('Centralized exchanges are platforms that are managed by a single entity or company. They act as middlemen between buyers and sellers of cryptocurrencies, similar to traditional stock exchanges.')} </div>
             <div className={styles.content}>
                 <Trans ns="get-map-1" i18nKey="ERC-20 MAP (MAP Protocol's native token on Ethereum) is available on Kucoin, Bithumb, Coinone and MEXC Global. MRC-20 MAPO (MAP Protocol's native token on MAP Relay Chain thus the MAPO Mainnet) is available on LBank." components={{
-                    link1: <Link target="_blank" href={"https://www.kucoin.com/ko/trade/MAP-USDT"} className={styles.linkText}></Link>,
+                    link1: <Link target="_blank" href={"https://www.kucoin.com/trade/MAPO-USDT"} className={styles.linkText}></Link>,
                     link2: <Link target="_blank" href={"https://www.bithumb.com/react/trade/order/MAP-KRW"} className={styles.linkText}></Link>,
                     link3: <Link target="_blank" href={"https://coinone.co.kr/exchange/trade/mapo/krw"} className={styles.linkText}></Link>,
                     link4: <Link target="_blank" href={"https://www.mexc.com/exchange/MAP_USDT?_from=search"} className={styles.linkText}></Link>,
