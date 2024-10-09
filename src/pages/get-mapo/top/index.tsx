@@ -38,7 +38,7 @@ const GetMapCard = ({ cardInfo, index }: { cardInfo: CardInfo, index: number }) 
       <div className={styles.cardDesc}>{cardInfo.cardContent}</div>
 
       <div onClick={() => {
-        index < 3
+        index < 2
           ? handleButtonClick(cardInfo.cardLink) : Router.push(cardInfo.cardLink as Url)
       }} className={styles.cardLink}>{cardInfo.cardLinkText} <Image
           width={11}
