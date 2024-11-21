@@ -83,7 +83,7 @@ export const languageCards: Array<project> = [
     name: 'Klaytn',
     desc: "Klaytn is an open source public blockchain designed for tomorrow’s on-chain world.",
     tag: 'Layer1',
-    image: "https://pbs.twimg.com/profile_images/1747551844405297152/732rFLWS_x96.jpg",
+    image: "https://pbs.twimg.com/profile_images/1782287812571942912/qknmFIjo_400x400.jpg",
     website: 'https://klaytn.foundation/',
     x: 'https://twitter.com/klaytn_official',
   },
@@ -101,7 +101,7 @@ export const languageCards: Array<project> = [
     name: 'Blast',
     desc: "The L2 with native yield.",
     tag: 'Layer2',
-    image: "https://pbs.twimg.com/profile_images/1726739354700173312/OeT9Ef1J_400x400.jpg",
+    image: "https://pbs.twimg.com/profile_images/1807869834509549568/wb0HaZQL_400x400.jpg",
     website: 'https://blast.io/en',
     x: 'https://twitter.com/Blast_L2',
   },
@@ -110,7 +110,7 @@ export const languageCards: Array<project> = [
     name: 'zkSync',
     desc: "Scaling Ethereum’s technology and values.",
     tag: 'Layer2',
-    image: "https://pbs.twimg.com/profile_images/1647563917349060608/S1P_lNAN_400x400.jpg",
+    image: "https://pbs.twimg.com/profile_images/1835668010951950336/Aq1Kg1p0_400x400.jpg",
     website: 'https://zksync.io/',
     x: 'https://twitter.com/zksync',
   },
@@ -120,7 +120,7 @@ export const languageCards: Array<project> = [
     name: 'NEAR',
     desc: "Delivering on the promises of Web3, with Chain Abstraction.",
     tag: 'Layer1',
-    image: "https://pbs.twimg.com/profile_images/1631021064171196431/_ahCp9jR_400x400.jpg",
+    image: "https://pbs.twimg.com/profile_images/1857771063616446464/yXyw3LF6_400x400.jpg",
     website: 'https://near.org/',
     x: 'https://twitter.com/NEARProtocol',
   },
@@ -175,28 +175,11 @@ export const languageCards: Array<project> = [
     website: 'https://confluxnetwork.org/en',
     x: 'https://twitter.com/Conflux_Network',
   },
-
-  {
-    name: 'LessGas',
-    desc: 'LessGas is inscription platform with ultra-low gas fees, 0 failure &  0 congestion, deployed on Bitcoin L2s.',
-    tag: 'Launchpad',
-    image: "https://pbs.twimg.com/profile_images/1734191984175353856/zQDl03Yb_400x400.jpg",
-    website: 'https://app.lessgas.xyz/',
-    x: 'https://twitter.com/Less_Gas',
-  },
-  {
-    name: 'SATSAT',
-    desc: 'SATSAT is a Community-Oriented Bitcoin Layer2 BRC-20 Trading Platform.',
-    tag: 'DEX',
-    image: "https://pbs.twimg.com/profile_images/1739880682804109312/oXV9cR4Y_x96.jpg",
-    website: 'https://app.satsat.exchange/',
-    x: 'https://twitter.com/satsatstst',
-  },
   {
     name: 'ButterSwap',
     desc: 'ButterSwap is the first t ZK light-client cross-chain aggregator swap with minimized ZK verification time & optimized gas fees. One-click exchanges btw popular chains & BTC ecosystem.',
     tag: 'DEX',
-    image: "https://pbs.twimg.com/profile_images/1597090686825730049/pmw3ioiY_x96.jpg",
+    image: "https://pbs.twimg.com/profile_images/1796442018962669568/uYoVJ6xC_x96.jpg",
     website: 'https://www.butternetwork.io/',
     x: 'https://twitter.com/ButterNetworkio',
   },
@@ -225,23 +208,12 @@ export const languageCards: Array<project> = [
     x: 'https://twitter.com/StaQ_io',
   },
 
-  {
-    name: 'THE BALL',
-    desc: 'The Ball is an on-chain game that takes you through a spiraling tower maze with simple controls, vivid graphics, and addictive gameplay.',
-    tag: 'Game',
-    image: "https://pbs.twimg.com/profile_images/1765279944102526976/l3KC6MBI_200x200.jpg",
-    website: 'https://web3-roblox.com/',
-    x: 'https://twitter.com/TheBall_B',
-  },
-
-
- 
 
   {
     name: 'FoxPool',
     desc: "FoxPool is the world's first BTC mining pool to introduce the concept of a native platform token.",
     tag: 'DEX',
-    image: "https://pbs.twimg.com/profile_images/1746789554823327744/Zrnbv8Xo_200x200.jpg",
+    image: "https://pbs.twimg.com/profile_images/1786598965586386944/RKkFat_q_400x400.jpg",
     website: 'https://foxpool.io/',
     x: 'https://twitter.com/FoxPool_BTC',
   },
@@ -254,34 +226,6 @@ export const languageCards: Array<project> = [
     website: 'https://rootmud.xyz/',
     x: 'https://twitter.com/root_mud',
   },
-
-  {
-    name: 'MMAI',
-    desc: "MMAI is the meme powered AI built on Bitcoin Layer2.",
-    tag: 'Meme',
-    image: "https://pbs.twimg.com/profile_images/1767795062568792064/RhZZXXsn_x96.jpg",
-    website: 'https://mmai.wtf/',
-    x: 'https://twitter.com/mmaibtc/',
-  },
-
-  {
-    name: 'Tyche',
-    desc: "Tyche is the world's first NFT dividend game driven by inscriptions, and currently supports MAP Protocol Network.",
-    tag: 'NFT',
-    image: "https://pbs.twimg.com/profile_images/1757568842199609344/KC75dkeA_200x200.jpg",
-    website: 'https://mapo.tyche.fund/',
-    x: 'https://twitter.com/tychegame',
-  },
-
-  {
-    name: 'Mirak Finance',
-    desc: "Miark Finance is an all-in-one Bitcoin farming solution, offering Yield Farming, Lending, Staking, Restaking, and more for streamlined investment growth.",
-    tag: 'DEX',
-    image: "https://pbs.twimg.com/profile_images/1754820780301459456/V1a8f3-A_200x200.jpg",
-    website: 'https://www.mirak.finance/',
-    x: 'https://twitter.com/MirakFinance',
-  },
-
 
   {
     name: 'DRPX',
@@ -300,16 +244,7 @@ export const languageCards: Array<project> = [
     website: 'https://cheersland.org/',
     x: 'https://twitter.com/cheers_land',
   },
-  {
-    name: 'POP2',
-    desc: "Candy Designer open source community, copyright-free open source material, Mapo-based NFT platform.",
-    tag: 'NFT',
-    image: "https://pbs.twimg.com/profile_images/1755809473149763584/mxGrCMWX_x96.jpg",
-    website: 'https://pop2.io/#/',
-    x: 'https://twitter.com/community_candy',
-  },
-
-
+ 
   {
     name: 'Roup',
     desc: "Cross-chain is the Future.ROUP is the first inscription project strictly selected by Binance Web3.",
@@ -329,15 +264,6 @@ export const languageCards: Array<project> = [
   },
 
   {
-    name: 'Bitscale Labs',
-    desc: "Infuse AI power into the BTC network for mass adoption.",
-    tag: 'AI',
-    image: "https://pbs.twimg.com/profile_images/1543950982828023808/EEFbeEL9_400x400.jpg",
-    website: 'https://www.bitscale.one/',
-    x: 'https://twitter.com/BitscaleLabs',
-  },
-
-  {
     name: 'Friend3AI',
     desc: "Make friends & profits with Friend3 | An open #SocialFi platform that blends social dApp, inscriptions marketplace, AI, BTC eco, & trending tech.",
     tag: 'AI',
@@ -350,7 +276,7 @@ export const languageCards: Array<project> = [
     name: 'Bitget Wallet',
     desc: "Join 20M users in seamlessly navigating the Web3 space with Bitget Wallet-Your Web3 Trading Wallet of the Future.",
     tag: 'Wallet',
-    image: "https://pbs.twimg.com/profile_images/1742532543507992576/Kg_Q4dU__400x400.png",
+    image: "https://pbs.twimg.com/profile_images/1853320868342247424/9nLy9gRX_x96.jpg",
     website: 'https://web3.bitget.com/en',
     x: 'https://twitter.com/BitgetWallet',
   },
@@ -448,19 +374,19 @@ export const languageCards: Array<project> = [
     x: 'https://twitter.com/MapProtocol/status/1782675033640624563',
   },
 
-  {
-    name: 'CPIC IMHK',
-    desc: "CPIC IMHK is a wholly owned Hong Kong asset management platform of China Pacific Insurance (Group) Co. Ltd. (CPIC), has become the investment advisor to the technology company MAPO Labs, the developer of MAP Protocol.",
-    tag: 'Asset Management',
-    image: "https://media.licdn.com/dms/image/C510BAQE6I9uMRDU1qQ/company-logo_200_200/0/1630570949465?e=1722470400&v=beta&t=UScs9bqyvu9uUArlGH7xSaNm1NMtXZNe6Js6heXnWvI",
-    website: 'https://www.linkedin.com/company/cpic-investment-management-h-k-company-ltd',
-    x: 'https://twitter.com/MapProtocol/status/1772852066056286460',
-  },
+  // {
+  //   name: 'CPIC IMHK',
+  //   desc: "CPIC IMHK is a wholly owned Hong Kong asset management platform of China Pacific Insurance (Group) Co. Ltd. (CPIC), has become the investment advisor to the technology company MAPO Labs, the developer of MAP Protocol.",
+  //   tag: 'Asset Management',
+  //   image: "https://media.licdn.com/dms/image/C510BAQE6I9uMRDU1qQ/company-logo_200_200/0/1630570949465?e=1722470400&v=beta&t=UScs9bqyvu9uUArlGH7xSaNm1NMtXZNe6Js6heXnWvI",
+  //   website: 'https://www.linkedin.com/company/cpic-investment-management-h-k-company-ltd',
+  //   x: 'https://twitter.com/MapProtocol/status/1772852066056286460',
+  // },
   {
     name: 'Meson Finance',
     desc: "Meson is the faster and safer way to execute low-cost, zero-slippage BTC ETH and Stablecoin cross-chain swaps.",
     tag: 'DEX',
-    image: "https://pbs.twimg.com/profile_images/1486771068115116038/okULTyez_200x200.jpg",
+    image: "https://pbs.twimg.com/profile_images/1844573068083273728/03OqXzZD_400x400.jpg",
     website: 'https://meson.fi/',
     x: 'https://twitter.com/mesonfi',
 
