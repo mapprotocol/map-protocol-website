@@ -346,6 +346,22 @@ export const languageCards: Array<project> = [
   },
 
   {
+    name: 'LessGas',
+    desc: 'LessGas is inscription platform with ultra-low gas fees, 0 failure &  0 congestion, deployed on Bitcoin L2s.',
+    tag: 'Launchpad',
+    image: "https://pbs.twimg.com/profile_images/1734191984175353856/zQDl03Yb_400x400.jpg",
+    website: 'https://app.lessgas.xyz/',
+    x: 'https://twitter.com/Less_Gas',
+  },
+  {
+    name: 'SATSAT',
+    desc: 'SATSAT is a Community-Oriented Bitcoin Layer2 BRC-20 Trading Platform.',
+    tag: 'DEX',
+    image: "https://pbs.twimg.com/profile_images/1739880682804109312/oXV9cR4Y_x96.jpg",
+    website: 'https://app.satsat.exchange/',
+    x: 'https://twitter.com/satsatstst',
+  },
+  {
     name: 'Babylon',
     desc: "Unlocking 21 Million Bitcoins to Secure the Decentralized Economy.",
     tag: 'DeFi',
