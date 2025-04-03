@@ -194,7 +194,7 @@ export const tabsArray: TabsArray = {
         },
         {
             name: 'MAPO explorer',
-            path: 'https://mapscan.io/'
+            path: 'https://maposcan.io/'
 
         },
         {
