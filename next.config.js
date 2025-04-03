@@ -11,7 +11,6 @@ const nextConfig = {
         domains: ['assets.coingecko.com', "pbs.twimg.com"],
     },
     pageExtensions: ['js', 'jsx', 'md', 'ts', 'tsx'],
-    target: 'experimental-serverless-trace',
     // Optionally, add any other Next.js config below
 }
 
