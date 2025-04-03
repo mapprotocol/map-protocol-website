@@ -52,7 +52,7 @@ export default function Body(
             marginBottom: '50px'
           }}> {<div>
             <Trans ns="run-a-node" i18nKey="You can find an overview of all current validators and their votes on MAPO Scan and the complete guides on how to become a new validator here." components={{
-              link1: <Link target="_blank" href={"https://mapscan.io/validators"} ></Link>,
+              link1: <Link target="_blank" href={"https://maposcan.io/validators"} ></Link>,
               link2: <Link target="_blank" href={router.locale == 'zh' ? 'https://mapo.gitbook.io/docs-zh/ji-chu-zhu-ti/architecture/shi-li/how-to-become-a-new-validator' : 'https://mapo.gitbook.io/docs-en/base/architecture_en/example/how-to-become-a-new-validator_en'}></Link>
             }} /></div>}</HandTip>
         </div>
