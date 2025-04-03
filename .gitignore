@@ -33,3 +33,6 @@ yarn.lock
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.idea
+/.idea
+package-lock.json

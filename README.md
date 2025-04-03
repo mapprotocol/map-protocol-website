@@ -28,3 +28,6 @@ What things you need to install the software and how to install them:
 ### Installing
 
 A step-by-step series of examples that tell you how to get a development environment running:
+
+
+/var/www/www-maplabs-io/map-protocol-website
