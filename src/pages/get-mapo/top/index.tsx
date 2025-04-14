@@ -187,7 +187,7 @@ export default function GetMapTop(
               link1: <Link target="_blank" href={"https://www.kucoin.com/trade/MAPO-USDT"} className={styles.linkText}></Link>,
               link2: <Link target="_blank" href={"https://www.bithumb.com/react/trade/order/MAPO-KRW"} className={styles.linkText}></Link>,
               link3: <Link target="_blank" href={"https://coinone.co.kr/exchange/trade/mapo/krw"} className={styles.linkText}></Link>,
-              link4: <Link target="_blank" href={"https://www.mexc.com/exchange/MAP_USDT?_from=search"} className={styles.linkText}></Link>,
+              link4: <Link target="_blank" href={"https://www.mexc.co/exchange/MAPO_USDT?_from=search"} className={styles.linkText}></Link>,
               link5: <Link target="_blank" href={"https://www.Bitget.com/spot/MAPOUSDT"} className={styles.linkText}></Link>,
               link6: <Link target="_blank" href={"https://www.gate.io/trade/MAPO_USDT"} className={styles.linkText}></Link>,
 
