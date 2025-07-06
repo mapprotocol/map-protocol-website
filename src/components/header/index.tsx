@@ -255,7 +255,8 @@ export const tabsArray: TabsArray = {
     ]
 }
 export const tabs = [
-    'Bitcoin layer-2', 'Use MAP Protocol', 'Learn', 'Developer', 'Enterprise', 'Community'
+    // 'Bitcoin layer-2',
+    'Use MAP Protocol', 'Learn', 'Developer', 'Enterprise', 'Community'
 
 ]
 const Header = (
