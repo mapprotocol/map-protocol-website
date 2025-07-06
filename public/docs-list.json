@@ -8,46 +8,61 @@
       "children": [
         {
           "type": "file",
+          "name": "Develop",
+          "path": "develop/README"
+        },
+        {
+          "type": "file",
           "name": "How to integrate MAP Protocol with EVM-Compatible Chains",
-          "path": "develop\\chains-connect"
+          "path": "develop/chains-connect"
         },
         {
           "type": "directory",
           "name": "light-client",
           "children": [
             {
+              "type": "file",
+              "name": "MAP Maintainer - Compass",
+              "path": "develop/light-client/Maintainer"
+            },
+            {
+              "type": "file",
+              "name": "Light Client",
+              "path": "develop/light-client/README"
+            },
+            {
               "type": "directory",
               "name": "clients",
               "children": [
                 {
                   "type": "file",
-                  "name": "BNBSmartChain Light Client",
-                  "path": "develop\\light-client\\clients\\bsc"
+                  "name": "Conflux Light Client",
+                  "path": "develop/light-client/clients/Conflux"
                 },
                 {
                   "type": "file",
-                  "name": "Conflux Light Client",
-                  "path": "develop\\light-client\\clients\\Conflux"
+                  "name": "BNBSmartChain Light Client",
+                  "path": "develop/light-client/clients/bsc"
                 },
                 {
                   "type": "file",
                   "name": "Eth2.0 PoS light client",
-                  "path": "develop\\light-client\\clients\\eth2"
+                  "path": "develop/light-client/clients/eth2"
                 },
                 {
                   "type": "file",
                   "name": "Klaytn Light Client",
-                  "path": "develop\\light-client\\clients\\klaytn"
+                  "path": "develop/light-client/clients/klaytn"
                 },
                 {
                   "type": "file",
                   "name": "Polygon Light Client",
-                  "path": "develop\\light-client\\clients\\matic"
+                  "path": "develop/light-client/clients/matic"
                 },
                 {
                   "type": "file",
                   "name": "Near Protocol Light Client",
-                  "path": "develop\\light-client\\clients\\near"
+                  "path": "develop/light-client/clients/near"
                 }
               ]
             },
@@ -62,12 +77,12 @@
                     {
                       "type": "file",
                       "name": "Header-Store-API",
-                      "path": "develop\\light-client\\ethereum\\light-client-data\\Header-Store-API"
+                      "path": "develop/light-client/ethereum/light-client-data/Header-Store-API"
                     },
                     {
                       "type": "file",
                       "name": "Header-Store-Contract",
-                      "path": "develop\\light-client\\ethereum\\light-client-data\\Header-Store-Contract"
+                      "path": "develop/light-client/ethereum/light-client-data/Header-Store-Contract"
                     }
                   ]
                 },
@@ -78,12 +93,12 @@
                     {
                       "type": "file",
                       "name": "Tx-Verify-Contract",
-                      "path": "develop\\light-client\\ethereum\\tx-verify\\Tx-Verify-Contract"
+                      "path": "develop/light-client/ethereum/tx-verify/Tx-Verify-Contract"
                     },
                     {
                       "type": "file",
                       "name": "Cross Chain Transaction Verify Interface",
-                      "path": "develop\\light-client\\ethereum\\tx-verify\\Tx-Verify"
+                      "path": "develop/light-client/ethereum/tx-verify/Tx-Verify"
                     }
                   ]
                 }
@@ -92,12 +107,7 @@
             {
               "type": "file",
               "name": "Client Manager",
-              "path": "develop\\light-client\\light-client-manager"
-            },
-            {
-              "type": "file",
-              "name": "MAP Maintainer - Compass",
-              "path": "develop\\light-client\\Maintainer"
+              "path": "develop/light-client/light-client-manager"
             },
             {
               "type": "directory",
@@ -106,12 +116,12 @@
                 {
                   "type": "file",
                   "name": "EVM Chains",
-                  "path": "develop\\light-client\\map\\evm"
+                  "path": "develop/light-client/map/evm"
                 },
                 {
                   "type": "file",
                   "name": "MAPO light client on near protocol",
-                  "path": "develop\\light-client\\map\\near"
+                  "path": "develop/light-client/map/near"
                 },
                 {
                   "type": "directory",
@@ -120,21 +130,16 @@
                     {
                       "type": "file",
                       "name": "Tx-Verify-Contract",
-                      "path": "develop\\light-client\\map\\tx-verify\\Tx-Verify-Contract"
+                      "path": "develop/light-client/map/tx-verify/Tx-Verify-Contract"
                     },
                     {
                       "type": "file",
                       "name": "Cross Chain Transaction Verify struct",
-                      "path": "develop\\light-client\\map\\tx-verify\\Tx-Verify"
+                      "path": "develop/light-client/map/tx-verify/Tx-Verify"
                     }
                   ]
                 }
               ]
-            },
-            {
-              "type": "file",
-              "name": "Light Client",
-              "path": "develop\\light-client\\README"
             }
           ]
         },
@@ -143,18 +148,23 @@
           "name": "map-relay-chain",
           "children": [
             {
+              "type": "file",
+              "name": "MAP Relay Chain",
+              "path": "develop/map-relay-chain/README"
+            },
+            {
               "type": "directory",
               "name": "account-abstraction",
               "children": [
                 {
                   "type": "file",
                   "name": "RPC Methods",
-                  "path": "develop\\map-relay-chain\\account-abstraction\\bundler"
+                  "path": "develop/map-relay-chain/account-abstraction/bundler"
                 },
                 {
                   "type": "file",
                   "name": "Introduction",
-                  "path": "develop\\map-relay-chain\\account-abstraction\\eip4337"
+                  "path": "develop/map-relay-chain/account-abstraction/eip4337"
                 }
               ]
             },
@@ -165,12 +175,42 @@
                 {
                   "type": "file",
                   "name": "AggregatedSeal",
-                  "path": "develop\\map-relay-chain\\consensus\\AggregatedSeal"
+                  "path": "develop/map-relay-chain/consensus/AggregatedSeal"
                 },
                 {
                   "type": "file",
                   "name": "Elections",
-                  "path": "develop\\map-relay-chain\\consensus\\Election"
+                  "path": "develop/map-relay-chain/consensus/Election"
+                },
+                {
+                  "type": "file",
+                  "name": "Locked MAP And Voting",
+                  "path": "develop/map-relay-chain/consensus/LockedMAP"
+                },
+                {
+                  "type": "file",
+                  "name": "Consensus",
+                  "path": "develop/map-relay-chain/consensus/Overview"
+                },
+                {
+                  "type": "file",
+                  "name": "Proof-of-Stake.md",
+                  "path": "develop/map-relay-chain/consensus/Proof-of-Stake"
+                },
+                {
+                  "type": "file",
+                  "name": "Consensus",
+                  "path": "develop/map-relay-chain/consensus/README"
+                },
+                {
+                  "type": "file",
+                  "name": "Epoch Reward",
+                  "path": "develop/map-relay-chain/consensus/Rewards"
+                },
+                {
+                  "type": "file",
+                  "name": "Validators",
+                  "path": "develop/map-relay-chain/consensus/Validator"
                 },
                 {
                   "type": "directory",
@@ -179,39 +219,9 @@
                     {
                       "type": "file",
                       "name": "Epoch And Block",
-                      "path": "develop\\map-relay-chain\\consensus\\epoch-and-block\\README"
+                      "path": "develop/map-relay-chain/consensus/epoch-and-block/README"
                     }
                   ]
-                },
-                {
-                  "type": "file",
-                  "name": "Locked MAP And Voting",
-                  "path": "develop\\map-relay-chain\\consensus\\LockedMAP"
-                },
-                {
-                  "type": "file",
-                  "name": "Consensus",
-                  "path": "develop\\map-relay-chain\\consensus\\Overview"
-                },
-                {
-                  "type": "file",
-                  "name": "Proof-of-Stake.md",
-                  "path": "develop\\map-relay-chain\\consensus\\Proof-of-Stake"
-                },
-                {
-                  "type": "file",
-                  "name": "Consensus",
-                  "path": "develop\\map-relay-chain\\consensus\\README"
-                },
-                {
-                  "type": "file",
-                  "name": "Epoch Reward",
-                  "path": "develop\\map-relay-chain\\consensus\\Rewards"
-                },
-                {
-                  "type": "file",
-                  "name": "Validators",
-                  "path": "develop\\map-relay-chain\\consensus\\Validator"
                 }
               ]
             },
@@ -226,39 +236,39 @@
                     {
                       "type": "file",
                       "name": "AccountsABI.md",
-                      "path": "develop\\map-relay-chain\\contracts\\ABI\\AccountsABI"
+                      "path": "develop/map-relay-chain/contracts/ABI/AccountsABI"
                     },
                     {
                       "type": "file",
                       "name": "ElectionABI.md",
-                      "path": "develop\\map-relay-chain\\contracts\\ABI\\ElectionABI"
+                      "path": "develop/map-relay-chain/contracts/ABI/ElectionABI"
                     },
                     {
                       "type": "file",
                       "name": "EpochRewardsABI.md",
-                      "path": "develop\\map-relay-chain\\contracts\\ABI\\EpochRewardsABI"
+                      "path": "develop/map-relay-chain/contracts/ABI/EpochRewardsABI"
                     },
                     {
                       "type": "file",
                       "name": "LockedGoldABI.md",
-                      "path": "develop\\map-relay-chain\\contracts\\ABI\\LockedGoldABI"
+                      "path": "develop/map-relay-chain/contracts/ABI/LockedGoldABI"
                     },
                     {
                       "type": "file",
                       "name": "ValidatorsABI.md",
-                      "path": "develop\\map-relay-chain\\contracts\\ABI\\ValidatorsABI"
+                      "path": "develop/map-relay-chain/contracts/ABI/ValidatorsABI"
                     }
                   ]
                 },
                 {
                   "type": "file",
                   "name": "Contract Address About Validator",
-                  "path": "develop\\map-relay-chain\\contracts\\ContractsAddress"
+                  "path": "develop/map-relay-chain/contracts/ContractsAddress"
                 },
                 {
                   "type": "file",
                   "name": "Deploy Genesis Contracts on MAP  Relay Chain with Truffle",
-                  "path": "develop\\map-relay-chain\\contracts\\DeployContracts"
+                  "path": "develop/map-relay-chain/contracts/DeployContracts"
                 },
                 {
                   "type": "directory",
@@ -267,7 +277,7 @@
                     {
                       "type": "file",
                       "name": "Concept",
-                      "path": "develop\\map-relay-chain\\contracts\\precompile-contract\\precompile-contract"
+                      "path": "develop/map-relay-chain/contracts/precompile-contract/precompile-contract"
                     }
                   ]
                 }
@@ -279,38 +289,38 @@
               "children": [
                 {
                   "type": "file",
-                  "name": "build.md",
-                  "path": "develop\\map-relay-chain\\getting-started\\build"
-                },
-                {
-                  "type": "file",
-                  "name": "Marker genesis",
-                  "path": "develop\\map-relay-chain\\getting-started\\how-to-make-genesis"
-                },
-                {
-                  "type": "file",
-                  "name": "how-to-vote.md",
-                  "path": "develop\\map-relay-chain\\getting-started\\how-to-vote"
-                },
-                {
-                  "type": "file",
-                  "name": "how-to-withdraw.md",
-                  "path": "develop\\map-relay-chain\\getting-started\\how-to-withdraw"
-                },
-                {
-                  "type": "file",
                   "name": "Integrate an Exchange with MAP Relay Chain",
-                  "path": "develop\\map-relay-chain\\getting-started\\Integrate-an-Exchange"
+                  "path": "develop/map-relay-chain/getting-started/Integrate-an-Exchange"
                 },
                 {
                   "type": "file",
                   "name": "Integrate MAP Relay Chain with EVM-Compatible Chains",
-                  "path": "develop\\map-relay-chain\\getting-started\\Integration-EVM-Compatible-Chains"
+                  "path": "develop/map-relay-chain/getting-started/Integration-EVM-Compatible-Chains"
+                },
+                {
+                  "type": "file",
+                  "name": "build.md",
+                  "path": "develop/map-relay-chain/getting-started/build"
+                },
+                {
+                  "type": "file",
+                  "name": "Marker genesis",
+                  "path": "develop/map-relay-chain/getting-started/how-to-make-genesis"
+                },
+                {
+                  "type": "file",
+                  "name": "how-to-vote.md",
+                  "path": "develop/map-relay-chain/getting-started/how-to-vote"
+                },
+                {
+                  "type": "file",
+                  "name": "how-to-withdraw.md",
+                  "path": "develop/map-relay-chain/getting-started/how-to-withdraw"
                 },
                 {
                   "type": "file",
                   "name": "Operating a private network",
-                  "path": "develop\\map-relay-chain\\getting-started\\make-private-chain"
+                  "path": "develop/map-relay-chain/getting-started/make-private-chain"
                 }
               ]
             },
@@ -321,34 +331,29 @@
                 {
                   "type": "file",
                   "name": "AboutCommon.md",
-                  "path": "develop\\map-relay-chain\\marker\\AboutCommon"
+                  "path": "develop/map-relay-chain/marker/AboutCommon"
                 },
                 {
                   "type": "file",
                   "name": "AboutContractOwner.md",
-                  "path": "develop\\map-relay-chain\\marker\\AboutContractOwner"
+                  "path": "develop/map-relay-chain/marker/AboutContractOwner"
                 },
                 {
                   "type": "file",
                   "name": "AboutValidator.md",
-                  "path": "develop\\map-relay-chain\\marker\\AboutValidator"
+                  "path": "develop/map-relay-chain/marker/AboutValidator"
                 },
                 {
                   "type": "file",
                   "name": "AboutVote.md",
-                  "path": "develop\\map-relay-chain\\marker\\AboutVote"
+                  "path": "develop/map-relay-chain/marker/AboutVote"
                 },
                 {
                   "type": "file",
                   "name": "Marker",
-                  "path": "develop\\map-relay-chain\\marker\\Marker"
+                  "path": "develop/map-relay-chain/marker/Marker"
                 }
               ]
-            },
-            {
-              "type": "file",
-              "name": "MAP Relay Chain",
-              "path": "develop\\map-relay-chain\\README"
             }
           ]
         },
@@ -357,18 +362,23 @@
           "name": "mos",
           "children": [
             {
+              "type": "file",
+              "name": "MAP Omnichain Service (MOS)",
+              "path": "develop/mos/README"
+            },
+            {
               "type": "directory",
               "name": "examples",
               "children": [
                 {
                   "type": "file",
-                  "name": "omni-app.md",
-                  "path": "develop\\mos\\examples\\omni-app"
+                  "name": "OmniDictionary",
+                  "path": "develop/mos/examples/OmniDictionary"
                 },
                 {
                   "type": "file",
-                  "name": "OmniDictionary",
-                  "path": "develop\\mos\\examples\\OmniDictionary"
+                  "name": "omni-app.md",
+                  "path": "develop/mos/examples/omni-app"
                 }
               ]
             },
@@ -377,55 +387,55 @@
               "name": "mcs",
               "children": [
                 {
+                  "type": "file",
+                  "name": "MCS",
+                  "path": "develop/mos/mcs/README"
+                },
+                {
                   "type": "directory",
                   "name": "api",
                   "children": [
                     {
                       "type": "file",
                       "name": "api.md",
-                      "path": "develop\\mos\\mcs\\api\\api"
+                      "path": "develop/mos/mcs/api/api"
                     }
                   ]
                 },
                 {
                   "type": "file",
                   "name": "How MOS works",
-                  "path": "develop\\mos\\mcs\\how-it-works"
+                  "path": "develop/mos/mcs/how-it-works"
                 },
                 {
                   "type": "file",
                   "name": "How to use MCS on EVM chains",
-                  "path": "develop\\mos\\mcs\\how-to-evm"
+                  "path": "develop/mos/mcs/how-to-evm"
                 },
                 {
                   "type": "file",
                   "name": "How to use MCS on near protocol?",
-                  "path": "develop\\mos\\mcs\\how-to-near"
+                  "path": "develop/mos/mcs/how-to-near"
                 },
                 {
                   "type": "file",
                   "name": "How to use MCS",
-                  "path": "develop\\mos\\mcs\\how-to"
+                  "path": "develop/mos/mcs/how-to"
                 },
                 {
                   "type": "file",
                   "name": "EVM Chains Contract",
-                  "path": "develop\\mos\\mcs\\mcs-on-evm"
+                  "path": "develop/mos/mcs/mcs-on-evm"
                 },
                 {
                   "type": "file",
                   "name": "Relay Chain Contract",
-                  "path": "develop\\mos\\mcs\\mcs-on-mapo"
+                  "path": "develop/mos/mcs/mcs-on-mapo"
                 },
                 {
                   "type": "file",
                   "name": "Map cross chain service (MCS) on near protocol",
-                  "path": "develop\\mos\\mcs\\mcs-on-near"
-                },
-                {
-                  "type": "file",
-                  "name": "MCS",
-                  "path": "develop\\mos\\mcs\\README"
+                  "path": "develop/mos/mcs/mcs-on-near"
                 }
               ]
             },
@@ -436,22 +446,22 @@
                 {
                   "type": "file",
                   "name": "MAP Omnichain Service (MOS) Message",
-                  "path": "develop\\mos\\message\\cross-chain-message"
-                },
-                {
-                  "type": "file",
-                  "name": "How to use MOS Messsage on EVM chains",
-                  "path": "develop\\mos\\message\\how-to-use-evm"
-                },
-                {
-                  "type": "file",
-                  "name": "mos-message.md",
-                  "path": "develop\\mos\\message\\mos-message"
+                  "path": "develop/mos/message/README"
                 },
                 {
                   "type": "file",
                   "name": "MAP Omnichain Service (MOS) Message",
-                  "path": "develop\\mos\\message\\README"
+                  "path": "develop/mos/message/cross-chain-message"
+                },
+                {
+                  "type": "file",
+                  "name": "How to use MOS Messsage on EVM chains",
+                  "path": "develop/mos/message/how-to-use-evm"
+                },
+                {
+                  "type": "file",
+                  "name": "mos-message.md",
+                  "path": "develop/mos/message/mos-message"
                 }
               ]
             },
@@ -462,26 +472,16 @@
                 {
                   "type": "file",
                   "name": "Quick Start",
-                  "path": "develop\\mos\\messenger\\messenger"
+                  "path": "develop/mos/messenger/messenger"
                 },
                 {
                   "type": "file",
                   "name": "near-lake-s3",
-                  "path": "develop\\mos\\messenger\\near-lake-s3"
+                  "path": "develop/mos/messenger/near-lake-s3"
                 }
               ]
-            },
-            {
-              "type": "file",
-              "name": "MAP Omnichain Service (MOS)",
-              "path": "develop\\mos\\README"
             }
           ]
-        },
-        {
-          "type": "file",
-          "name": "Develop",
-          "path": "develop\\README"
         },
         {
           "type": "directory",
@@ -489,18 +489,18 @@
           "children": [
             {
               "type": "file",
-              "name": "bridge-api.md",
-              "path": "develop\\sdk\\bridge-api"
+              "name": "SDK",
+              "path": "develop/sdk/README"
             },
             {
               "type": "file",
-              "name": "SDK",
-              "path": "develop\\sdk\\README"
+              "name": "bridge-api.md",
+              "path": "develop/sdk/bridge-api"
             },
             {
               "type": "file",
               "name": "scan-api.md",
-              "path": "develop\\sdk\\scan-api"
+              "path": "develop/sdk/scan-api"
             }
           ]
         }

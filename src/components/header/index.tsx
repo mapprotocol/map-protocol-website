@@ -20,34 +20,34 @@ export interface TabsArray {
     [key: string]: TabItem[];
 }
 export const tabsArray: TabsArray = {
-    'Bitcoin layer-2': [
-        {
-            name: 'Understand Bitcoin layer-2',
-            path: '/article?id=understand-bitcoin'
-        },
-        {
-            name: 'Security features',
-            path: '/article?id=security-features'
-        },
-        {
-            name: 'MAP Protocol as Bitcoin layer-2',
-            path: '/article?id=map-as-bitcoin-layer2'
-
-        }, {
-            name: 'Understand BRC-20',
-            path: '/article?id=understand-brc20'
-        },
-        {
-            name: 'BRC 201: From BRC-20 to EVMs',
-            path: '/article?id=from-BRC-20-to-EVMs'
-        },
-        {
-            name: 'Unlocking Bitcoin ecosystem with MAP Protocol',
-            path: '/article?id=unlocking-bitcoin-ecosystem'
-
-        },
-
-    ],
+    // 'Bitcoin layer-2': [
+    //     {
+    //         name: 'Understand Bitcoin layer-2',
+    //         path: '/article?id=understand-bitcoin'
+    //     },
+    //     {
+    //         name: 'Security features',
+    //         path: '/article?id=security-features'
+    //     },
+    //     {
+    //         name: 'MAP Protocol as Bitcoin layer-2',
+    //         path: '/article?id=map-as-bitcoin-layer2'
+    //
+    //     }, {
+    //         name: 'Understand BRC-20',
+    //         path: '/article?id=understand-brc20'
+    //     },
+    //     {
+    //         name: 'BRC 201: From BRC-20 to EVMs',
+    //         path: '/article?id=from-BRC-20-to-EVMs'
+    //     },
+    //     {
+    //         name: 'Unlocking Bitcoin ecosystem with MAP Protocol',
+    //         path: '/article?id=unlocking-bitcoin-ecosystem'
+    //
+    //     },
+    //
+    // ],
     'Use MAP Protocol': [
         // {
         //     name: 'Bitcoin layer-2',
@@ -128,10 +128,10 @@ export const tabsArray: TabsArray = {
             name: 'MAP Omnichain Serivice (MOS)',
             path: '/article?id=understanding-MAP-omnichain-service'
         },
-        {
-            name: 'MAP Protocol as Bitcoin layer-2',
-            path: '/article?id=map-as-bitcoin-layer2'
-        },
+        // {
+        //     name: 'MAP Protocol as Bitcoin layer-2',
+        //     path: '/article?id=map-as-bitcoin-layer2'
+        // },
         {
             name: 'Gas fee',
             path: '/article?id=gas-fee'

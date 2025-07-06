@@ -73,13 +73,13 @@ export default function ColorsContent(
                     <div className={styles.desc}>
                         {t('With MAP Protocol’s BRC-201, a cross-chain extension protocol to BRC-20 tokens, BRC-20 and ORC-20 assets on the Bitcoin network can interact with other tokens on other public chains. This layer of Bitcoin network cross-chain interoperability will also grow the Bitcoin community as a whole.')}
                     </div>
-                    <div className={styles.button}>
-                        <Button
-                            onClick={
-                                () => {
-                                    Router.push('/article?id=map-as-bitcoin-layer2')
-                                }}
-                            variant="contained">{t('More on MAP Protocol')}</Button></div>
+                    {/*<div className={styles.button}>*/}
+                    {/*    <Button*/}
+                    {/*        onClick={*/}
+                    {/*            () => {*/}
+                    {/*                Router.push('/article?id=map-as-bitcoin-layer2')*/}
+                    {/*            }}*/}
+                    {/*        variant="contained">{t('More on MAP Protocol')}</Button></div>*/}
                 </div>
 
             </div>
