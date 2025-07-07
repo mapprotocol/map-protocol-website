@@ -77,11 +77,11 @@ export default function WhatIsMapProtocolTop(
           <div className={styles.title}>{t('A Bitcoin layer-2. The foundation for Interoperability')}</div>
           <div className={styles.desc}>{t("A complete beginner's guide to how MAP Protocol works, the benefits it brings, and how it can bring a truly interoperable future where assets, storage, and computing are all on-chain and interoperable into a reality.")}</div>
 
-          <div className={styles.getMapButton}><Button
-            onClick={() => {
-              Router.push('/article?id=understand-bitcoin')
-            }}
-            variant="contained">{t('What is Bitcoin layer-2')}</Button></div>
+          {/*<div className={styles.getMapButton}><Button*/}
+          {/*  onClick={() => {*/}
+          {/*    Router.push('/article?id=understand-bitcoin')*/}
+          {/*  }}*/}
+          {/*  variant="contained">{t('What is Bitcoin layer-2')}</Button></div>*/}
         </div>
         <div className={styles.mapCoinsImage}>
           <Image
