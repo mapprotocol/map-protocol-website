@@ -130,8 +130,9 @@ export default function HomePageTop(
   return (
     <>
       <Head>
-        <title>{'Map Protocol - A Bitcoin layer-2 for peer-to-peer cross-chain interoperability.'}</title>
+        <title>{'MAP Protocol - Omnichain Infrastructure for BTC, Stablecoin, and Tokenized Asset Swap'}</title>
         <link rel="icon" href="/images/logo-h5.png" />
+        <meta name="description" content={'MAP Protocol is an omnichain infrastructure for BTC, stablecoin, and tokenized asset swap, enabling efficient, secure, and seamless cross-chain swaps between BTC, stablecoins, and tokenised assets.'}></meta>
       </Head>
       <div dir="ltr" className={fade} >
         
