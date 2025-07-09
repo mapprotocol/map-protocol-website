@@ -82,14 +82,14 @@ const CardList: React.FC = () => {
                 link: '/article?id=whitepaper',
                 src: '/images/computer.png',
             },
-            {
-                id: 2,
-                title: t('Unlock Bitcoin Ecosystem with MAP Protocol'),
-                content: t('The new narrative of the Bitcoin ecosystem has revoked topics and debates on Bitcoin interoperability. Explore what’s possible with MAP Protocol as a Bitcoin layer-2.'),
-                link: '/article?id=map-as-bitcoin-layer2',
-                src: '/images/run-a-node/run-a-node.png',
-    
-            },
+            // {
+            //     id: 2,
+            //     title: t('Unlock Bitcoin Ecosystem with MAP Protocol'),
+            //     content: t('The new narrative of the Bitcoin ecosystem has revoked topics and debates on Bitcoin interoperability. Explore what’s possible with MAP Protocol as a Bitcoin layer-2.'),
+            //     link: '/article?id=map-as-bitcoin-layer2',
+            //     src: '/images/run-a-node/run-a-node.png',
+            //
+            // },
             {
                 id: 3,
                 title: t('Stake MAPO'),
