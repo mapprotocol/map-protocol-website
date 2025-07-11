@@ -29,11 +29,11 @@ type language = {
 }
 
 export const languageCards: Array<language> = [
-  {
-    id: 'ar',
-    name: 'عربي',
-    englishName: 'ARABIC'
-  },
+  // {
+  //   id: 'ar',
+  //   name: 'عربي',
+  //   englishName: 'ARABIC'
+  // },
   {
     id: 'en',
     name: 'English',
@@ -44,21 +44,21 @@ export const languageCards: Array<language> = [
     name: '简体中文',
     englishName: 'CHINESE SIMPLIFIED'
   },
-  {
-    id: 'zh-TW',
-    name: '繁體中文',
-    englishName: 'CHINESE TRADITIONAL'
-  },
-  {
-    id: 'fr',
-    name: 'Français',
-    englishName: 'FRENCH'
-  },
-  {
-    id: 'de',
-    name: 'Deutsch',
-    englishName: 'GERMAN'
-  },
+  // {
+  //   id: 'zh-TW',
+  //   name: '繁體中文',
+  //   englishName: 'CHINESE TRADITIONAL'
+  // },
+  // {
+  //   id: 'fr',
+  //   name: 'Français',
+  //   englishName: 'FRENCH'
+  // },
+  // {
+  //   id: 'de',
+  //   name: 'Deutsch',
+  //   englishName: 'GERMAN'
+  // },
   // {
   //   id: 'hi',
   //   name: 'हिंदी',
@@ -66,50 +66,50 @@ export const languageCards: Array<language> = [
   // },
 
 
-  {
-    id: 'it',
-    name: 'Italiano',
-    englishName: 'ITALIAN'
-  },
-
-  {
-    id: 'ja',
-    name: '日本語',
-    englishName: 'JAPANESE'
-  },
+  // {
+  //   id: 'it',
+  //   name: 'Italiano',
+  //   englishName: 'ITALIAN'
+  // },
+  //
+  // {
+  //   id: 'ja',
+  //   name: '日本語',
+  //   englishName: 'JAPANESE'
+  // },
   {
     id: 'kr',
     name: '한국어',
     englishName: 'KOREAN'
   },
 
-  {
-    id: 'ru',
-    name: 'Русский',
-    englishName: 'RUSSIAN'
-  },
-
-  {
-    id: 'es',
-    name: 'Español',
-    englishName: 'SPANISH'
-  },
-
-  {
-    id: 'tr',
-    name: 'Türkiye',
-    englishName: 'TURKISH'
-  },
-  {
-    id: 'uk',
-    name: 'Україна',
-    englishName: 'UKRAINIAN'
-  },
-  {
-    id: 'vi',
-    name: 'Tiếng Việt',
-    englishName: 'VIETNAMESE'
-  },
+  // {
+  //   id: 'ru',
+  //   name: 'Русский',
+  //   englishName: 'RUSSIAN'
+  // },
+  //
+  // {
+  //   id: 'es',
+  //   name: 'Español',
+  //   englishName: 'SPANISH'
+  // },
+  //
+  // {
+  //   id: 'tr',
+  //   name: 'Türkiye',
+  //   englishName: 'TURKISH'
+  // },
+  // {
+  //   id: 'uk',
+  //   name: 'Україна',
+  //   englishName: 'UKRAINIAN'
+  // },
+  // {
+  //   id: 'vi',
+  //   name: 'Tiếng Việt',
+  //   englishName: 'VIETNAMESE'
+  // },
 ]
 export default function Language(
   _props: InferGetServerSidePropsType<typeof getServerSideProps>

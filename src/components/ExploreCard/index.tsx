@@ -122,14 +122,14 @@ const CardList: React.FC = () => {
                 src: '/images/home-page/get-start-1.png',
     
             },
-            {
-                id: 7,
-                title: t('Understand Bitcoin layer-2'),
-                content: t('Bitcoin layer-2 is key to Bitcoin ecosystem growth. As the adoption of Bitcoin continues to grow, the importance of these Layer-2 solutions cannot be overstated.'),
-                link: '/article?id=understand-bitcoin',
-                src: '/images/article/bitcoin.png',
-    
-            },
+            // {
+            //     id: 7,
+            //     title: t('Understand Bitcoin layer-2'),
+            //     content: t('Bitcoin layer-2 is key to Bitcoin ecosystem growth. As the adoption of Bitcoin continues to grow, the importance of these Layer-2 solutions cannot be overstated.'),
+            //     link: '/article?id=understand-bitcoin',
+            //     src: '/images/article/bitcoin.png',
+            //
+            // },
             {
                 id: 8,
                 title: t('Understand long-range attack'),
