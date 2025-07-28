@@ -1,10 +1,11 @@
 import React from 'react';
-import { TabItem, TabsArray, tabsArray } from '../header';
+import {TabItem, TabsArray, tabsArray} from '../header';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import styles from './index.module.css'
-import Router, { useRouter } from 'next/router';
+import Router, {useRouter} from 'next/router';
 
 import Image from 'next/image'
-import { useTranslation } from 'next-i18next';
+import {useTranslation} from 'next-i18next';
 
 const iconArray = [
     {
@@ -31,7 +32,7 @@ const iconArray = [
         src: '/fonts/x.svg',
         link: 'https://twitter.com/mapprotocol'
     },
-   
+
 ]
 
 export const footerArray: TabsArray = {
@@ -81,7 +82,7 @@ export const footerArray: TabsArray = {
 
 
 export const Footer = () => {
-    const { t } = useTranslation('common');
+    const {t} = useTranslation('common');
     const router = useRouter();
 
     const jumpRouter = (item: TabItem) => {
@@ -99,29 +100,29 @@ export const Footer = () => {
                     {iconArray.map((item, index) =>
                         <div key={index} onClick={() => {
                             window.open(item.link)
-                        }} className={styles.logoImage} >
+                        }} className={styles.logoImage}>
                             <Image
                                 width={30}
                                 height={30}
                                 src={item.src}
-                                alt="logo" />
+                                alt="logo"/>
                         </div>
-
                     )}
                 </div>
                 <div className={styles.footerList}>
                     <div className={styles.category}>
                         {Object.keys(tabsArray).slice(0, 1).map((category) => (
                             <div key={category}
-                                style={{
-                                    marginBottom: '48px'
-                                }}
-                                className={styles.category}>
+                                 style={{
+                                     marginBottom: '48px'
+                                 }}
+                                 className={styles.category}>
                                 <div className={styles.categoryTitle}>{t(category)}</div>
                                 <div>
                                     {tabsArray[category].map((item) => (
-                                        <div onClick={() => jumpRouter(item)} className={styles.tabItem} key={item.name}>
-                                            <div >{t(item.name)}</div>
+                                        <div onClick={() => jumpRouter(item)} className={styles.tabItem}
+                                             key={item.name}>
+                                            <div>{t(item.name)}</div>
                                         </div>
                                     ))}
                                 </div>
@@ -132,8 +133,9 @@ export const Footer = () => {
                                 <div className={styles.categoryTitle}>{t(category)}</div>
                                 <div>
                                     {footerArray[category].map((item) => (
-                                        <div onClick={() => jumpRouter(item)} className={styles.tabItem} key={item.name}>
-                                            <div >{t(item.name)}</div>
+                                        <div onClick={() => jumpRouter(item)} className={styles.tabItem}
+                                             key={item.name}>
+                                            <div>{t(item.name)}</div>
                                         </div>
                                     ))}
                                 </div>
@@ -147,7 +149,7 @@ export const Footer = () => {
                             <div>
                                 {tabsArray[category].map((item) => (
                                     <div onClick={() => jumpRouter(item)} className={styles.tabItem} key={item.name}>
-                                        <div >{t(item.name)}</div>
+                                        <div>{t(item.name)}</div>
                                     </div>
                                 ))}
                             </div>
@@ -159,12 +161,13 @@ export const Footer = () => {
                                 marginBottom: '48px'
                             }}
 
-                                key={category}>
+                                 key={category}>
                                 <div className={styles.categoryTitle}>{t(category)}</div>
                                 <div>
                                     {tabsArray[category].map((item) => (
-                                        <div onClick={() => jumpRouter(item)} className={styles.tabItem} key={item.name}>
-                                            <div >{t(item.name)}</div>
+                                        <div onClick={() => jumpRouter(item)} className={styles.tabItem}
+                                             key={item.name}>
+                                            <div>{t(item.name)}</div>
                                         </div>
                                     ))}
                                 </div>
@@ -176,10 +179,11 @@ export const Footer = () => {
                                 key={category}>
                                 <div className={styles.categoryTitle}>{t(category)}</div>
                                 <div>
-                                
+
                                     {footerArray[category].map((item) => (
-                                        <div onClick={() => jumpRouter(item)} className={styles.tabItem} key={item.name}>
-                                            <div >{t(item.name)}</div>
+                                        <div onClick={() => jumpRouter(item)} className={styles.tabItem}
+                                             key={item.name}>
+                                            <div>{t(item.name)}</div>
                                         </div>
                                     ))}
                                 </div>
@@ -187,8 +191,17 @@ export const Footer = () => {
                         ))}
                     </div>
                 </div>
-                <div className={styles.bottom}>
-                    <div>&copy; {new Date().getFullYear()} MAP Protocol. All rights reserved.</div>
+                <div className={styles.bottomContainer}>
+                    <div className={styles.bottom}>
+                        <div>&copy; {new Date().getFullYear()} MAP Protocol. All rights reserved.</div>
+                    </div>
+                    <div className={styles.bottom}>
+                        <EmailOutlinedIcon/>
+                        <a href="mailto:cooperation@maplabs.io">
+                            cooperation@maplabs.io
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </footer>
