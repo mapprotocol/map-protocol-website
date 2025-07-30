@@ -4,7 +4,7 @@ description:
 lang: en
 ---
 
-MAP Protocol is a Bitcoin layer-2 and peer-to-peer omnichain infrastructure built upon light clients and ZK technology, focusing on cross-chain interoperability. During the cross-chain process, it does not rely on any privileged third parties, but is purely peer-to-peer and only puts trust in code. It provides an omnichain smart contract development platform for dApps and interoperability for the Bitcoin ecosystem.
+MAP Protocol is a peer-to-peer omnichain infrastructure built upon light clients and ZK technology, focusing on secure cross-chain interoperability. During the cross-chain process, it does not rely on any privileged third parties, but is purely peer-to-peer and only puts trust in code. It provides an omnichain smart contract development platform for dApps and interoperability for the Bitcoin ecosystem.
 
 ---
 
@@ -16,7 +16,7 @@ _The white paper explains the basic principles and technical framework of MAP Pr
 ---
 
 
-# A Bitcoin Layer-2 Focused on Cross-chain
+# A Peer-to-Peer Omnichain Infrastructure for BTC, Stablecoins, and Tokenized Assets
 
 
 ## Bitcoin Development History
@@ -38,7 +38,7 @@ However, the Bitcoin network mechanism did not remain unchanged. Over the past d
 
 The Taproot upgrade in 2021 allows for faster verification of multi-signature transactions and opens the door for inscribing text, images, SVG, and HTML on the smallest denomination of Bitcoin (called "satoshis"). In May 2023, with the proposal and explosion of BRC-20, an experimental, alternative token standard for Bitcoin, people are paying more attention to the future of Bitcoin ecosystem interoperability.
 
-How assets and users on other public chains can cross to the Bitcoin network through peer-to-peer cross-chain interoperability is also a technical issue that the industry has been exploring. As a Bitcoin-level peer-to-peer cross-chain infrastructure, MAP Protocol is committed to achieving this goal as a Bitcoin Layer 2, enriching the interoperability of the Bitcoin ecosystem.
+How assets and users on other public chains can cross to the Bitcoin network through peer-to-peer cross-chain interoperability is also a technical issue that the industry has been exploring. As a Bitcoin-level peer-to-peer cross-chain infrastructure, MAP Protocol is committed to achieving this goal, enriching the interoperability of the Bitcoin ecosystem.
 
 
 # A Peer-to-Peer Cross-Chain Smart Contracts and Web3 DApp Development Platform
@@ -560,7 +560,7 @@ This enables other cryptocurrencies on different blockchains to be traded with B
 
 # Conclusion
 
-MAP Protocol is a Bitcoin layer-2 as well as a peer-to-peer omnichain network built upon light clients and ZK technology,  focused on cross-chain interoperability. It provides the essential omnichain infrastructure for achieving interoperability among blockchain-based assets, storage, and computing across EVM and non-EVM chains.
+MAP Protocol is a peer-to-peer omnichain infrastructure built upon light clients and ZK technology,  focused on cross-chain interoperability. It provides the essential omnichain infrastructure for achieving interoperability among blockchain-based assets, storage, and computing across EVM and non-EVM chains.
 
 As an omnichain infrastructure, MAP Protocol does not rely on any trusted third party for cross-chain communication. The only trust is put in the code, which leverages the self-verifying nature of light clients to ensure cross-chain interaction in a completely peer-to-peer manner. When a cross-chain request occurs on the source chain, it is transmitted to the target chain via an off-chain role. Then, the light client deployed on the source chain will verify the validity of the cross-chain request sent by the off-chain role in a peer-to-peer manner.
 
