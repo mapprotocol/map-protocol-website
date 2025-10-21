@@ -208,6 +208,11 @@ export const tabsArray: TabsArray = {
       path: 'https://github.com/mapprotocol'
 
     },
+    {
+      name: 'MiCA Whitepaper',
+      path: 'https://files.mapprotocol.io/pdf/mapo_micar_whitepaper_2025.pdf'
+
+    },
     // {
     //     name: 'Tutorials',
     //     path: '/stake-mapo'
