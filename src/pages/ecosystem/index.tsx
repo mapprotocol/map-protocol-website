@@ -1,25 +1,16 @@
-
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import type {
-  GetServerSideProps,
-  InferGetServerSidePropsType,
-} from 'next'
+import CustomHead from '@/components/CustimHead';
+import Footer from '@/components/footer';
+import {Button, FormControl, InputLabel, MenuItem, Select, SelectChangeEvent} from '@mui/material';
+import type {GetServerSideProps, InferGetServerSidePropsType,} from 'next'
+import {useTranslation} from 'next-i18next';
+import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
 import Image from 'next/image'
-import InputAdornment from '@mui/material/InputAdornment';
-import styles from './index.module.css'
-import Link from 'next/link';
-import Router, { useRouter } from 'next/router';
-
-import TextField from '@mui/material/TextField';
+import {useRouter} from 'next/router';
+import {useEffect, useState} from 'react';
 
 import Header from '../../components/header'
-// import Faqs from './faqs'
-import { useTranslation, Trans, i18n } from 'next-i18next';
-import SearchIcon from '@mui/icons-material/Search';
-import { useEffect, useState } from 'react';
-import Footer from '@/components/footer';
-import CustomHead from '@/components/CustimHead';
-import { Button, FormControl, InputLabel, MenuItem, Select, SelectChangeEvent } from '@mui/material';
+import styles from './index.module.css'
+
 type Props = {}
 
 type project = {
@@ -56,7 +47,7 @@ export const languageCards: Array<project> = [
     name: 'Ethereum',
     desc: "Ethereum is the community-run technology powering the cryptocurrency ether (ETH) and thousands of decentralized applications.",
     tag: 'Layer1',
-    image: "https://pbs.twimg.com/profile_images/1627642622645878784/TP1GH9TM_400x400.jpg",
+    image: "/images/ecosystem/1.png",
     website: 'https://ethereum.org/en/',
     x: 'https://twitter.com/ethereum',
   },
@@ -74,18 +65,18 @@ export const languageCards: Array<project> = [
     name: 'Polygon',
     desc: "Enabling an infinitely scalable web of sovereign blockchains that feels like a single chain. Powered by ZK tech.",
     tag: 'Layer2',
-    image: "https://pbs.twimg.com/profile_images/1781425963265327104/TB5fMI9O_x96.jpg",
+    image: "/images/ecosystem/3.png",
     website: 'https://polygon.technology/',
     x: 'https://twitter.com/0xPolygon',
   },
 
   {
-    name: 'Klaytn',
-    desc: "Klaytn is an open source public blockchain designed for tomorrow’s on-chain world.",
+    name: 'Kaia',
+    desc: "Kaia is a highly optimized, BFT-based public blockchain designed to meet enterprise-grade reliability and performance standards.",
     tag: 'Layer1',
-    image: "https://pbs.twimg.com/profile_images/1782287812571942912/qknmFIjo_400x400.jpg",
-    website: 'https://klaytn.foundation/',
-    x: 'https://twitter.com/klaytn_official',
+    image: "/images/ecosystem/4.png",
+    website: "https://www.kaia.io/",
+    x: "https://x.com/kaiachain",
   },
 
   {
@@ -110,7 +101,7 @@ export const languageCards: Array<project> = [
     name: 'zkSync',
     desc: "Scaling Ethereum’s technology and values.",
     tag: 'Layer2',
-    image: "https://pbs.twimg.com/profile_images/1835668010951950336/Aq1Kg1p0_400x400.jpg",
+    image: "https://avatars.githubusercontent.com/u/133792386?s=200&v=4",
     website: 'https://zksync.io/',
     x: 'https://twitter.com/zksync',
   },
@@ -120,7 +111,7 @@ export const languageCards: Array<project> = [
     name: 'NEAR',
     desc: "Delivering on the promises of Web3, with Chain Abstraction.",
     tag: 'Layer1',
-    image: "https://pbs.twimg.com/profile_images/1857771063616446464/yXyw3LF6_400x400.jpg",
+    image: "https://avatars.githubusercontent.com/u/7613128?s=200&v=4",
     website: 'https://near.org/',
     x: 'https://twitter.com/NEARProtocol',
   },
@@ -129,40 +120,40 @@ export const languageCards: Array<project> = [
     desc: "A Native Bitcoin Layer2 powered by BitmapTech, building upon the native assets, protocols, and products on Bitcoin Layer1, to Make #Bitcoin Fun Again.",
     tag: 'Layer2',
     image: "https://pbs.twimg.com/profile_images/1752499460175962112/C4IPI-zt_x96.jpg",
-    website: 'https://zksync.io/',
+    website: 'https://merlinchain.io/',
     x: 'https://twitter.com/MerlinLayer2',
   },
+  // {
+  //   name: 'BEVM',
+  //   desc: "BEVM is the first fully decentralized EVM-compatible Bitcoin L2 that uses BTC as Gas. It allows all DApps which can run in the Ethereum ecosystem to operate on Bitcoin L2.",
+  //   tag: 'Layer2',
+  //   image: "https://pbs.twimg.com/profile_images/1738138565874425856/xOG10LN0_400x400.jpg",
+  //   website: 'https://zksync.io/',
+  //   x: 'https://twitter.com/BTClayer2',
+  // },
   {
-    name: 'BEVM',
-    desc: "BEVM is the first fully decentralized EVM-compatible Bitcoin L2 that uses BTC as Gas. It allows all DApps which can run in the Ethereum ecosystem to operate on Bitcoin L2.",
-    tag: 'Layer2',
-    image: "https://pbs.twimg.com/profile_images/1738138565874425856/xOG10LN0_400x400.jpg",
-    website: 'https://zksync.io/',
-    x: 'https://twitter.com/BTClayer2',
-  },
-  {
-    name: 'AINN Layer2',
-    desc: "The Ultimate AI-modular Bitcoin Layer2 solution.",
+    name: 'AiLayer',
+    desc: "AILayer is an innovative Bitcoin Layer2 solution, crafted with a focus on AI-driven modular construction.",
     tag: 'Layer2',
     image: "https://pbs.twimg.com/profile_images/1763669638033084416/Zlup0Y1B_x96.jpg",
-    website: 'https://zksync.io/',
-    x: 'https://twitter.com/AINNLayer2',
+    website: 'https://ailayer.xyz/',
+    x: 'https://x.com/AILayerXYZ',
   },
 
   {
     name: 'MerlinStarter',
     desc: "The 1st native launchpad on Merlin Chain. The accelerator for all #BTCLayer2 projects.",
     tag: 'Launchpad',
-    image: "https://pbs.twimg.com/profile_images/1760956700981698561/i0vaeLiR_normal.jpg",
+    image: "/images/ecosystem/10.png",
     website: 'https://merlinstarter.com/',
     x: 'https://twitter.com/Merlin_Starter',
   },
 
   {
-    name: 'BSquaredNetwork',
+    name: 'b²network',
     desc: "The Most Practical Bitcoin Layer-2 Network .The First Bitcoin DA Layer.",
     tag: 'Layer2',
-    image: "https://pbs.twimg.com/profile_images/1722440713886130176/JxGtDv9Y_x96.jpg",
+    image: "https://avatars.githubusercontent.com/u/144320694?s=200&v=4",
     website: 'https://www.bsquared.network/',
     x: 'https://twitter.com/BSquaredNetwork',
   },
@@ -209,14 +200,14 @@ export const languageCards: Array<project> = [
   },
 
 
-  {
-    name: 'FoxPool',
-    desc: "FoxPool is the world's first BTC mining pool to introduce the concept of a native platform token.",
-    tag: 'DEX',
-    image: "https://pbs.twimg.com/profile_images/1786598965586386944/RKkFat_q_400x400.jpg",
-    website: 'https://foxpool.io/',
-    x: 'https://twitter.com/FoxPool_BTC',
-  },
+  // {
+  //   name: 'FoxPool',
+  //   desc: "FoxPool is the world's first BTC mining pool to introduce the concept of a native platform token.",
+  //   tag: 'DEX',
+  //   image: "https://pbs.twimg.com/profile_images/1786598965586386944/RKkFat_q_400x400.jpg",
+  //   website: 'https://foxpool.io/',
+  //   x: 'https://twitter.com/FoxPool_BTC',
+  // },
 
   {
     name: 'rootMUD',
@@ -231,7 +222,7 @@ export const languageCards: Array<project> = [
     name: 'DRPX',
     desc: "DRPX is your gateway to effortless token innovation, cross-chain synergy, and smart contract automation, harmonizing with Bitcoin Layer2.",
     tag: 'Infra',
-    image: "https://pbs.twimg.com/profile_images/1760950392026693632/OJQ92ryL_x96.jpg",
+    image: "https://cdn5.telesco.pe/file/gmQHffXLUr5pbP3dj_jZOQimS78ztleuKjoh7Tj4XRacbHk13LtnDcuH5ggl9KC-CxG5ZE79Xl46zCpnhYSFH7J-I_-YnHEBNBC8hY7fXld_UW9vIkjXDFD_gFxbycjn4epP2DUwRcSyE2fILCMsg65brgKAWFFmFJw__OrvidZFILq6mLTyF5hYG7zfuV5KRMOUD0buDDZoOHtxC1Xdh2w9jvwzB_24MIvrXU95ipo5WjsumjJ23nD5GByN1KSLHYMn7DvjR30rfwDrRxnM_dvctZJ7KcMUEXvEREHZy5_zAxSvBXeimS41lXIPNesmFrhJKDACX2tXBzOnJl6EEg.jpg",
     website: 'https://t.me/DropX_DAO',
     x: 'https://twitter.com/DropX_DAO',
   },
@@ -267,18 +258,18 @@ export const languageCards: Array<project> = [
     name: 'Friend3AI',
     desc: "Make friends & profits with Friend3 | An open #SocialFi platform that blends social dApp, inscriptions marketplace, AI, BTC eco, & trending tech.",
     tag: 'AI',
-    image: "https://pbs.twimg.com/profile_images/1744435081140387841/OkWORgfK_400x400.jpg",
+    image: "https://avatars.githubusercontent.com/u/143409600?s=200&v=4",
     website: 'https://friend3.group/',
-    x: 'https://twitter.com/Friend3AI',
+    x: 'https://x.com/Friend3AI',
   },
 
   {
     name: 'Bitget Wallet',
     desc: "Join 20M users in seamlessly navigating the Web3 space with Bitget Wallet-Your Web3 Trading Wallet of the Future.",
     tag: 'Wallet',
-    image: "https://pbs.twimg.com/profile_images/1853320868342247424/9nLy9gRX_x96.jpg",
-    website: 'https://web3.bitget.com/en',
-    x: 'https://twitter.com/BitgetWallet',
+    image: "https://avatars.githubusercontent.com/u/117051857?s=200&v=4",
+    website: 'https://web3.bitget.com/',
+    x: 'https://x.com/BitgetWallet',
   },
 
   {
@@ -294,7 +285,7 @@ export const languageCards: Array<project> = [
     name: 'Rabby Wallet',
     desc: "The game-changing wallet for Ethereum and all EVM chains.",
     tag: 'Wallet',
-    image: "https://pbs.twimg.com/profile_images/1414514212915748873/Grz0B2t2_400x400.jpg",
+    image: "https://avatars.githubusercontent.com/u/84845472?s=200&v=4",
     website: 'https://rabby.io/',
     x: 'https://twitter.com/Rabby_io',
   },
@@ -312,7 +303,7 @@ export const languageCards: Array<project> = [
     name: 'Solv Protocol',
     desc: "Shaping the Future of BTCFi With SolvBTC, the World’s First Ever Yield Bearing Bitcoin. Backed by  BinanceLabs and Bockchaincap.",
     tag: 'Defi',
-    image: "https://pbs.twimg.com/profile_images/1638065819581300737/gM2GUNLi_400x400.jpg",
+    image: "/images/ecosystem/solv.png",
     website: 'https://solv.finance/',
     x: 'https://twitter.com/SolvProtocol',
   },
@@ -331,7 +322,7 @@ export const languageCards: Array<project> = [
     name: 'Bitsmiley',
     desc: "BTC-Native stablecoin protocol. BTC-Native AMM.",
     tag: 'Defi',
-    image: "https://pbs.twimg.com/profile_images/1742786697606340608/449zhZuK_400x400.jpg",
+    image: "/images/ecosystem/bitsmiley.jpg",
     website: 'https://www.bitsmiley.io/',
     x: 'https://twitter.com/bitsmiley_labs',
   },
@@ -340,9 +331,9 @@ export const languageCards: Array<project> = [
     name: 'Surf Protocol',
     desc: "The Defi Hub on Bitcoin Ecosystem.",
     tag: 'DEX',
-    image: "https://pbs.twimg.com/profile_images/1710521347670257664/Pq8lYeHT_x96.png",
+    image: "https://turboflow.gitbook.io/v2-docs/~gitbook/image?url=https%3A%2F%2F3414385479-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Forganizations%252Fzlz8AZ6eP8IB6lnGxa0y%252Fsites%252Fsite_eIQVp%252Ficon%252FHCj7teDfMYmKLE3i18YT%252FFrame%25202085661941%2520%281%29.png%3Falt%3Dmedia%26token%3D4243b78b-bbed-4acb-857b-7f1163365db9&width=32&dpr=4&quality=100&sign=e2109372&sv=2",
     website: 'https://www.surf.one/',
-    x: 'https://twitter.com/surf_protocol',
+    x: 'https://x.com/surf_protocol',
   },
 
   {
@@ -365,18 +356,16 @@ export const languageCards: Array<project> = [
     name: 'Babylon',
     desc: "Unlocking 21 Million Bitcoins to Secure the Decentralized Economy.",
     tag: 'DeFi',
-    image: "https://pbs.twimg.com/profile_images/1781168613661274112/DVPEQLrM_x96.jpg",
+    image: "https://avatars.githubusercontent.com/u/175623330?s=200&v=4",
     website: 'https://babylonchain.io/',
     x: 'https://twitter.com/babylon_chain',
   },
-
-
 
   {
     name: 'TrustWallet',
     desc: "The worlds most trusted & secure crypto wallet & Web3 gateway, with 100 million+ users.",
     tag: 'Wallet',
-    image: "https://pbs.twimg.com/profile_images/1744535601574301696/B6nMXZBV_400x400.jpg",
+    image: "https://avatars.githubusercontent.com/u/32179889?s=200&v=4",
     website: 'https://trustwallet.com/download?utm_source=twitter&utm_medium=about_section&utm_campaign=branding',
     x: 'https://twitter.com/TrustWallet',
   },
@@ -411,7 +400,7 @@ export const languageCards: Array<project> = [
     name: 'Owlto Finance',
     desc: 'Owlto Finance is an intent-centric interoperability protocol, "Bridge the World with AI Agent".',
     tag: 'DEX',
-    image: "https://pbs.twimg.com/profile_images/1742900205241106432/OAYGxT31_200x200.jpg",
+    image: "https://avatars.githubusercontent.com/u/131841203?v=4",
     website: 'https://owlto.finance/',
     x: 'https://twitter.com/Owlto_Finance',
   },
@@ -423,21 +412,94 @@ export const languageCards: Array<project> = [
     website: 'https://www.bitstore.net/',
     x: 'https://twitter.com/storebitcoin',
   },
-  {
-    name: 'Gate Web3 Wallet',
-    desc: "Your GateWay to Web3 FREE Airdrops | Wallet | Trade | NFT | DeFi",
-    tag: 'Wallet',
-    image: "https://pbs.twimg.com/profile_images/1711414778072322048/luieKMM8_x96.jpg",
-    website: 'https://trustwallet.com/download?utm_source=twitter&utm_medium=about_section&utm_campaign=branding',
-    x: 'https://twitter.com/TrustWallet',
-  },
+  // {
+  //   name: 'Gate Web3 Wallet',
+  //   desc: "Your GateWay to Web3 FREE Airdrops | Wallet | Trade | NFT | DeFi",
+  //   tag: 'Wallet',
+  //   image: "https://pbs.twimg.com/profile_images/1711414778072322048/luieKMM8_x96.jpg",
+  //   website: 'https://trustwallet.com/download?utm_source=twitter&utm_medium=about_section&utm_campaign=branding',
+  //   x: 'https://twitter.com/TrustWallet',
+  // },
   {
     name: 'AlchemyPay',
     desc: "Alchemy Pay bridges fiat and crypto global economies through its real-world payment network and direct access to Web3 services via its Ramp Solution.",
     tag: 'Infra',
-    image: "https://pbs.twimg.com/profile_images/1739915334768041984/LB9lrAsB_200x200.jpg",
+    image: "https://miro.medium.com/v2/resize:fill:176:176/1*AFl48Wa3mqDhWU091MWa9g.png",
     website: 'https://alchemypay.org/',
     x: 'https://twitter.com/AlchemyPay',
+  },
+
+  {
+    name: "SlowMist",
+    image: "/images/ecosystem/25.png",
+    x: "https://x.com/SlowMist_Team",
+    website: "https://www.slowmist.com",
+    desc:
+      "SlowMist is a Blockchain security firm established in 2018, providing services such as security audits, security consultants, red teaming, and more.",
+    tag: "Security",
+  },
+  {
+    name: "CertiK",
+    image: "/images/ecosystem/26.jpg",
+    x: "https://x.com/CertiK",
+    website: "https://www.certik.com",
+    desc:
+      "CertiK is the largest blockchain security auditor and provides a comprehensive suite of tools to secure the industry at scale.",
+    tag: "Security",
+  },
+  {
+    name: "DeHacker",
+    image: "/images/ecosystem/27.png",
+    x: "https://x.com/dehackerio",
+    website: "https://www.dehacker.io/",
+    desc:
+      "We focus on Blockchain Ecosystem Security and provide audit solutions to help crypto startups build secure technology.",
+    tag: "Security",
+  },
+  {
+    name: "TokenPocket",
+    image: "/images/ecosystem/28.jpg",
+    x: "https://x.com/TokenPocket_TP",
+    website: "https://www.tokenpocket.pro/",
+    desc:
+      "TokenPocket is a multi-chain crypto wallet, easy and secure to use that trusted by millions.",
+    tag: "Wallet",
+  },
+  {
+    name: "imToken",
+    image: "/images/ecosystem/29.jpg",
+    x: "https://x.com/imTokenOfficial",
+    website: "https://token.im/",
+    desc:
+      "imToken is a reliable Web3 digital wallet trusted by tens of millions, enabling easy access to 50+ major networks including Bitcoin, Ethereum, TRON and TON.",
+    tag: "Wallet",
+  },
+  {
+    name: "D’Cent Wallet",
+    image: "/images/ecosystem/30.png",
+    x: "https://x.com/DCENTwallets",
+    website: "https://www.dcentwallet.com/",
+    desc:
+      "A secure biometric wallet for self-custody and smarter crypto management.",
+    tag: "Wallet",
+  },
+  {
+    name: "ShapeShift",
+    image: "/images/ecosystem/31.jpg",
+    x: "https://x.com/ShapeShiftt",
+    website: "https://shapeshift.com/",
+    desc:
+      "ShapeShift is the fastest way to swap Bitcoin, Ethereum, Solana, and thousands of tokens — all from your phone, with full self-custody and no KYC.",
+    tag: "DEX",
+  },
+  {
+    name: "Burrito Wallet",
+    image: "/images/ecosystem/32.png",
+    x: "https://x.com/BurritoGlobal",
+    website: "https://www.burritowallet.com/",
+    desc:
+      "Burrito Wallet supports multiple cryptocurrencies and provides access to the most popular Dapps, Defi Platforms, and NFT Marketplaces.",
+    tag: "Wallet",
   },
 ]
 export default function Language(
