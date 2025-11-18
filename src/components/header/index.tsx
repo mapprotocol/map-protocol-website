@@ -15,6 +15,7 @@ import Head from 'next/head';
 export interface TabItem {
   name: string;
   path?: string;
+  newTab?: boolean;
 }
 
 export interface TabsArray {
@@ -71,6 +72,12 @@ export const tabsArray: TabsArray = {
     {
       name: 'Stake MAPO',
       path: '/stake-mapo'
+
+    },
+    {
+      name: 'MAPO Liquidity',
+      path: 'https://liquidity.mapprotocol.io',
+      newTab: true
 
     },
     {
@@ -290,10 +297,15 @@ const Header = () => {
   };
 
   const jumpRouter = (item: TabItem) => {
-    if (item.name == 'Documentation')
+    if (item.name == 'Documentation') {
       Router.push(router.locale == 'zh' ? 'https://mapo.gitbook.io/docs-zh/' : 'https://mapo.gitbook.io/docs-en/')
-    else
-      item?.path && Router.push(item.path)
+    } else {
+      if (item.newTab){
+        window.open(item.path,'_blank')
+      }else {
+        item?.path && Router.push(item.path)
+      }
+    }
   }
 
 
