@@ -28,7 +28,7 @@ export const useMapTickers = () => {
         tickers.forEach((item: any) => {
           if (
             item.market.identifier !== "uniswap_v3" &&
-            item.base.startsWith("MAP")
+            item.base.startsWith("MAPO")
           )
             tickerArray.push({
               logo: item.market.logo,
@@ -43,6 +43,8 @@ export const useMapTickers = () => {
               volume: absoluteDecimal(item.converted_volume.usd, 0),
             });
         });
+        // volume;
+        tickerArray.sort((a, b) => b.volume - a.volume);
         setMapTickers(tickerArray);
       } catch (error) {
         console.error(error);
