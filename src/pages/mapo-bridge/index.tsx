@@ -110,6 +110,31 @@ type EthereumProvider = {
   removeListener?: (event: string, listener: (...args: unknown[]) => void) => void;
 };
 
+const readBalanceOf = async (
+  provider: EthereumProvider,
+  tokenAddress: string,
+  owner: string,
+) => {
+  const result = await provider.request({
+    method: "eth_call",
+    params: [
+      {
+        to: tokenAddress,
+        data: `0x70a08231${padAddress(owner)}`,
+      },
+      "latest",
+    ],
+  });
+  return BigInt((result as string) || "0x0");
+};
+
+const formatUnits = (value: bigint, decimals = DECIMALS) => {
+  return new Decimal(value.toString())
+    .div(new Decimal(10).pow(decimals))
+    .toFixed(6)
+    .replace(/\.?0+$/, "");
+};
+
 const CHAINS: ChainConfig[] = [
   {
     id: "22776",
@@ -371,6 +396,8 @@ export default function MapoBridge(
   const [receiver, setReceiver] = useState("");
   const [account, setAccount] = useState("");
   const [walletChainId, setWalletChainId] = useState("");
+  const [sourceBalance, setSourceBalance] = useState("0");
+  const [balanceLoading, setBalanceLoading] = useState(false);
   const [routes, setRoutes] = useState<RouteData[]>([]);
   const [selectedRouteHash, setSelectedRouteHash] = useState("");
   const [loadingRoute, setLoadingRoute] = useState(false);
@@ -400,6 +427,10 @@ export default function MapoBridge(
     () => routes.find((route) => route.hash === selectedRouteHash) || routes[0] || null,
     [routes, selectedRouteHash],
   );
+  const hasEnoughBalance = useMemo(() => {
+    if (!amount || Number(amount) <= 0) return true;
+    return new Decimal(sourceBalance || "0").gte(new Decimal(amount || "0"));
+  }, [amount, sourceBalance]);
 
   const walletOnSourceChain = walletChainId.toLowerCase() === fromChain.hexChainId.toLowerCase();
 
@@ -442,6 +473,48 @@ export default function MapoBridge(
     setErrorMessage("");
     setLastTxHash("");
   }, [selectedPairId, amount, routeSlippage]);
+
+  useEffect(() => {
+    let aborted = false;
+
+    const loadBalance = async () => {
+      const provider = getEthereum();
+      if (!provider || !account) {
+        setSourceBalance("0");
+        setBalanceLoading(false);
+        return;
+      }
+
+      try {
+        setBalanceLoading(true);
+        let rawBalance = BigInt(0);
+        if (fromChain.tokenAddress === ZERO_ADDRESS) {
+          const result = await provider.request({
+            method: "eth_getBalance",
+            params: [account, "latest"],
+          });
+          rawBalance = BigInt((result as string) || "0x0");
+        } else {
+          rawBalance = await readBalanceOf(provider, fromChain.tokenAddress, account);
+        }
+        if (aborted) return;
+        setSourceBalance(formatUnits(rawBalance));
+      } catch (error) {
+        if (aborted) return;
+        setSourceBalance("0");
+      } finally {
+        if (!aborted) {
+          setBalanceLoading(false);
+        }
+      }
+    };
+
+    loadBalance();
+
+    return () => {
+      aborted = true;
+    };
+  }, [account, fromChain]);
 
   useEffect(() => {
     const timer = window.setTimeout(() => {
@@ -548,6 +621,9 @@ export default function MapoBridge(
       if (!amount || Number(amount) <= 0) {
         throw new Error("Enter a MAPO amount greater than 0.");
       }
+      if (!hasEnoughBalance) {
+        throw new Error("Insufficient MAPO balance.");
+      }
 
       await ensureWalletChain(provider, fromChain);
       const chainId = (await provider.request({ method: "eth_chainId" })) as string;
@@ -618,8 +694,7 @@ export default function MapoBridge(
             <div className={styles.assetWrap}>
               <Image
                 src="/images/map-coin-swap.png"
-                width={380}
-                height={280}
+                fill
                 alt="MAPO bridge"
                 className={styles.assetImage}
                 priority
@@ -759,6 +834,14 @@ export default function MapoBridge(
                 />
                 MAPO
               </span>
+            </div>
+            <div className={styles.balanceRow}>
+              <span>
+                Balance: {balanceLoading ? "Loading..." : `${sourceBalance || "0"} MAPO`}
+              </span>
+              {!hasEnoughBalance && amount ? (
+                <span className={styles.balanceError}>Insufficient balance</span>
+              ) : null}
             </div>
 
             <label className={styles.inputLabel} htmlFor="mapo-receiver">

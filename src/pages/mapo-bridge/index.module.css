@@ -293,6 +293,21 @@
     border-color: rgba(31, 143, 95, 0.5);
 }
 
+.balanceRow {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    color: #61706c;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.balanceError {
+    color: #8f1f1f;
+}
+
 .walletRow {
     margin-top: 14px;
     display: flex;
@@ -537,6 +552,7 @@
         min-height: auto;
         grid-template-columns: 1fr;
         align-items: start;
+        gap: 28px;
     }
 
     .bridgePanel {
@@ -545,7 +561,9 @@
     }
 
     .assetWrap {
-        height: 220px;
+        width: min(100%, 360px);
+        height: 180px;
+        margin-top: 18px;
     }
 
     .infoBand {
@@ -555,26 +573,50 @@
 
 @media (max-width: 640px) {
     .bridgeSection {
-        padding-top: 24px;
-        gap: 24px;
+        padding-top: 20px;
+        padding-bottom: 28px;
+        gap: 18px;
     }
 
     .title {
-        font-size: 34px;
+        font-size: 31px;
+        max-width: 100%;
     }
 
     .description {
-        font-size: 17px;
+        font-size: 16px;
+        line-height: 1.45;
+        margin-top: 12px;
+    }
+
+    .bridgeCopy {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .assetWrap {
+        width: min(100%, 280px);
+        height: 132px;
+        margin-top: 12px;
     }
 
     .bridgePanel {
-        padding: 16px;
+        padding: 14px;
     }
 
     .panelHeader,
     .walletRow {
         align-items: stretch;
         flex-direction: column;
+    }
+
+    .panelTitle {
+        font-size: 20px;
+    }
+
+    .timeBadge {
+        width: fit-content;
     }
 
     .pairGrid {
@@ -587,5 +629,34 @@
 
     .addressLink {
         grid-column: 2;
+    }
+
+    .amountInputWrap {
+        height: 52px;
+        padding: 0 12px;
+    }
+
+    .amountInput {
+        font-size: 22px;
+    }
+
+    .balanceRow {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .slippageRow {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .slippageInputWrap {
+        width: 100%;
+    }
+
+    .infoBand {
+        padding-top: 12px;
+        padding-bottom: 32px;
     }
 }
