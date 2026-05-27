@@ -63,6 +63,11 @@ export const tabsArray: TabsArray = {
 
         },
         {
+            name: 'MAPO Bridge',
+            path: '/mapo-bridge'
+
+        },
+        {
             name: 'Stake MAPO',
             path: '/stake-mapo'
 
@@ -432,4 +437,3 @@ const Header = (
 };
 
 export default Header;
-
