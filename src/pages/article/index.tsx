@@ -185,7 +185,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     // // 使用 next-mdx-remote 序列化 MDX 内容
     const mdxSource = await serialize(content, {
         mdxOptions: {
-            remarkPlugins: [remarkPrism],
+            remarkPlugins: [remarkPrism as any],
         },
     });
     return {
