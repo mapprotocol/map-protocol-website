@@ -18,6 +18,7 @@ import { useRouter } from 'next/router';
 import path from 'path';
 import { serialize } from 'next-mdx-remote/serialize';
 import { MDXRemote } from 'next-mdx-remote';
+import type { Pluggable } from 'unified';
 import Sidebar from '@/components/Sidebar';
 import CardList from '@/components/ExploreCard';
 import Footer from '@/components/footer';
@@ -185,7 +186,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     // // 使用 next-mdx-remote 序列化 MDX 内容
     const mdxSource = await serialize(content, {
         mdxOptions: {
-            remarkPlugins: [remarkPrism],
+            remarkPlugins: [remarkPrism as unknown as Pluggable],
         },
     });
     return {
