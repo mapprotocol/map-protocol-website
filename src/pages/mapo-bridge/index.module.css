@@ -1,0 +1,591 @@
+.page {
+    background: #f7faf8;
+    color: #101414;
+}
+
+.bridgeSection {
+    min-height: calc(100vh - 68px);
+    padding: 44px calc(50% - 620px) 56px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 456px;
+    gap: 44px;
+    align-items: center;
+    background:
+        radial-gradient(circle at 12% 18%, rgba(31, 143, 95, 0.14), transparent 26%),
+        linear-gradient(135deg, #fbfffd 0%, #eef8f2 48%, #f6f8ff 100%);
+}
+
+.bridgeCopy {
+    min-width: 0;
+}
+
+.kicker {
+    color: #1f8f5f;
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.title {
+    max-width: 720px;
+    margin: 10px 0 0;
+    color: #071512;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.08;
+}
+
+.description {
+    max-width: 580px;
+    margin: 18px 0 0;
+    color: #3d4b47;
+    font-size: 20px;
+    line-height: 1.55;
+}
+
+.assetWrap {
+    margin-top: 26px;
+    width: min(100%, 430px);
+    height: 300px;
+    position: relative;
+}
+
+.assetImage {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.bridgePanel {
+    width: 100%;
+    border: 1px solid rgba(16, 20, 20, 0.08);
+    background: rgba(255, 255, 255, 0.94);
+    border-radius: 8px;
+    box-shadow: 0 18px 44px rgba(13, 41, 31, 0.12);
+    padding: 22px;
+    box-sizing: border-box;
+}
+
+.panelHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.panelLabel {
+    color: #61706c;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.panelTitle {
+    margin-top: 4px;
+    color: #101414;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.timeBadge {
+    height: 36px;
+    padding: 0 10px;
+    border: 1px solid rgba(31, 143, 95, 0.2);
+    border-radius: 8px;
+    color: #1f8f5f;
+    background: #edf8f2;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.pairGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.pairButton {
+    min-height: 42px;
+    border: 1px solid rgba(16, 20, 20, 0.1);
+    border-radius: 8px;
+    background: #fff;
+    color: #25312e;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 800;
+    transition: border-color 0.2s, background-color 0.2s, color 0.2s;
+}
+
+.pairIcon {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.pairButton:hover {
+    border-color: rgba(31, 143, 95, 0.4);
+    background: #f4fbf7;
+}
+
+.pairButtonActive {
+    border-color: #1f8f5f;
+    background: #e9f7ef;
+    color: #146141;
+}
+
+.routeBox {
+    margin-top: 16px;
+    border: 1px solid rgba(16, 20, 20, 0.08);
+    border-radius: 8px;
+    background: #fbfdfc;
+    padding: 12px;
+    position: relative;
+}
+
+.chainRow {
+    min-height: 72px;
+    display: grid;
+    grid-template-columns: 42px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 12px;
+}
+
+.chainBadge {
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.chainIcon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.tokenLine {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 5px;
+}
+
+.tokenIcon {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.chainText {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.chainText strong {
+    color: #101414;
+    font-size: 16px;
+}
+
+.chainText span {
+    color: #61706c;
+    font-size: 13px;
+}
+
+.chainLabel {
+    color: #1f8f5f !important;
+    font-weight: 800;
+}
+
+.addressLink {
+    color: #1976d2;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.flipButton {
+    width: 34px;
+    height: 34px;
+    border: 1px solid rgba(16, 20, 20, 0.1);
+    border-radius: 8px;
+    background: #fff;
+    color: #1f8f5f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.inputLabel {
+    display: block;
+    margin-top: 16px;
+    color: #2a3633;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.amountInputWrap {
+    margin-top: 8px;
+    height: 58px;
+    border: 1px solid rgba(16, 20, 20, 0.1);
+    border-radius: 8px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 14px;
+}
+
+.amountInput {
+    width: 100%;
+    min-width: 0;
+    border: 0;
+    outline: 0;
+    color: #101414;
+    font-size: 26px;
+    font-weight: 800;
+    background: transparent;
+}
+
+.amountToken {
+    color: #1f8f5f;
+    font-weight: 900;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.receiverInput {
+    width: 100%;
+    height: 44px;
+    margin-top: 8px;
+    border: 1px solid rgba(16, 20, 20, 0.1);
+    border-radius: 8px;
+    background: #fff;
+    color: #101414;
+    padding: 0 12px;
+    box-sizing: border-box;
+    outline: 0;
+    font-size: 14px;
+}
+
+.receiverInput:focus,
+.amountInputWrap:focus-within {
+    border-color: rgba(31, 143, 95, 0.5);
+}
+
+.walletRow {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.slippageRow {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.slippageLabel {
+    color: #2a3633;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.slippageInputWrap {
+    width: 108px;
+    height: 38px;
+    border: 1px solid rgba(16, 20, 20, 0.1);
+    border-radius: 8px;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.slippageInput {
+    width: 100%;
+    min-width: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #101414;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.slippageInputWrap span {
+    color: #61706c;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.secondaryButton,
+.quoteButton,
+.primaryButton {
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 900;
+    transition: opacity 0.2s, transform 0.2s, background-color 0.2s;
+}
+
+.secondaryButton {
+    min-height: 38px;
+    padding: 0 12px;
+    color: #101414;
+    background: #eef2f1;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.quoteButton {
+    width: 100%;
+    height: 44px;
+    margin-top: 14px;
+    color: #123528;
+    background: #dff2e7;
+}
+
+.primaryButton {
+    width: 100%;
+    height: 50px;
+    margin-top: 14px;
+    color: #fff;
+    background: #1f8f5f;
+    font-size: 16px;
+}
+
+.secondaryButton:hover,
+.quoteButton:hover,
+.primaryButton:hover {
+    transform: translateY(-1px);
+}
+
+.quoteButton:disabled,
+.primaryButton:disabled {
+    cursor: not-allowed;
+    opacity: 0.55;
+    transform: none;
+}
+
+.walletOk,
+.walletWarn {
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.walletOk {
+    color: #1f8f5f;
+}
+
+.walletWarn {
+    color: #a76500;
+}
+
+.quotePanel {
+    margin-top: 14px;
+    border: 1px solid rgba(16, 20, 20, 0.08);
+    border-radius: 8px;
+    background: #fbfdfc;
+    padding: 12px;
+}
+
+.quoteHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 10px;
+    color: #101414;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.routeSelect {
+    height: 32px;
+    border: 1px solid rgba(16, 20, 20, 0.1);
+    border-radius: 8px;
+    background: #fff;
+    color: #101414;
+    padding: 0 8px;
+}
+
+.quoteMetric {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 8px 0;
+    color: #61706c;
+    font-size: 13px;
+    border-top: 1px solid rgba(16, 20, 20, 0.06);
+}
+
+.quoteMetric strong {
+    color: #101414;
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+.errorBox,
+.statusBox {
+    margin-top: 12px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.45;
+}
+
+.errorBox {
+    color: #8f1f1f;
+    background: #fff0f0;
+}
+
+.statusBox {
+    color: #166142;
+    background: #ecf8f1;
+}
+
+.txLink {
+    display: inline-block;
+    margin-top: 10px;
+    color: #1976d2;
+    font-size: 14px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.infoBand {
+    padding: 24px calc(50% - 620px) 56px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.4fr;
+    gap: 12px;
+}
+
+.infoItem {
+    min-width: 0;
+    border: 1px solid rgba(16, 20, 20, 0.08);
+    border-radius: 8px;
+    background: #fff;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.infoItem strong {
+    color: #101414;
+    font-size: 15px;
+}
+
+.infoItem span {
+    color: #61706c;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.infoToken {
+    color: #1f8f5f !important;
+    font-weight: 800;
+}
+
+@media (max-width: 1288px) {
+    .bridgeSection,
+    .infoBand {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media (max-width: 980px) {
+    .bridgeSection {
+        min-height: auto;
+        grid-template-columns: 1fr;
+        align-items: start;
+    }
+
+    .bridgePanel {
+        max-width: 560px;
+        margin: 0 auto;
+    }
+
+    .assetWrap {
+        height: 220px;
+    }
+
+    .infoBand {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .bridgeSection {
+        padding-top: 24px;
+        gap: 24px;
+    }
+
+    .title {
+        font-size: 34px;
+    }
+
+    .description {
+        font-size: 17px;
+    }
+
+    .bridgePanel {
+        padding: 16px;
+    }
+
+    .panelHeader,
+    .walletRow {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .pairGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .chainRow {
+        grid-template-columns: 38px minmax(0, 1fr);
+    }
+
+    .addressLink {
+        grid-column: 2;
+    }
+}

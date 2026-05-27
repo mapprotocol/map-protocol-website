@@ -69,6 +69,10 @@ export const tabsArray: TabsArray = {
       path: "/get-mapo",
     },
     {
+      name: "MAPO Bridge",
+      path: "/mapo-bridge",
+    },
+    {
       name: "Stake MAPO",
       path: "/stake-mapo",
     },
