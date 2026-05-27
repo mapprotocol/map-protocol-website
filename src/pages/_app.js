@@ -1,3 +1,4 @@
+import 'core-js/modules/es.array.map'
 import Layout from './layout'
 import { appWithTranslation } from 'next-i18next';
 import BackToTopButton from "@/components/BackToTopButton"
