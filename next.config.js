@@ -8,7 +8,7 @@ const {i18n} = require('./next-i18next.config')
 const nextConfig = {
     i18n,
     images: {
-        domains: ['assets.coingecko.com', "pbs.twimg.com"],
+        domains: ['assets.coingecko.com', "pbs.twimg.com", 's3.amazonaws.com', 'cdn.befiwalletdao.com'],
     },
     pageExtensions: ['js', 'jsx', 'md', 'ts', 'tsx'],
     // Optionally, add any other Next.js config below

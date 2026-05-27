@@ -69,6 +69,10 @@ export const tabsArray: TabsArray = {
       path: "/get-mapo",
     },
     {
+      name: "MAPO Bridge",
+      path: "/mapo-bridge",
+    },
+    {
       name: "Stake MAPO",
       path: "/stake-mapo",
     },
@@ -159,10 +163,22 @@ export const tabsArray: TabsArray = {
     //     path: '/stake-mapo'
     // },
 
+<<<<<<< HEAD
     // {
     //     name: 'MAP Protocol nodes',
     //     path: '/run-a-node'
     // },
+=======
+        },
+        {
+            name: 'MAPO Bridge',
+            path: '/mapo-bridge'
+
+        },
+        {
+            name: 'Stake MAPO',
+            path: '/stake-mapo'
+>>>>>>> 1a021d9 (feat(bridge): add mapo bridge page)
 
     // {
     //     name: 'MAP Protocol roadmap',
