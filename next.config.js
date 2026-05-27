@@ -11,6 +11,11 @@ const nextConfig = {
         domains: ['assets.coingecko.com', "pbs.twimg.com", 's3.amazonaws.com', 'cdn.befiwalletdao.com'],
     },
     pageExtensions: ['js', 'jsx', 'md', 'ts', 'tsx'],
+    experimental: {
+        outputFileTracingIncludes: {
+            '/*': ['./node_modules/core-js/**/*'],
+        },
+    },
     // Optionally, add any other Next.js config below
 }
 
