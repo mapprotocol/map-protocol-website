@@ -566,22 +566,42 @@ function MapoBridgeContent() {
         );
       }
 
-      const route =
-        selectedRoute ||
-        (await requestRoutes(
+      const loadFreshRoute = async () => {
+        const freshRoutes = await requestRoutes(
           fromChain,
           toChain,
           amount,
           DEFAULT_SLIPPAGE_BPS,
-        ))[0];
-      if (!route) throw new Error("No route found.");
+        );
+        setRoutes(freshRoutes);
+        const freshRoute = freshRoutes[0];
+        if (!freshRoute) throw new Error("No route found.");
+        return freshRoute;
+      };
+
+      const requestTxWithRouteRetry = async () => {
+        const route = selectedRoute || (await loadFreshRoute());
+        try {
+          return await requestSwapTx(
+            route.hash,
+            account,
+            receiver,
+            DEFAULT_SLIPPAGE_BPS,
+          );
+        } catch (error) {
+          setStatus("Quote expired. Refreshing route...");
+          const freshRoute = await loadFreshRoute();
+          return requestSwapTx(
+            freshRoute.hash,
+            account,
+            receiver,
+            DEFAULT_SLIPPAGE_BPS,
+          );
+        }
+      };
+
       setStatus("Preparing transaction data...");
-      const tx = await requestSwapTx(
-        route.hash,
-        account,
-        receiver,
-        DEFAULT_SLIPPAGE_BPS,
-      );
+      const tx = await requestTxWithRouteRetry();
 
       if (fromChain.tokenAddress !== ZERO_ADDRESS) {
         const requiredAmount = decimalToUnits(amount);
