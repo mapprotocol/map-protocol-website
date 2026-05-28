@@ -333,51 +333,6 @@
     user-select: none;
 }
 
-.slippageRow {
-    margin-top: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-}
-
-.slippageLabel {
-    color: #2a3633;
-    font-size: 14px;
-    font-weight: 800;
-}
-
-.slippageInputWrap {
-    width: 108px;
-    height: 38px;
-    border: 1px solid rgba(16, 20, 20, 0.1);
-    border-radius: 8px;
-    background: #fff;
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-    padding: 0 10px;
-    box-sizing: border-box;
-}
-
-.slippageInput {
-    width: 100%;
-    min-width: 0;
-    border: 0;
-    outline: 0;
-    background: transparent;
-    color: #101414;
-    font-size: 14px;
-    font-weight: 800;
-}
-
-.slippageInputWrap span {
-    color: #61706c;
-    font-size: 13px;
-    font-weight: 800;
-}
-
 .secondaryButton,
 .quoteButton,
 .primaryButton {
@@ -459,15 +414,6 @@
     color: #101414;
     font-size: 14px;
     font-weight: 900;
-}
-
-.routeSelect {
-    height: 32px;
-    border: 1px solid rgba(16, 20, 20, 0.1);
-    border-radius: 8px;
-    background: #fff;
-    color: #101414;
-    padding: 0 8px;
 }
 
 .quoteMetric {
@@ -669,15 +615,6 @@
         align-items: flex-start;
         flex-direction: column;
         gap: 4px;
-    }
-
-    .slippageRow {
-        align-items: stretch;
-        flex-direction: column;
-    }
-
-    .slippageInputWrap {
-        width: 100%;
     }
 
     .infoBand {

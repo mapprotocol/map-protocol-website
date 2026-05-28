@@ -42,8 +42,7 @@ const MAPO_TOKEN_ICON = "/images/logo-h5.png";
 const ROUTE_TYPE = "exactIn";
 const ENTRANCE = "buttertest";
 const DECIMALS = 18;
-const DEFAULT_SLIPPAGE = "2";
-const DEFAULT_SLIPPAGE_SWAP = "0.2";
+const DEFAULT_SLIPPAGE_BPS = "200";
 
 type ChainId = "22776" | "56" | "1";
 type WagmiChainId = 22776 | 56 | 1;
@@ -345,14 +344,11 @@ function MapoBridgeContent() {
   const [selectedPairId, setSelectedPairId] = useState(PAIR_OPTIONS[0].id);
   const [amount, setAmount] = useState("");
   const [debouncedAmount, setDebouncedAmount] = useState("");
-  const [slippage, setSlippage] = useState(DEFAULT_SLIPPAGE);
-  const [slippageSwap, setSlippageSwap] = useState(DEFAULT_SLIPPAGE_SWAP);
   const [receiver, setReceiver] = useState("");
   const [sourceBalance, setSourceBalance] = useState("0");
   const [balanceLoading, setBalanceLoading] = useState(false);
   const [balanceReady, setBalanceReady] = useState(false);
   const [routes, setRoutes] = useState<RouteData[]>([]);
-  const [selectedRouteHash, setSelectedRouteHash] = useState("");
   const [loadingRoute, setLoadingRoute] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [status, setStatus] = useState("");
@@ -376,23 +372,7 @@ function MapoBridgeContent() {
     () => CHAINS.find((chain) => Number(chain.id) === walletChainId),
     [walletChainId],
   );
-  const routeSlippage = useMemo(() => {
-    if (fromChain.id === toChain.id) {
-      return slippageSwap;
-    }
-    return slippage;
-  }, [fromChain.id, toChain.id, slippage, slippageSwap]);
-  const routeSlippageBps = useMemo(
-    () => `${Math.max(Number(routeSlippage) || 0, 0) * 100}`,
-    [routeSlippage],
-  );
-  const selectedRoute = useMemo(
-    () =>
-      routes.find((route) => route.hash === selectedRouteHash) ||
-      routes[0] ||
-      null,
-    [routes, selectedRouteHash],
-  );
+  const selectedRoute = routes[0] || null;
   const hasEnoughBalance = useMemo(() => {
     if (!balanceReady) return false;
     if (!amount || Number(amount) <= 0) return true;
@@ -431,11 +411,10 @@ function MapoBridgeContent() {
 
   useEffect(() => {
     setRoutes([]);
-    setSelectedRouteHash("");
     setStatus("");
     setErrorMessage("");
     setLastTxHash("");
-  }, [selectedPairId, amount, routeSlippage]);
+  }, [selectedPairId, amount]);
 
   useEffect(() => {
     let aborted = false;
@@ -502,7 +481,6 @@ function MapoBridgeContent() {
       if (!debouncedAmount || Number(debouncedAmount) <= 0) {
         setLoadingRoute(false);
         setRoutes([]);
-        setSelectedRouteHash("");
         return;
       }
 
@@ -515,18 +493,16 @@ function MapoBridgeContent() {
           fromChain,
           toChain,
           debouncedAmount,
-          routeSlippageBps,
+          DEFAULT_SLIPPAGE_BPS,
         );
         if (aborted) return;
         setRoutes(result);
-        setSelectedRouteHash(result[0]?.hash || "");
         setStatus(
           "Route quote loaded. The quote can expire after a few minutes.",
         );
       } catch (error) {
         if (aborted) return;
         setRoutes([]);
-        setSelectedRouteHash("");
         setErrorMessage(getErrorMessage(error));
       } finally {
         if (!aborted) {
@@ -540,7 +516,7 @@ function MapoBridgeContent() {
     return () => {
       aborted = true;
     };
-  }, [debouncedAmount, fromChain, toChain, routeSlippageBps]);
+  }, [debouncedAmount, fromChain, toChain]);
 
   const handleFlip = () => {
     const nextPair = PAIR_OPTIONS.find(
@@ -592,14 +568,19 @@ function MapoBridgeContent() {
 
       const route =
         selectedRoute ||
-        (await requestRoutes(fromChain, toChain, amount, routeSlippageBps))[0];
+        (await requestRoutes(
+          fromChain,
+          toChain,
+          amount,
+          DEFAULT_SLIPPAGE_BPS,
+        ))[0];
       if (!route) throw new Error("No route found.");
       setStatus("Preparing transaction data...");
       const tx = await requestSwapTx(
         route.hash,
         account,
         receiver,
-        routeSlippageBps,
+        DEFAULT_SLIPPAGE_BPS,
       );
 
       if (fromChain.tokenAddress !== ZERO_ADDRESS) {
@@ -914,46 +895,10 @@ function MapoBridgeContent() {
               )}
             </div>
 
-            <div className={styles.slippageRow}>
-              <label className={styles.slippageLabel} htmlFor="mapo-slippage">
-                Slippage
-              </label>
-              <div className={styles.slippageInputWrap}>
-                <input
-                  id="mapo-slippage"
-                  className={styles.slippageInput}
-                  inputMode="decimal"
-                  value={routeSlippage}
-                  onChange={(event) => {
-                    const next = event.target.value.replace(/[^\d.]/g, "");
-                    if (fromChain.id === toChain.id) {
-                      setSlippageSwap(next);
-                    } else {
-                      setSlippage(next);
-                    }
-                  }}
-                />
-                <span>%</span>
-              </div>
-            </div>
-
             {selectedRoute && (
               <div className={styles.quotePanel}>
                 <div className={styles.quoteHeader}>
-                  <span>Best route</span>
-                  <select
-                    className={styles.routeSelect}
-                    value={selectedRoute.hash}
-                    onChange={(event) =>
-                      setSelectedRouteHash(event.target.value)
-                    }
-                  >
-                    {routes.map((route, index) => (
-                      <option key={route.hash} value={route.hash}>
-                        Route {index + 1}
-                      </option>
-                    ))}
-                  </select>
+                  <span>Quote</span>
                 </div>
                 <div className={styles.quoteMetric}>
                   <span>Receive</span>
