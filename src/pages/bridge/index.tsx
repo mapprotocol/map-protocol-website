@@ -11,8 +11,20 @@ import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
 import SwapVertIcon from "@mui/icons-material/SwapVert";
 import { useAccount, useChainId, usePublicClient, useSwitchChain } from "wagmi";
-import { getBalance, readContract, sendTransaction, waitForTransactionReceipt, writeContract } from "viem/actions";
-import { erc20Abi, type Address, type Hex, type PublicClient, type WalletClient } from "viem";
+import {
+  getBalance,
+  readContract,
+  sendTransaction,
+  waitForTransactionReceipt,
+  writeContract,
+} from "viem/actions";
+import {
+  erc20Abi,
+  type Address,
+  type Hex,
+  type PublicClient,
+  type WalletClient,
+} from "viem";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import CustomHead from "@/components/CustimHead";
@@ -152,7 +164,13 @@ const CHAINS: ChainConfig[] = [
     name: "Ethereum",
     shortName: "ETH",
     nativeSymbol: "ETH",
-    rpcUrls: ["https://eth.drpc.org", "https://ethereum-rpc.publicnode.com"],
+    rpcUrls: [
+      "https://eth.drpc.org",
+      "https://ethereum-rpc.publicnode.com",
+      "https://rpc.flashbots.net",
+      "https://eth-mainnet.public.blastapi.io",
+      "https://ethereum.publicnode.com",
+    ],
     explorerUrl: "https://etherscan.io",
     tokenAddress: MAPO_OMNI_ADDRESS,
     tokenLabel: "MAPO",
@@ -183,6 +201,15 @@ const getErrorMessage = (error: unknown) => {
   return "Unexpected error";
 };
 
+const assertTransactionSuccess = (
+  status: string,
+  failureMessage: string,
+) => {
+  if (status !== "success") {
+    throw new Error(failureMessage);
+  }
+};
+
 const shortAddress = (address: string) => {
   if (!address || address === ZERO_ADDRESS) return "Native";
   return `${address.slice(0, 6)}...${address.slice(-4)}`;
@@ -204,7 +231,8 @@ const decimalToUnits = (value: string, decimals = DECIMALS) => {
   return BigInt(units.toFixed(0));
 };
 
-const isAddress = (value: string): value is Address => /^0x[a-fA-F0-9]{40}$/.test(value);
+const isAddress = (value: string): value is Address =>
+  /^0x[a-fA-F0-9]{40}$/.test(value);
 
 const toWagmiChainId = (chain: ChainConfig): WagmiChainId =>
   Number(chain.id) as WagmiChainId;
@@ -267,7 +295,9 @@ const requestSwapTx = async (
   params.set("receiver", receiver);
 
   const response = await fetch(`${ROUTER_API}/swap?${params.toString()}`);
-  const body = (await response.json()) as ApiResponse<RouteTxData[] | RouteTxData>;
+  const body = (await response.json()) as ApiResponse<
+    RouteTxData[] | RouteTxData
+  >;
 
   if (!response.ok) {
     throw new Error(body.message || "Swap transaction request failed.");
@@ -291,7 +321,8 @@ const formatFee = (fee?: { amount: string; symbol: string }) => {
 
 const getRouteOutput = (route: RouteData | null) => {
   if (!route) return "-";
-  const output = route.dstChain?.totalAmountOut || route.bridgeChain?.totalAmountOut || "0";
+  const output =
+    route.dstChain?.totalAmountOut || route.bridgeChain?.totalAmountOut || "0";
   const symbol =
     route.dstChain?.tokenOut?.symbol ||
     route.bridgeChain?.tokenOut?.symbol ||
@@ -333,7 +364,9 @@ function MapoBridgeContent() {
   const publicClient = usePublicClient({ chainId: walletChainId });
 
   const selectedPair = useMemo(
-    () => PAIR_OPTIONS.find((pair) => pair.id === selectedPairId) || PAIR_OPTIONS[0],
+    () =>
+      PAIR_OPTIONS.find((pair) => pair.id === selectedPairId) ||
+      PAIR_OPTIONS[0],
     [selectedPairId],
   );
 
@@ -354,7 +387,10 @@ function MapoBridgeContent() {
     [routeSlippage],
   );
   const selectedRoute = useMemo(
-    () => routes.find((route) => route.hash === selectedRouteHash) || routes[0] || null,
+    () =>
+      routes.find((route) => route.hash === selectedRouteHash) ||
+      routes[0] ||
+      null,
     [routes, selectedRouteHash],
   );
   const hasEnoughBalance = useMemo(() => {
@@ -362,7 +398,8 @@ function MapoBridgeContent() {
     if (!amount || Number(amount) <= 0) return true;
     return new Decimal(sourceBalance || "0").gte(new Decimal(amount || "0"));
   }, [amount, balanceReady, sourceBalance]);
-  const bridgeDisabled = submitting || loadingRoute || balanceLoading || !balanceReady;
+  const bridgeDisabled =
+    submitting || loadingRoute || balanceLoading || !balanceReady;
   const pairButtonsDisabled = isConnected && (balanceLoading || !balanceReady);
 
   const walletOnSourceChain = walletChainId === Number(fromChain.id);
@@ -483,7 +520,9 @@ function MapoBridgeContent() {
         if (aborted) return;
         setRoutes(result);
         setSelectedRouteHash(result[0]?.hash || "");
-        setStatus("Route quote loaded. The quote can expire after a few minutes.");
+        setStatus(
+          "Route quote loaded. The quote can expire after a few minutes.",
+        );
       } catch (error) {
         if (aborted) return;
         setRoutes([]);
@@ -505,7 +544,9 @@ function MapoBridgeContent() {
 
   const handleFlip = () => {
     const nextPair = PAIR_OPTIONS.find(
-      (pair) => pair.fromChainId === selectedPair.toChainId && pair.toChainId === selectedPair.fromChainId,
+      (pair) =>
+        pair.fromChainId === selectedPair.toChainId &&
+        pair.toChainId === selectedPair.fromChainId,
     );
     if (nextPair) selectPair(nextPair);
   };
@@ -540,11 +581,13 @@ function MapoBridgeContent() {
       const sourcePublicClient = getPublicClient(rainbowkitConfig, {
         chainId: sourceChainId,
       }) as BridgePublicClient | undefined;
-      const sourceWalletClient = await getWalletClient(rainbowkitConfig, {
+      const sourceWalletClient = (await getWalletClient(rainbowkitConfig, {
         chainId: sourceChainId,
-      }) as BridgeWalletClient | undefined;
+      })) as BridgeWalletClient | undefined;
       if (!sourcePublicClient || !sourceWalletClient) {
-        throw new Error("Wallet client is not ready. Reconnect wallet and try again.");
+        throw new Error(
+          "Wallet client is not ready. Reconnect wallet and try again.",
+        );
       }
 
       const route =
@@ -552,7 +595,12 @@ function MapoBridgeContent() {
         (await requestRoutes(fromChain, toChain, amount, routeSlippageBps))[0];
       if (!route) throw new Error("No route found.");
       setStatus("Preparing transaction data...");
-      const tx = await requestSwapTx(route.hash, account, receiver, routeSlippageBps);
+      const tx = await requestSwapTx(
+        route.hash,
+        account,
+        receiver,
+        routeSlippageBps,
+      );
 
       if (fromChain.tokenAddress !== ZERO_ADDRESS) {
         const requiredAmount = decimalToUnits(amount);
@@ -573,7 +621,14 @@ function MapoBridgeContent() {
             account,
             chain: sourceWalletClient.chain,
           });
-          await waitForTransactionReceipt(sourcePublicClient, { hash: approveHash });
+          setStatus("Waiting for MAPO approval confirmation...");
+          const approveReceipt = await waitForTransactionReceipt(sourcePublicClient, {
+            hash: approveHash,
+          });
+          assertTransactionSuccess(
+            approveReceipt.status,
+            "MAPO approval failed on-chain. Please try again.",
+          );
         }
       }
 
@@ -587,7 +642,15 @@ function MapoBridgeContent() {
       });
 
       setLastTxHash(txHash);
-      setStatus("Transaction submitted.");
+      setStatus("Transaction submitted. Waiting for on-chain confirmation...");
+      const bridgeReceipt = await waitForTransactionReceipt(sourcePublicClient, {
+        hash: txHash,
+      });
+      assertTransactionSuccess(
+        bridgeReceipt.status,
+        "Bridge transaction failed on-chain. Check the transaction and try again.",
+      );
+      setStatus("Bridge transaction confirmed. Waiting for destination chain arrival.");
     } catch (error) {
       setErrorMessage(getErrorMessage(error));
     } finally {
@@ -603,10 +666,10 @@ function MapoBridgeContent() {
         <section className={styles.bridgeSection}>
           <div className={styles.bridgeCopy}>
             <div className={styles.kicker}>MAPO Bridge</div>
-            <h1 className={styles.title}>Bridge MAPO between MAP Protocol, BSC, and Ethereum</h1>
-            <p className={styles.description}>
-              Dedicated MAPO routes only.
-            </p>
+            <h1 className={styles.title}>
+              Bridge MAPO between MAP Protocol, BSC, and Ethereum
+            </h1>
+            <p className={styles.description}>Dedicated MAPO routes only.</p>
             <div className={styles.assetWrap}>
               <Image
                 src="/images/map-coin-swap.png"
@@ -621,8 +684,7 @@ function MapoBridgeContent() {
           <div className={styles.bridgePanel}>
             <div className={styles.panelHeader}>
               <div>
-                <div className={styles.panelLabel}>Route</div>
-                <div className={styles.panelTitle}>MAPO Mainnet Bridge</div>
+                <div className={styles.panelTitle}>MAPO Bridge</div>
               </div>
             </div>
 
@@ -634,7 +696,11 @@ function MapoBridgeContent() {
                 return (
                   <button
                     key={pair.id}
-                    className={active ? `${styles.pairButton} ${styles.pairButtonActive}` : styles.pairButton}
+                    className={
+                      active
+                        ? `${styles.pairButton} ${styles.pairButtonActive}`
+                        : styles.pairButton
+                    }
                     onClick={() => selectPair(pair)}
                     disabled={pairButtonsDisabled}
                     type="button"
@@ -663,7 +729,10 @@ function MapoBridgeContent() {
 
             <div className={styles.routeBox}>
               <div className={styles.chainRow}>
-                <div className={styles.chainBadge} style={{ backgroundColor: fromChain.accent }}>
+                <div
+                  className={styles.chainBadge}
+                  style={{ backgroundColor: fromChain.accent }}
+                >
                   <Image
                     src={fromChain.icon}
                     width={28}
@@ -686,17 +755,30 @@ function MapoBridgeContent() {
                     {fromChain.tokenLabel}
                   </span>
                 </div>
-                <a className={styles.addressLink} href={`${fromChain.explorerUrl}/address/${fromChain.tokenAddress}`} target="_blank" rel="noreferrer">
+                <a
+                  className={styles.addressLink}
+                  href={`${fromChain.explorerUrl}/address/${fromChain.tokenAddress}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   {shortAddress(fromChain.tokenAddress)}
                 </a>
               </div>
 
-              <button className={styles.flipButton} onClick={handleFlip} type="button" aria-label="Flip route">
+              <button
+                className={styles.flipButton}
+                onClick={handleFlip}
+                type="button"
+                aria-label="Flip route"
+              >
                 <SwapVertIcon />
               </button>
 
               <div className={styles.chainRow}>
-                <div className={styles.chainBadge} style={{ backgroundColor: toChain.accent }}>
+                <div
+                  className={styles.chainBadge}
+                  style={{ backgroundColor: toChain.accent }}
+                >
                   <Image
                     src={toChain.icon}
                     width={28}
@@ -719,7 +801,12 @@ function MapoBridgeContent() {
                     {toChain.tokenLabel}
                   </span>
                 </div>
-                <a className={styles.addressLink} href={`${toChain.explorerUrl}/address/${toChain.tokenAddress}`} target="_blank" rel="noreferrer">
+                <a
+                  className={styles.addressLink}
+                  href={`${toChain.explorerUrl}/address/${toChain.tokenAddress}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   {shortAddress(toChain.tokenAddress)}
                 </a>
               </div>
@@ -735,7 +822,9 @@ function MapoBridgeContent() {
                 inputMode="decimal"
                 placeholder="0.0"
                 value={amount}
-                onChange={(event) => setAmount(event.target.value.replace(/[^\d.]/g, ""))}
+                onChange={(event) =>
+                  setAmount(event.target.value.replace(/[^\d.]/g, ""))
+                }
               />
               <span className={styles.amountToken}>
                 <Image
@@ -758,7 +847,9 @@ function MapoBridgeContent() {
                     : "Unavailable"}
               </span>
               {!hasEnoughBalance && amount ? (
-                <span className={styles.balanceError}>Insufficient balance</span>
+                <span className={styles.balanceError}>
+                  Insufficient balance
+                </span>
               ) : null}
             </div>
 
@@ -811,7 +902,11 @@ function MapoBridgeContent() {
                 }}
               </ConnectButton.Custom>
               {account && (
-                <span className={walletOnSourceChain ? styles.walletOk : styles.walletWarn}>
+                <span
+                  className={
+                    walletOnSourceChain ? styles.walletOk : styles.walletWarn
+                  }
+                >
                   {walletOnSourceChain
                     ? `${fromChain.name} ready`
                     : `${currentWalletChain?.name || "Wallet"} · Switch to ${fromChain.shortName}`}
@@ -849,7 +944,9 @@ function MapoBridgeContent() {
                   <select
                     className={styles.routeSelect}
                     value={selectedRoute.hash}
-                    onChange={(event) => setSelectedRouteHash(event.target.value)}
+                    onChange={(event) =>
+                      setSelectedRouteHash(event.target.value)
+                    }
                   >
                     {routes.map((route, index) => (
                       <option key={route.hash} value={route.hash}>
@@ -898,7 +995,12 @@ function MapoBridgeContent() {
               </a>
             )}
 
-            <button className={styles.primaryButton} onClick={handleBridge} disabled={bridgeDisabled} type="button">
+            <button
+              className={styles.primaryButton}
+              onClick={handleBridge}
+              disabled={bridgeDisabled}
+              type="button"
+            >
               {submitting ? "Processing..." : "Bridge MAPO"}
             </button>
           </div>
@@ -920,7 +1022,9 @@ function MapoBridgeContent() {
           </div>
           <div className={styles.infoItem}>
             <strong>Supported routes</strong>
-            <span>MAP Protocol <ArrowForwardIcon fontSize="small" /> BSC or Ethereum</span>
+            <span>
+              MAP Protocol <ArrowForwardIcon fontSize="small" /> BSC or Ethereum
+            </span>
           </div>
           <div className={styles.infoItem}>
             <strong>BSC / Ethereum MAPO</strong>
@@ -933,7 +1037,9 @@ function MapoBridgeContent() {
   );
 }
 
-export const getServerSideProps: GetServerSideProps<Props> = async ({ locale }) => ({
+export const getServerSideProps: GetServerSideProps<Props> = async ({
+  locale,
+}) => ({
   props: {
     ...(await serverSideTranslations(locale ?? "en", ["common"])),
   },

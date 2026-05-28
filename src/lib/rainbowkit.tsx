@@ -14,6 +14,9 @@ const projectId =
 const ETH_RPC_URLS = [
   "https://eth.drpc.org",
   "https://ethereum-rpc.publicnode.com",
+  "https://rpc.flashbots.net",
+  "https://eth-mainnet.public.blastapi.io",
+  "https://ethereum.publicnode.com",
 ];
 
 export const mapProtocol = {
