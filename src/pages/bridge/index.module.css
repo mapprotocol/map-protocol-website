@@ -87,21 +87,6 @@
     font-weight: 800;
 }
 
-.timeBadge {
-    height: 36px;
-    padding: 0 10px;
-    border: 1px solid rgba(31, 143, 95, 0.2);
-    border-radius: 8px;
-    color: #1f8f5f;
-    background: #edf8f2;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 14px;
-    font-weight: 800;
-    white-space: nowrap;
-}
-
 .pairGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -314,6 +299,13 @@
     align-items: center;
     justify-content: space-between;
     gap: 12px;
+}
+
+.walletActions {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
 }
 
 .slippageRow {
@@ -615,10 +607,6 @@
         font-size: 20px;
     }
 
-    .timeBadge {
-        width: fit-content;
-    }
-
     .pairGrid {
         grid-template-columns: 1fr;
     }
@@ -629,6 +617,17 @@
 
     .addressLink {
         grid-column: 2;
+    }
+
+    .walletActions {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .walletActions .secondaryButton,
+    .walletRow .secondaryButton {
+        width: 100%;
+        justify-content: center;
     }
 
     .amountInputWrap {
