@@ -308,6 +308,21 @@
     flex-wrap: wrap;
 }
 
+.walletChainName {
+    min-height: 38px;
+    padding: 0 12px;
+    border-radius: 8px;
+    color: #101414;
+    background: #eef2f1;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 900;
+    cursor: default;
+    user-select: none;
+}
+
 .slippageRow {
     margin-top: 14px;
     display: flex;
@@ -625,7 +640,8 @@
     }
 
     .walletActions .secondaryButton,
-    .walletRow .secondaryButton {
+    .walletRow .secondaryButton,
+    .walletChainName {
         width: 100%;
         justify-content: center;
     }

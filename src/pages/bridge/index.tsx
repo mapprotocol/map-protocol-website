@@ -761,7 +761,6 @@ function MapoBridgeContent() {
                   chain,
                   mounted,
                   openAccountModal,
-                  openChainModal,
                   openConnectModal,
                 }) => {
                   const connected = mounted && rkAccount && chain;
@@ -781,13 +780,9 @@ function MapoBridgeContent() {
 
                   return (
                     <div className={styles.walletActions}>
-                      <button
-                        className={styles.secondaryButton}
-                        onClick={openChainModal}
-                        type="button"
-                      >
-                        <span>{chain.name}</span>
-                      </button>
+                      <span className={styles.walletChainName}>
+                        {chain.name}
+                      </span>
                       <button
                         className={styles.secondaryButton}
                         onClick={openAccountModal}
