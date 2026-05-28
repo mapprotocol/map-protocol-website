@@ -87,21 +87,6 @@
     font-weight: 800;
 }
 
-.timeBadge {
-    height: 36px;
-    padding: 0 10px;
-    border: 1px solid rgba(31, 143, 95, 0.2);
-    border-radius: 8px;
-    color: #1f8f5f;
-    background: #edf8f2;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 14px;
-    font-weight: 800;
-    white-space: nowrap;
-}
-
 .pairGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -135,6 +120,16 @@
 .pairButton:hover {
     border-color: rgba(31, 143, 95, 0.4);
     background: #f4fbf7;
+}
+
+.pairButton:disabled {
+    cursor: not-allowed;
+    opacity: 0.55;
+}
+
+.pairButton:disabled:hover {
+    border-color: rgba(16, 20, 20, 0.1);
+    background: #fff;
 }
 
 .pairButtonActive {
@@ -314,6 +309,28 @@
     align-items: center;
     justify-content: space-between;
     gap: 12px;
+}
+
+.walletActions {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.walletChainName {
+    min-height: 38px;
+    padding: 0 12px;
+    border-radius: 8px;
+    color: #101414;
+    background: #eef2f1;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 900;
+    cursor: default;
+    user-select: none;
 }
 
 .slippageRow {
@@ -615,10 +632,6 @@
         font-size: 20px;
     }
 
-    .timeBadge {
-        width: fit-content;
-    }
-
     .pairGrid {
         grid-template-columns: 1fr;
     }
@@ -629,6 +642,18 @@
 
     .addressLink {
         grid-column: 2;
+    }
+
+    .walletActions {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .walletActions .secondaryButton,
+    .walletRow .secondaryButton,
+    .walletChainName {
+        width: 100%;
+        justify-content: center;
     }
 
     .amountInputWrap {
