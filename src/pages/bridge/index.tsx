@@ -359,6 +359,24 @@ function MapoBridgeContent() {
 
   const walletOnSourceChain = walletChainId === Number(fromChain.id);
 
+  const switchToPairSourceChain = async (pair: PairOption) => {
+    if (!isConnected) return;
+    const nextFromChain = CHAINS_BY_ID[pair.fromChainId];
+    if (walletChainId === toWagmiChainId(nextFromChain)) return;
+
+    try {
+      await switchChainAsync({ chainId: toWagmiChainId(nextFromChain) });
+    } catch (error) {
+      setErrorMessage(getErrorMessage(error));
+    }
+  };
+
+  const selectPair = (pair: PairOption) => {
+    setSelectedPairId(pair.id);
+    setErrorMessage("");
+    switchToPairSourceChain(pair);
+  };
+
   useEffect(() => {
     if (account && !receiver) {
       setReceiver(account);
@@ -476,7 +494,7 @@ function MapoBridgeContent() {
     const nextPair = PAIR_OPTIONS.find(
       (pair) => pair.fromChainId === selectedPair.toChainId && pair.toChainId === selectedPair.fromChainId,
     );
-    if (nextPair) setSelectedPairId(nextPair.id);
+    if (nextPair) selectPair(nextPair);
   };
 
   const handleBridge = async () => {
@@ -604,7 +622,7 @@ function MapoBridgeContent() {
                   <button
                     key={pair.id}
                     className={active ? `${styles.pairButton} ${styles.pairButtonActive}` : styles.pairButton}
-                    onClick={() => setSelectedPairId(pair.id)}
+                    onClick={() => selectPair(pair)}
                     type="button"
                   >
                     <Image
