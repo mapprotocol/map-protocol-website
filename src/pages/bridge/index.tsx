@@ -194,10 +194,50 @@ const PAIR_OPTIONS: PairOption[] = [
   { id: "eth-mapo", fromChainId: "1", toChainId: "22776" },
 ];
 
+type BridgeErrorLike = {
+  code?: number | string;
+  shortMessage?: string;
+  message?: string;
+  cause?: unknown;
+};
+
+const getErrorCode = (error: unknown): string | undefined => {
+  if (!error || typeof error !== "object") return undefined;
+  const errorLike = error as BridgeErrorLike;
+  if (errorLike.code !== undefined) return String(errorLike.code);
+  return getErrorCode(errorLike.cause);
+};
+
 const getErrorMessage = (error: unknown) => {
-  if (error instanceof Error) return error.message;
-  if (typeof error === "string") return error;
-  return "Unexpected error";
+  const code = getErrorCode(error);
+  if (code === "4001") return "Request rejected in wallet.";
+  if (code === "4100") return "Wallet authorization failed.";
+  if (code === "4900" || code === "4901") return "Wallet network disconnected.";
+  if (code === "-32002") return "Wallet request already pending.";
+
+  const rawMessage =
+    typeof error === "string"
+      ? error
+      : error && typeof error === "object"
+        ? (error as BridgeErrorLike).shortMessage ||
+          (error as BridgeErrorLike).message
+        : "";
+  const message = rawMessage || "Unexpected error";
+  const lowerMessage = message.toLowerCase();
+
+  if (lowerMessage.includes("user rejected")) {
+    return "Request rejected in wallet.";
+  }
+  if (lowerMessage.includes("insufficient funds")) {
+    return "Insufficient funds for this transaction.";
+  }
+  if (lowerMessage.includes("request arguments")) {
+    return message.split("Request Arguments:")[0].trim();
+  }
+  if (message.length > 140) {
+    return `${message.slice(0, 137).trim()}...`;
+  }
+  return message;
 };
 
 const assertTransactionSuccess = (

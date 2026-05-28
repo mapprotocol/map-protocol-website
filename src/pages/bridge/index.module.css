@@ -443,6 +443,14 @@
     font-size: 13px;
     font-weight: 700;
     line-height: 1.45;
+    min-width: 0;
+}
+
+.errorBox span,
+.statusBox span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .errorBox {
