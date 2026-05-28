@@ -319,6 +319,7 @@ function MapoBridgeContent() {
   const [receiver, setReceiver] = useState("");
   const [sourceBalance, setSourceBalance] = useState("0");
   const [balanceLoading, setBalanceLoading] = useState(false);
+  const [balanceReady, setBalanceReady] = useState(false);
   const [routes, setRoutes] = useState<RouteData[]>([]);
   const [selectedRouteHash, setSelectedRouteHash] = useState("");
   const [loadingRoute, setLoadingRoute] = useState(false);
@@ -338,6 +339,10 @@ function MapoBridgeContent() {
 
   const fromChain = CHAINS_BY_ID[selectedPair.fromChainId];
   const toChain = CHAINS_BY_ID[selectedPair.toChainId];
+  const currentWalletChain = useMemo(
+    () => CHAINS.find((chain) => Number(chain.id) === walletChainId),
+    [walletChainId],
+  );
   const routeSlippage = useMemo(() => {
     if (fromChain.id === toChain.id) {
       return slippageSwap;
@@ -353,9 +358,12 @@ function MapoBridgeContent() {
     [routes, selectedRouteHash],
   );
   const hasEnoughBalance = useMemo(() => {
+    if (!balanceReady) return false;
     if (!amount || Number(amount) <= 0) return true;
     return new Decimal(sourceBalance || "0").gte(new Decimal(amount || "0"));
-  }, [amount, sourceBalance]);
+  }, [amount, balanceReady, sourceBalance]);
+  const bridgeDisabled = submitting || loadingRoute || balanceLoading || !balanceReady;
+  const pairButtonsDisabled = isConnected && (balanceLoading || !balanceReady);
 
   const walletOnSourceChain = walletChainId === Number(fromChain.id);
 
@@ -372,6 +380,7 @@ function MapoBridgeContent() {
   };
 
   const selectPair = (pair: PairOption) => {
+    if (pairButtonsDisabled) return;
     setSelectedPairId(pair.id);
     setErrorMessage("");
     switchToPairSourceChain(pair);
@@ -398,11 +407,13 @@ function MapoBridgeContent() {
       if (!publicClient || !account) {
         setSourceBalance("0");
         setBalanceLoading(false);
+        setBalanceReady(false);
         return;
       }
 
       try {
         setBalanceLoading(true);
+        setBalanceReady(false);
         let rawBalance = BigInt(0);
         if (fromChain.tokenAddress === ZERO_ADDRESS) {
           rawBalance = await getBalance(publicClient, {
@@ -418,9 +429,11 @@ function MapoBridgeContent() {
         }
         if (aborted) return;
         setSourceBalance(formatUnits(rawBalance));
+        setBalanceReady(true);
       } catch (error) {
         if (aborted) return;
         setSourceBalance("0");
+        setBalanceReady(false);
       } finally {
         if (!aborted) {
           setBalanceLoading(false);
@@ -623,6 +636,7 @@ function MapoBridgeContent() {
                     key={pair.id}
                     className={active ? `${styles.pairButton} ${styles.pairButtonActive}` : styles.pairButton}
                     onClick={() => selectPair(pair)}
+                    disabled={pairButtonsDisabled}
                     type="button"
                   >
                     <Image
@@ -736,7 +750,12 @@ function MapoBridgeContent() {
             </div>
             <div className={styles.balanceRow}>
               <span>
-                Balance: {balanceLoading ? "Loading..." : `${sourceBalance || "0"} MAPO`}
+                Balance:{" "}
+                {balanceLoading
+                  ? "Loading..."
+                  : balanceReady
+                    ? `${sourceBalance || "0"} MAPO`
+                    : "Unavailable"}
               </span>
               {!hasEnoughBalance && amount ? (
                 <span className={styles.balanceError}>Insufficient balance</span>
@@ -780,9 +799,6 @@ function MapoBridgeContent() {
 
                   return (
                     <div className={styles.walletActions}>
-                      <span className={styles.walletChainName}>
-                        {chain.name}
-                      </span>
                       <button
                         className={styles.secondaryButton}
                         onClick={openAccountModal}
@@ -796,7 +812,9 @@ function MapoBridgeContent() {
               </ConnectButton.Custom>
               {account && (
                 <span className={walletOnSourceChain ? styles.walletOk : styles.walletWarn}>
-                  {walletOnSourceChain ? "Source network ready" : `Switch to ${fromChain.shortName}`}
+                  {walletOnSourceChain
+                    ? `${fromChain.name} ready`
+                    : `${currentWalletChain?.name || "Wallet"} · Switch to ${fromChain.shortName}`}
                 </span>
               )}
             </div>
@@ -880,7 +898,7 @@ function MapoBridgeContent() {
               </a>
             )}
 
-            <button className={styles.primaryButton} onClick={handleBridge} disabled={submitting || loadingRoute} type="button">
+            <button className={styles.primaryButton} onClick={handleBridge} disabled={bridgeDisabled} type="button">
               {submitting ? "Processing..." : "Bridge MAPO"}
             </button>
           </div>

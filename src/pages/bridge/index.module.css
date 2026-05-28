@@ -122,6 +122,16 @@
     background: #f4fbf7;
 }
 
+.pairButton:disabled {
+    cursor: not-allowed;
+    opacity: 0.55;
+}
+
+.pairButton:disabled:hover {
+    border-color: rgba(16, 20, 20, 0.1);
+    background: #fff;
+}
+
 .pairButtonActive {
     border-color: #1f8f5f;
     background: #e9f7ef;
