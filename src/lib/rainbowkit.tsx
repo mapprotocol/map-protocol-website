@@ -5,12 +5,16 @@ import {
   type Chain,
 } from "@rainbow-me/rainbowkit";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { http, WagmiProvider } from "wagmi";
+import { fallback, http, WagmiProvider } from "wagmi";
 import { mainnet, bsc } from "wagmi/chains";
 
 const projectId =
   process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID ||
   "00000000000000000000000000000000";
+const ETH_RPC_URLS = [
+  "https://eth.drpc.org",
+  "https://ethereum-rpc.publicnode.com",
+];
 
 export const mapProtocol = {
   id: 22776,
@@ -64,7 +68,7 @@ export const rainbowkitConfig = getDefaultConfig({
   chains: bridgeChains,
   ssr: true,
   transports: {
-    [mainnet.id]: http(),
+    [mainnet.id]: fallback(ETH_RPC_URLS.map((url) => http(url))),
     [bsc.id]: http(),
     [mapProtocol.id]: http("https://rpc.maplabs.io"),
   },

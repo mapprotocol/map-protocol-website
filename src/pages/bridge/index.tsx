@@ -152,7 +152,7 @@ const CHAINS: ChainConfig[] = [
     name: "Ethereum",
     shortName: "ETH",
     nativeSymbol: "ETH",
-    rpcUrls: ["https://ethereum-rpc.publicnode.com", "https://eth.llamarpc.com"],
+    rpcUrls: ["https://eth.drpc.org", "https://ethereum-rpc.publicnode.com"],
     explorerUrl: "https://etherscan.io",
     tokenAddress: MAPO_OMNI_ADDRESS,
     tokenLabel: "MAPO",
