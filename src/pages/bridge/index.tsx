@@ -40,7 +40,7 @@ const ZERO_ADDRESS = "0x0000000000000000000000000000000000000000";
 const MAPO_OMNI_ADDRESS = "0x7046933234A82AF77F14625e8d0fA9Bcc5044a7E";
 const MAPO_TOKEN_ICON = "/images/logo-h5.png";
 const ROUTE_TYPE = "exactIn";
-const ENTRANCE = "buttertest";
+const ENTRANCE = "Butter+";
 const DECIMALS = 18;
 const DEFAULT_SLIPPAGE_BPS = "200";
 
@@ -240,10 +240,7 @@ const getErrorMessage = (error: unknown) => {
   return message;
 };
 
-const assertTransactionSuccess = (
-  status: string,
-  failureMessage: string,
-) => {
+const assertTransactionSuccess = (status: string, failureMessage: string) => {
   if (status !== "success") {
     throw new Error(failureMessage);
   }
@@ -435,7 +432,6 @@ function MapoBridgeContent() {
       setErrorMessage(getErrorMessage(error));
     }
   };
-
   const selectPair = (pair: PairOption) => {
     if (pairButtonsDisabled) return;
     setSelectedPairId(pair.id);
@@ -663,9 +659,12 @@ function MapoBridgeContent() {
             chain: sourceWalletClient.chain,
           });
           setStatus("Waiting for MAPO approval confirmation...");
-          const approveReceipt = await waitForTransactionReceipt(sourcePublicClient, {
-            hash: approveHash,
-          });
+          const approveReceipt = await waitForTransactionReceipt(
+            sourcePublicClient,
+            {
+              hash: approveHash,
+            },
+          );
           assertTransactionSuccess(
             approveReceipt.status,
             "MAPO approval failed on-chain. Please try again.",
@@ -684,14 +683,19 @@ function MapoBridgeContent() {
 
       setLastTxHash(txHash);
       setStatus("Transaction submitted. Waiting for on-chain confirmation...");
-      const bridgeReceipt = await waitForTransactionReceipt(sourcePublicClient, {
-        hash: txHash,
-      });
+      const bridgeReceipt = await waitForTransactionReceipt(
+        sourcePublicClient,
+        {
+          hash: txHash,
+        },
+      );
       assertTransactionSuccess(
         bridgeReceipt.status,
         "Bridge transaction failed on-chain. Check the transaction and try again.",
       );
-      setStatus("Bridge transaction confirmed. Waiting for destination chain arrival.");
+      setStatus(
+        "Bridge transaction confirmed. Waiting for destination chain arrival.",
+      );
     } catch (error) {
       setErrorMessage(getErrorMessage(error));
     } finally {
