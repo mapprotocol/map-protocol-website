@@ -35,26 +35,26 @@ const iconArray = [
 ];
 
 export const footerArray: TabsArray = {
-  // "Official contract addresses": [
+  "Official contract addresses": [
+    {
+      name: "Ethereum",
+      path: "https://etherscan.io/token/0x7046933234A82AF77F14625e8d0fA9Bcc5044a7E",
+    },
+    {
+      name: "BNB Smart Chain",
+      path: "https://bscscan.com/token/0x7046933234A82AF77F14625e8d0fA9Bcc5044a7E",
+    },
+  ],
+  // "Old contract address (deprecated)": [
   //   {
-  //     name: "Ethereum",
+  //     name: "Ethereum (deprecated)",
   //     path: "https://etherscan.io/token/0x66D79B8f60ec93Bfce0b56F5Ac14A2714E509a99",
   //   },
   //   {
-  //     name: "BNB Smart Chain",
+  //     name: "BNB Smart Chain (deprecated)",
   //     path: "https://bscscan.com/token/0x66d79b8f60ec93bfce0b56f5ac14a2714e509a99",
   //   },
   // ],
-  "Old contract address (deprecated)": [
-    {
-      name: "Ethereum (deprecated)",
-      path: "https://etherscan.io/token/0x66D79B8f60ec93Bfce0b56F5Ac14A2714E509a99",
-    },
-    {
-      name: "BNB Smart Chain (deprecated)",
-      path: "https://bscscan.com/token/0x66d79b8f60ec93bfce0b56f5ac14a2714e509a99",
-    },
-  ],
   Ecosystem: [
     {
       name: "Community center",
@@ -236,7 +236,9 @@ export const Footer = () => {
           </div>
           <div className={styles.bottom}>
             <EmailOutlinedIcon />
-            <a href="mailto:cooperation@maplabs.io">cooperation@maplabs.io</a>
+            <a href="mailto:cooperation@mapprotocol.io">
+              cooperation@mapprotocol.io
+            </a>
           </div>
         </div>
       </div>
