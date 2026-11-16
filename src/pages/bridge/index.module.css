@@ -74,6 +74,11 @@
     gap: 16px;
 }
 
+.historyLink {
+    text-decoration: none;
+    white-space: nowrap;
+}
+
 .panelLabel {
     color: #61706c;
     font-size: 13px;

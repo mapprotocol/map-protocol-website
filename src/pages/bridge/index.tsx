@@ -43,6 +43,7 @@ const ROUTE_TYPE = "exactIn";
 const ENTRANCE = "Butter+";
 const DECIMALS = 18;
 const DEFAULT_SLIPPAGE_BPS = "200";
+const MAPSCAN_URL = process.env.NEXT_PUBLIC_MAPSCAN_URL || "https://maposcan.io";
 
 type ChainId = "22776" | "56" | "1";
 type WagmiChainId = 22776 | 56 | 1;
@@ -731,6 +732,16 @@ function MapoBridgeContent() {
               <div>
                 <div className={styles.panelTitle}>MAPO Bridge</div>
               </div>
+              {account && (
+                <a
+                  className={`${styles.secondaryButton} ${styles.historyLink}`}
+                  href={`${MAPSCAN_URL}/cross/account/${account}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  交易记录
+                </a>
+              )}
             </div>
 
             <div className={styles.pairGrid}>
