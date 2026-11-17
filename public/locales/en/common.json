@@ -75,5 +75,6 @@
   "Brand aseets": "Brand aseets",
   "Old contract address (deprecated)": "Old contract address (deprecated)",
   "Ethereum (deprecated)": "Ethereum (deprecated)",
-  "BNB Smart Chain (deprecated)": "BNB Smart Chain (deprecated)"
+  "BNB Smart Chain (deprecated)": "BNB Smart Chain (deprecated)",
+  "bridge-tx-history": "Transactions"
 }

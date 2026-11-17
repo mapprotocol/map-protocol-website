@@ -61,5 +61,6 @@
   "Similar to the 51% attack, long-range attack is a threat to PoS blockchains. MAP Protocol uses the Bitcoin network’s security mechanism to prevent long-range attack.": "Simile all'attacco del 51%, l'attacco a lungo raggio è una minaccia per le blockchain PoS. MAP Protocol utilizza il meccanismo di sicurezza della rete Bitcoin per prevenire l'attacco a lungo raggio.",
   "Edit Page": "Modifica Pagina",
   "We use cookies to improve your experience. By continuing to browse our site, you agree to our Cookie Policy.": "Utilizziamo i cookie per migliorare la tua esperienza. Continuando a navigare sul nostro sito, accetti la nostra Cookie Policy.",
-  "Accept": "Accetta"
+  "Accept": "Accetta",
+  "bridge-tx-history": "Cronologia transazioni"
 }

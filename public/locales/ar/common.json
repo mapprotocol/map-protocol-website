@@ -61,5 +61,6 @@
   "Similar to the 51% attack, long-range attack is a threat to PoS blockchains. MAP Protocol uses the Bitcoin network’s security mechanism to prevent long-range attack.": "مشابهًا لهجوم الـ 51%، الهجوم طويل المدى هو تهديد لسلاسل الكتل PoS. يستخدم MAP Protocol آلية أمان شبكة البيتكوين لمنع الهجوم طويل المدى.",
   "Edit Page": "تحرير الصفحة",
   "We use cookies to improve your experience. By continuing to browse our site, you agree to our Cookie Policy.": "نحن نستخدم الكوكيز لتحسين تجربتك. من خلال الاستمرار في تصفح موقعنا، فإنك توافق على سياسة الكوكيز لدينا.",
-  "Accept": "قبول"
+  "Accept": "قبول",
+  "bridge-tx-history": "سجل المعاملات"
 }

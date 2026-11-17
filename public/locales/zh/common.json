@@ -75,5 +75,6 @@
   "Brand aseets": "品牌资源",
   "Old contract address (deprecated)": "旧合约地址（已废弃）",
   "Ethereum (deprecated)": "Ethereum (已废弃)",
-  "BNB Smart Chain (deprecated)": "BNB Smart Chain (已废弃)"
+  "BNB Smart Chain (deprecated)": "BNB Smart Chain (已废弃)",
+  "bridge-tx-history": "交易记录"
 }

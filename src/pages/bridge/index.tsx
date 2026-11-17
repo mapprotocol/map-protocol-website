@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import type { GetServerSideProps, InferGetServerSidePropsType } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 import Decimal from "decimal.js";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { getPublicClient, getWalletClient } from "@wagmi/core";
@@ -393,6 +394,7 @@ function MapoBridgeContent() {
   const [errorMessage, setErrorMessage] = useState("");
   const [lastTxHash, setLastTxHash] = useState("");
   const { address: account, isConnected } = useAccount();
+  const { t } = useTranslation("common");
   const walletChainId = useChainId();
   const { switchChainAsync } = useSwitchChain();
   const publicClient = usePublicClient({ chainId: walletChainId });
@@ -739,7 +741,7 @@ function MapoBridgeContent() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  交易记录
+                  {t("bridge-tx-history")}
                 </a>
               )}
             </div>
